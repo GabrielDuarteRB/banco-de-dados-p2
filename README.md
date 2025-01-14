@@ -1,6 +1,6 @@
 # Trabalho de banco de dados
 
-#Banco de dados
+# Banco de dados
 
   Utilizamos a base de dados da europa ligue disponibilizada no kaggle, acesse o link abaixo para conferir e baixar.
 
