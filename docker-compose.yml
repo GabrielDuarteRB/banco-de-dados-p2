@@ -1,0 +1,40 @@
+version: "3.9"
+
+services:
+  postgres:
+    build: ./app
+    volumes:
+      - ./postgres-database:/var/lib/postgresql/data
+      - ./sqlite:/data
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: bd-p2
+    ports:
+      - "15432:5432"
+    networks:
+      - postgres-network 
+  pgadmin:
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: "gabriel@gmail.com"
+      PGADMIN_DEFAULT_PASSWORD: "postgres"
+    ports:
+      - "16543:80"
+    depends_on:
+      - postgres
+    networks:
+      - postgres-network
+  pgloader:
+    build: ./pgloader
+    volumes:
+      - ./sqlite:/data
+      - ./postgres-database:/var/lib/postgresql/data
+    depends_on:
+      - postgres
+    entrypoint: ["/usr/local/bin/entrypoint.sh"]
+    networks:
+      - postgres-network
+networks: 
+  postgres-network:
+    driver: bridge

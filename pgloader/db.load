@@ -1,0 +1,11 @@
+LOAD DATABASE
+     FROM sqlite:///data/database.sqlite
+     INTO postgresql://postgres:postgres@postgres:5432/bd-p2
+
+WITH include drop, create tables, create indexes, reset sequences, workers = 2
+
+CAST column player.height to varchar
+
+SET work_mem to '16MB', maintenance_work_mem to '512MB'
+
+;
