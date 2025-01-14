@@ -1,5 +1,9 @@
 # Trabalho de banco de dados
 
+# Como rodar
+  No diretório raiz da aplicação, crie uma pasta sqlite e adicione o arquivo do banco com o nome database.sqlite.
+
+  Após isso, de um docker-compose build e depois um docker-compose run e espere a inicialização da aplicação e transferencia de dados sqlite para postgres
 
 # Documentação
 
