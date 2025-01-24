@@ -1,74 +1,115 @@
 -- Primeira view
 
-CREATE VIEW view_time_performance AS
-SELECT 
-    t.team_long_name AS nome,
-    SUM(
+CREATE OR REPLACE VIEW view_avg_goals_per_season AS
+SELECT
+    match.season,
+    team.team_api_id,
+    team.team_long_name,
+    AVG(
         CASE WHEN 
-            m.home_team_api_id = t.team_api_id 
+            match.home_team_api_id = team.team_api_id 
         THEN 
-            m.home_team_goal 
+            match.home_team_goal 
         ELSE 
-            0 
+            match.away_team_goal 
         END
-    ) AS gols_marcados,
-    SUM(
+    ) AS average_goals_scored,
+    AVG(
         CASE WHEN 
-            m.away_team_api_id = t.team_api_id 
+            match.home_team_api_id = team.team_api_id 
         THEN 
-            m.away_team_goal 
+            match.away_team_goal 
         ELSE 
-            0 
+            match.home_team_goal
         END
-    ) AS gols_concedidos
-FROM 
-    team t
-LEFT JOIN 
-    match m 
+    ) AS average_goals_conceded
+FROM
+    match
+JOIN
+    team 
 ON 
-    t.team_api_id = m.home_team_api_id 
-    OR 
-    t.team_api_id = m.away_team_api_id
-GROUP BY 
-    t.team_long_name;
+    team.team_api_id = match.home_team_api_id 
+        OR 
+    team.team_api_id = match.away_team_api_id
+GROUP BY
+    match.season, team.team_api_id, team.team_long_name
+ORDER BY
+    match.season, team.team_long_name;
+
+select * from view_avg_goals_per_season
 
 -- Segunda View
 
-CREATE VIEW view_media_estatisticas_jogadores AS
-SELECT 
-    p.player_name AS nome_jogador,
-    AVG(pa.overall_rating) AS media_classificacao_geral,
-    AVG(pa.potential) AS media_potencial,
-    AVG(pa.crossing) AS media_cruzamentos,
-    AVG(pa.finishing) AS media_finalizacao,
-    AVG(pa.short_passing) AS media_passes_curtos,
-    AVG(pa.dribbling) AS media_drible,
-    AVG(pa.stamina) AS media_resistencia
-FROM 
-    player p
-JOIN 
-    player_attributes pa 
+CREATE OR REPLACE VIEW player_stats_per_match AS
+SELECT
+    m.match_api_id,
+    p.player_api_id,
+    p.player_name,
+    COUNT(DISTINCT mg.id) AS goals_scored,
+    COUNT(DISTINCT ms.id) AS shots_on_target,
+    COUNT(DISTINCT mc.id) AS crosses
+FROM
+    match m
+LEFT JOIN
+    match_goals mg
 ON 
-    p.player_api_id = pa.player_api_id
-GROUP BY 
-    p.player_name;
+	mg.match_api_id = m.match_api_id
+LEFT JOIN
+    match_shoton ms
+ON 
+	ms.match_api_id = m.match_api_id
+LEFT JOIN
+    match_cross mc
+ON 
+	mc.match_api_id = m.match_api_id
+JOIN
+    player p
+ON 
+	p.player_api_id = mg.player_api_id 
+		OR 
+	p.player_api_id = ms.player_api_id 
+		OR 
+	p.player_api_id = mc.player_api_id
+GROUP BY
+    m.match_api_id, p.player_api_id, p.player_name
+ORDER BY
+    m.match_api_id, p.player_name;
+
+select * from player_stats_per_match
 
 -- Terceira View
 
-CREATE VIEW view_resumo_partida AS
-SELECT 
+CREATE OR REPLACE VIEW match_odds_results AS
+SELECT
+    m.match_api_id,
     m.date,
-    t1.team_long_name AS time_casa,
-    t2.team_long_name AS time_visitante,
-    m.home_team_goal as gols_time_casa,
-    m.away_team_goal AS gols_time_visitante
-FROM 
+    home_team.team_long_name AS home_team,
+    away_team.team_long_name AS away_team,
+    m.home_team_goal,
+    m.away_team_goal,
+    bh.name AS bets_house,
+    mo.home_win_odds,
+    mo.draw_odds,
+    mo.away_win_odds
+FROM
     match m
-JOIN 
-    team t1 
+JOIN
+    team AS home_team 
 ON 
-	m.home_team_api_id = t1.team_api_id
-JOIN 
-    team t2 
+	home_team.team_api_id = m.home_team_api_id
+JOIN
+    team AS away_team 
 ON 
-	m.away_team_api_id = t2.team_api_id;
+	away_team.team_api_id = m.away_team_api_id
+JOIN
+    match_odds mo
+ON 
+	mo.match_id = m.id
+JOIN
+    bets_house bh
+ON 
+	bh.id_bets_house = mo.id_bets_house
+ORDER BY
+    m.date, bh.name;
+	
+select * from match_odds_results
