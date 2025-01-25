@@ -6,6 +6,7 @@ services:
     volumes:
       - ./postgres-database:/var/lib/postgresql/data
       - ./sqlite:/data
+      - ./barman:/var/lib/barman
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
