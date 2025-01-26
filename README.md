@@ -7,7 +7,7 @@
   ✅ **3 Functions**  
   ⏳ **3 Procedures (Falta uma)**  
   ✅ **3 Triggers**  
-  ❌ **PgBarman para configurar backup**  
+  ✅ **PgBarman para configurar backup**  
   ❌ **Transformar a base em Postgre em um DW (Usar o star schema)**  
   ❌ **Criar ETL do banco em Postgre para o DW**  
   ❌ **Criar dicionários de dados os dois banco criados**  
