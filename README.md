@@ -8,6 +8,7 @@
   ⏳ **3 Procedures (Falta uma)**  
   ✅ **3 Triggers**  
   ✅ **PgBarman para configurar backup**  
+  ❌ **Configurar o monitoramento ativo da base em Postgre com o TemBoard e o PgBadger**  
   ❌ **Transformar a base em Postgre em um DW (Usar o star schema)**  
   ❌ **Criar ETL do banco em Postgre para o DW**  
   ❌ **Criar dicionários de dados os dois banco criados**  
