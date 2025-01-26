@@ -2,3 +2,4 @@ database.sqlite
 postgres-database
 *.sqlite
 sqlite
+barman/
