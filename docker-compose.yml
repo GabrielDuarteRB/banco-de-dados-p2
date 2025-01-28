@@ -7,12 +7,14 @@ services:
       - ./postgres-database:/var/lib/postgresql/data
       - ./sqlite:/data
       - ./barman:/var/lib/barman
+      - ./logs:/var/log/pgbadger
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
       POSTGRES_DB: bd-p2
     ports:
       - "15432:5432"
+      - "8888:8888"
     networks:
       - postgres-network 
   pgadmin:
