@@ -104,7 +104,7 @@ ON
 JOIN
     match_odds mo
 ON 
-	mo.match_id = m.id
+	mo.match_api_id = m.match_api_id
 JOIN
     bets_house bh
 ON 

@@ -27,7 +27,7 @@ BEGIN
                 position_y
             )
             SELECT 
-                m.id, 
+                m.match_api_id, 
                 m.home_team_api_id AS team_id,
                 m.home_player_%s AS player_id, 
                 m.home_player_x%s AS position_x, 
@@ -47,7 +47,7 @@ BEGIN
                 position_y
             )
             SELECT 
-                m.id, 
+                m.match_api_id, 
                 m.away_team_api_id AS team_id,
                 m.away_player_%s AS player_id, 
                 m.away_player_x%s AS position_x, 
@@ -170,7 +170,7 @@ DECLARE
     r_match RECORD;
 BEGIN
     FOR r_match IN 
-        SELECT id, 
+        SELECT match_api_id, 
                b365h, b365d, b365a, 
                bwh, bwd, bwa, 
                iwh, iwd, iwa, 
@@ -194,27 +194,27 @@ BEGIN
 			(r_match.match_api_id, 2, r_match.bwh, r_match.bwd, r_match.bwa);
         
         INSERT INTO match_odds 
-			(match_api_idmatch_api_idmatch_api_idmatch_api_idmatch_api_idmatch_api_id, id_bets_house, home_win_odds, draw_odds, away_win_odds) 
+			(match_api_id, id_bets_house, home_win_odds, draw_odds, away_win_odds) 
         VALUES 
 			(r_match.match_api_id, 3, r_match.iwh, r_match.iwd, r_match.iwa);
         
         INSERT INTO match_odds 
-			(match_api_idmatch_api_idmatch_api_idmatch_api_idmatch_api_id, id_bets_house, home_win_odds, draw_odds, away_win_odds) 
+			(match_api_id, id_bets_house, home_win_odds, draw_odds, away_win_odds) 
         VALUES 
 			(r_match.match_api_id, 4, r_match.lbh, r_match.lbd, r_match.lba);
         
         INSERT INTO match_odds 
-			(match_api_idmatch_api_idmatch_api_idmatch_api_id, id_bets_house, home_win_odds, draw_odds, away_win_odds) 
+			(match_api_id, id_bets_house, home_win_odds, draw_odds, away_win_odds) 
         VALUES 
 			(r_match.match_api_id, 5, r_match.psh, r_match.psd, r_match.psa);
         
         INSERT INTO match_odds 
-			(match_api_idmatch_api_idmatch_api_id, id_bets_house, home_win_odds, draw_odds, away_win_odds) 
+			(match_api_id, id_bets_house, home_win_odds, draw_odds, away_win_odds) 
         VALUES 
 			(r_match.match_api_id, 6, r_match.whh, r_match.whd, r_match.wha);
         
         INSERT INTO match_odds 
-			(match_api_idmatch_api_id, id_bets_house, home_win_odds, draw_odds, away_win_odds) 
+			(match_api_id, id_bets_house, home_win_odds, draw_odds, away_win_odds) 
         VALUES 
 			(r_match.match_api_id, 7, r_match.sjh, r_match.sjd, r_match.sja);
         

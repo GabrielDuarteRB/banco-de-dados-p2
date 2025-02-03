@@ -2,40 +2,106 @@ version: "3.9"
 
 services:
   postgres:
+    container_name: postgres
     build: ./app
     volumes:
       - ./postgres-database:/var/lib/postgresql/data
+      -  ./app/config/postgresql.conf:/var/lib/postgresql/data/postgres-database/postgresql.conf
       - ./sqlite:/data
-      - ./barman:/var/lib/barman
+      - ./ssh/id_rsa.pub:/home/barman/.ssh/id_rsa.pub
+      - ./ssh/id_rsa:/home/barman/.ssh/id_rsa
+      - ./pgbadger/pg_log:/var/lib/postgresql/data/pg_log
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
       POSTGRES_DB: bd-p2
+      POSTGRES_NAME: postgres14
+      PGDATA: /var/lib/postgresql/data/postgres-database
+      PGPORT: "5432"
     ports:
       - "15432:5432"
+      - "222:22"  
+      - "2345:2345"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      retries: 5
     networks:
       - postgres-network 
-  pgadmin:
-    image: dpage/pgadmin4
-    environment:
-      PGADMIN_DEFAULT_EMAIL: "gabriel@gmail.com"
-      PGADMIN_DEFAULT_PASSWORD: "postgres"
-    ports:
-      - "16543:80"
-    depends_on:
-      - postgres
-    networks:
-      - postgres-network
+
   pgloader:
     build: ./pgloader
+    container_name: pgloader
     volumes:
       - ./sqlite:/data
       - ./postgres-database:/var/lib/postgresql/data
     depends_on:
       - postgres
     entrypoint: ["/usr/local/bin/entrypoint.sh"]
+    mem_limit: 8g
+    mem_reservation: 7g
     networks:
       - postgres-network
+
+  barman:
+    build: ./barman
+    container_name: barman
+    volumes:
+      - ./ssh/id_rsa:/home/barman/.ssh/id_rsa
+      - ./ssh/id_rsa.pub:/home/barman/.ssh/id_rsa.pub
+      - ./barman/backup:/var/lib/barman
+    environment:
+      - BARMAN_DB_HOST=postgres
+      - BARMAN_DB_USER=postgres
+      - BARMAN_DB_PASSWORD=postgres
+      - PGPASSWORD=postgres 
+    depends_on:
+      - postgres
+    networks:
+      - postgres-network
+
+  pgbadger:
+    container_name: pgbadger
+    build: ./pgbadger
+    volumes:
+      - ./pgbadger/pg_log:/logs
+    ports:
+      - "8080:80"
+    depends_on:
+      - postgres
+    networks:
+      - postgres-network
+
+  temboard:
+    build:
+      context: ./temboard
+      args:
+        TEMBOARD_VERSION: "8.2.1"
+    image: temboard:latest
+    container_name: temboard
+    volumes:
+      - ssl:/etc/ssl/certs  
+      - pgdata:/var/lib/postgresql/data
+      - home:/home/temboard
+      - ./temboard/config/temboard.conf:/home/temboard/temboard.conf:rw
+    ports:
+      - 3010:8888
+      - 3110:5431
+    depends_on:
+      - postgres
+    networks:
+      - postgres-network
+
+volumes:
+  ssl:
+    name: temboard-ssl
+    driver: local
+  pgdata:
+    name: temboard-pgdata
+    driver: local
+  home:
+    name: temboard-home
+    driver: local  
 networks: 
   postgres-network:
     driver: bridge

@@ -2,10 +2,9 @@ LOAD DATABASE
      FROM sqlite:///data/database.sqlite
      INTO postgresql://postgres:postgres@postgres:5432/bd-p2
 
-WITH include drop, create tables, create indexes, reset sequences
+WITH include drop, create tables, create indexes, batch rows = 1000, prefetch rows = 1000
 
 CAST column player.height TO FLOAT USING float-to-string
 
-SET work_mem to '16MB', maintenance_work_mem to '512MB'
-
+set work_mem to '2048 MB', maintenance_work_mem to '4096 MB'
 ;
