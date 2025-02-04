@@ -12,7 +12,7 @@ ENV PGDATABASE ${POSTGRES_DB}
 ENV PGHOST /var/run/postgresql
 ENV TEMBOARD_HOSTNAME "postgres14.host"
 
-#COPY ./config/postgresql.conf /usr/share/postgresql/postgresql.conf.sample
+COPY ./config/postgresql.conf /usr/share/postgresql/postgresql.conf.sample
 COPY ./config/pg_hba.conf /usr/share/postgresql/pg_hba.conf
 
 RUN apt-get update && apt-get install -y \
@@ -22,6 +22,7 @@ RUN apt-get update && apt-get install -y \
     ca-certificates \
     rsync \
     cron \
+    openssh-client \
     openssh-server \
     sshpass \
     python3-pip python3-setuptools python3-dev; \
@@ -31,11 +32,13 @@ RUN apt-get update && apt-get install -y \
 
 RUN useradd -m barman &&  \
     mkdir -p /home/barman/.ssh/ && \
+    touch /home/barman/.ssh/id_rsa && \
     touch /home/barman/.ssh/authorized_keys && \
     chmod 700 /home/barman/.ssh && \
     chmod 600 /home/barman/.ssh/authorized_keys && \
     chown -R barman:barman /home/barman/.ssh && \
-    chown -R barman:barman /home/barman/.ssh/authorized_keys 
+    chown -R barman:barman /home/barman/.ssh/authorized_keys && \
+    chown -R barman:barman /home/barman/.ssh/id_rsa 
 
 #RUN mkdir -p /var/lib/postgresql/data/postgres-database && \
 #    touch /var/lib/postgresql/data/postgres-database/postgresql.conf
@@ -51,7 +54,7 @@ COPY ./config/custom-entrypoint.sh /
 
 RUN chmod +x /custom-entrypoint.sh
 
-EXPOSE 22 
+#EXPOSE 22 
 EXPOSE 5432 
 
 ENTRYPOINT ["/custom-entrypoint.sh"]

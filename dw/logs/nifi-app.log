@@ -1,0 +1,1137 @@
+2025-02-04 17:00:05,602 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:00:05,603 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2025-02-04 17:00:12,072 ERROR [Timer-Driven Process Thread-1] o.a.n.p.standard.QueryDatabaseTable QueryDatabaseTable[id=d26d966d-0194-1000-8940-ee4d2dfcb58f] Unable to execute SQL select query SELECT match_api_id, country_id, league_id, season, stage, date, home_team_goal, away_team_goal  FROM match due to org.postgresql.util.PSQLException: ERROR: relation "match" does not exist
+  Position: 103
+org.postgresql.util.PSQLException: ERROR: relation "match" does not exist
+  Position: 103
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:335)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:321)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:297)
+	at org.postgresql.jdbc.PgStatement.executeQuery(PgStatement.java:246)
+	at org.apache.commons.dbcp2.DelegatingStatement.executeQuery(DelegatingStatement.java:318)
+	at org.apache.commons.dbcp2.DelegatingStatement.executeQuery(DelegatingStatement.java:318)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.apache.nifi.controller.service.StandardControllerServiceInvocationHandler.invoke(StandardControllerServiceInvocationHandler.java:254)
+	at org.apache.nifi.controller.service.StandardControllerServiceInvocationHandler$ProxiedReturnObjectInvocationHandler.invoke(StandardControllerServiceInvocationHandler.java:240)
+	at jdk.proxy11/jdk.proxy11.$Proxy167.executeQuery(Unknown Source)
+	at org.apache.nifi.processors.standard.AbstractQueryDatabaseTable.onTrigger(AbstractQueryDatabaseTable.java:399)
+	at org.apache.nifi.controller.StandardProcessorNode.onTrigger(StandardProcessorNode.java:1274)
+	at org.apache.nifi.controller.tasks.ConnectableTask.invoke(ConnectableTask.java:244)
+	at org.apache.nifi.controller.scheduling.TimerDrivenSchedulingAgent$1.run(TimerDrivenSchedulingAgent.java:102)
+	at org.apache.nifi.engine.FlowEngine$2.run(FlowEngine.java:110)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-02-04 17:00:20,590 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2025-02-04 17:00:23,950 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 132.91 GB, bytes free = 305.1 GB, capacity = 438.01 GB
+2025-02-04 17:00:25,603 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:00:25,603 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2025-02-04 17:00:45,604 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:00:45,604 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2025-02-04 17:00:45,977 INFO [Write-Ahead Local State Provider Maintenance] o.a.n.wali.SequentialAccessWriteAheadLog Checkpointed Write-Ahead Log with 18 Records and 0 Swap Files in 8 milliseconds (Stop-the-world time = 4 milliseconds), max Transaction ID 119
+2025-02-04 17:01:05,604 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:01:05,605 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2025-02-04 17:01:23,953 ERROR [Timer-Driven Process Thread-8] o.a.n.p.standard.QueryDatabaseTable QueryDatabaseTable[id=d26d966d-0194-1000-8940-ee4d2dfcb58f] Unable to execute SQL select query SELECT match_api_id, country_id, league_id, season, stage, date, home_team_goal, away_team_goal  FROM match due to org.postgresql.util.PSQLException: ERROR: relation "match" does not exist
+  Position: 103
+org.postgresql.util.PSQLException: ERROR: relation "match" does not exist
+  Position: 103
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:335)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:321)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:297)
+	at org.postgresql.jdbc.PgStatement.executeQuery(PgStatement.java:246)
+	at org.apache.commons.dbcp2.DelegatingStatement.executeQuery(DelegatingStatement.java:318)
+	at org.apache.commons.dbcp2.DelegatingStatement.executeQuery(DelegatingStatement.java:318)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.apache.nifi.controller.service.StandardControllerServiceInvocationHandler.invoke(StandardControllerServiceInvocationHandler.java:254)
+	at org.apache.nifi.controller.service.StandardControllerServiceInvocationHandler$ProxiedReturnObjectInvocationHandler.invoke(StandardControllerServiceInvocationHandler.java:240)
+	at jdk.proxy11/jdk.proxy11.$Proxy167.executeQuery(Unknown Source)
+	at org.apache.nifi.processors.standard.AbstractQueryDatabaseTable.onTrigger(AbstractQueryDatabaseTable.java:399)
+	at org.apache.nifi.controller.StandardProcessorNode.onTrigger(StandardProcessorNode.java:1274)
+	at org.apache.nifi.controller.tasks.ConnectableTask.invoke(ConnectableTask.java:244)
+	at org.apache.nifi.controller.scheduling.TimerDrivenSchedulingAgent$1.run(TimerDrivenSchedulingAgent.java:102)
+	at org.apache.nifi.engine.FlowEngine$2.run(FlowEngine.java:110)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-02-04 17:01:23,958 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2025-02-04 17:01:23,959 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 132.91 GB, bytes free = 305.1 GB, capacity = 438.01 GB
+2025-02-04 17:01:25,605 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:01:25,605 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2025-02-04 17:01:45,606 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:01:45,606 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2025-02-04 17:02:05,606 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:02:05,606 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2025-02-04 17:02:23,957 ERROR [Timer-Driven Process Thread-7] o.a.n.p.standard.QueryDatabaseTable QueryDatabaseTable[id=d26d966d-0194-1000-8940-ee4d2dfcb58f] Unable to execute SQL select query SELECT match_api_id, country_id, league_id, season, stage, date, home_team_goal, away_team_goal  FROM match due to org.postgresql.util.PSQLException: ERROR: relation "match" does not exist
+  Position: 103
+org.postgresql.util.PSQLException: ERROR: relation "match" does not exist
+  Position: 103
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:335)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:321)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:297)
+	at org.postgresql.jdbc.PgStatement.executeQuery(PgStatement.java:246)
+	at org.apache.commons.dbcp2.DelegatingStatement.executeQuery(DelegatingStatement.java:318)
+	at org.apache.commons.dbcp2.DelegatingStatement.executeQuery(DelegatingStatement.java:318)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.apache.nifi.controller.service.StandardControllerServiceInvocationHandler.invoke(StandardControllerServiceInvocationHandler.java:254)
+	at org.apache.nifi.controller.service.StandardControllerServiceInvocationHandler$ProxiedReturnObjectInvocationHandler.invoke(StandardControllerServiceInvocationHandler.java:240)
+	at jdk.proxy11/jdk.proxy11.$Proxy167.executeQuery(Unknown Source)
+	at org.apache.nifi.processors.standard.AbstractQueryDatabaseTable.onTrigger(AbstractQueryDatabaseTable.java:399)
+	at org.apache.nifi.controller.StandardProcessorNode.onTrigger(StandardProcessorNode.java:1274)
+	at org.apache.nifi.controller.tasks.ConnectableTask.invoke(ConnectableTask.java:244)
+	at org.apache.nifi.controller.scheduling.TimerDrivenSchedulingAgent$1.run(TimerDrivenSchedulingAgent.java:102)
+	at org.apache.nifi.engine.FlowEngine$2.run(FlowEngine.java:110)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-02-04 17:02:23,965 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2025-02-04 17:02:23,965 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 132.91 GB, bytes free = 305.09 GB, capacity = 438.01 GB
+2025-02-04 17:02:25,607 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:02:25,607 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2025-02-04 17:02:45,607 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:02:45,607 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2025-02-04 17:02:45,988 INFO [Write-Ahead Local State Provider Maintenance] o.a.n.wali.SequentialAccessWriteAheadLog Checkpointed Write-Ahead Log with 18 Records and 0 Swap Files in 10 milliseconds (Stop-the-world time = 2 milliseconds), max Transaction ID 121
+2025-02-04 17:03:05,608 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:03:05,608 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2025-02-04 17:03:23,960 ERROR [Timer-Driven Process Thread-9] o.a.n.p.standard.QueryDatabaseTable QueryDatabaseTable[id=d26d966d-0194-1000-8940-ee4d2dfcb58f] Unable to execute SQL select query SELECT match_api_id, country_id, league_id, season, stage, date, home_team_goal, away_team_goal  FROM match due to org.postgresql.util.PSQLException: ERROR: relation "match" does not exist
+  Position: 103
+org.postgresql.util.PSQLException: ERROR: relation "match" does not exist
+  Position: 103
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:335)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:321)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:297)
+	at org.postgresql.jdbc.PgStatement.executeQuery(PgStatement.java:246)
+	at org.apache.commons.dbcp2.DelegatingStatement.executeQuery(DelegatingStatement.java:318)
+	at org.apache.commons.dbcp2.DelegatingStatement.executeQuery(DelegatingStatement.java:318)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.apache.nifi.controller.service.StandardControllerServiceInvocationHandler.invoke(StandardControllerServiceInvocationHandler.java:254)
+	at org.apache.nifi.controller.service.StandardControllerServiceInvocationHandler$ProxiedReturnObjectInvocationHandler.invoke(StandardControllerServiceInvocationHandler.java:240)
+	at jdk.proxy11/jdk.proxy11.$Proxy167.executeQuery(Unknown Source)
+	at org.apache.nifi.processors.standard.AbstractQueryDatabaseTable.onTrigger(AbstractQueryDatabaseTable.java:399)
+	at org.apache.nifi.controller.StandardProcessorNode.onTrigger(StandardProcessorNode.java:1274)
+	at org.apache.nifi.controller.tasks.ConnectableTask.invoke(ConnectableTask.java:244)
+	at org.apache.nifi.controller.scheduling.TimerDrivenSchedulingAgent$1.run(TimerDrivenSchedulingAgent.java:102)
+	at org.apache.nifi.engine.FlowEngine$2.run(FlowEngine.java:110)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-02-04 17:03:23,976 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2025-02-04 17:03:23,977 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 132.91 GB, bytes free = 305.09 GB, capacity = 438.01 GB
+2025-02-04 17:03:25,608 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:03:25,609 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2025-02-04 17:03:45,610 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:03:45,611 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2025-02-04 17:04:05,611 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:04:05,615 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2025-02-04 17:04:23,965 ERROR [Timer-Driven Process Thread-10] o.a.n.p.standard.QueryDatabaseTable QueryDatabaseTable[id=d26d966d-0194-1000-8940-ee4d2dfcb58f] Unable to execute SQL select query SELECT match_api_id, country_id, league_id, season, stage, date, home_team_goal, away_team_goal  FROM match due to org.postgresql.util.PSQLException: ERROR: relation "match" does not exist
+  Position: 103
+org.postgresql.util.PSQLException: ERROR: relation "match" does not exist
+  Position: 103
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:335)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:321)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:297)
+	at org.postgresql.jdbc.PgStatement.executeQuery(PgStatement.java:246)
+	at org.apache.commons.dbcp2.DelegatingStatement.executeQuery(DelegatingStatement.java:318)
+	at org.apache.commons.dbcp2.DelegatingStatement.executeQuery(DelegatingStatement.java:318)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.apache.nifi.controller.service.StandardControllerServiceInvocationHandler.invoke(StandardControllerServiceInvocationHandler.java:254)
+	at org.apache.nifi.controller.service.StandardControllerServiceInvocationHandler$ProxiedReturnObjectInvocationHandler.invoke(StandardControllerServiceInvocationHandler.java:240)
+	at jdk.proxy11/jdk.proxy11.$Proxy167.executeQuery(Unknown Source)
+	at org.apache.nifi.processors.standard.AbstractQueryDatabaseTable.onTrigger(AbstractQueryDatabaseTable.java:399)
+	at org.apache.nifi.controller.StandardProcessorNode.onTrigger(StandardProcessorNode.java:1274)
+	at org.apache.nifi.controller.tasks.ConnectableTask.invoke(ConnectableTask.java:244)
+	at org.apache.nifi.controller.scheduling.TimerDrivenSchedulingAgent$1.run(TimerDrivenSchedulingAgent.java:102)
+	at org.apache.nifi.engine.FlowEngine$2.run(FlowEngine.java:110)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-02-04 17:04:23,983 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2025-02-04 17:04:23,984 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 132.91 GB, bytes free = 305.09 GB, capacity = 438.01 GB
+2025-02-04 17:04:25,615 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:04:25,615 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2025-02-04 17:04:45,616 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:04:45,616 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2025-02-04 17:04:45,994 INFO [Write-Ahead Local State Provider Maintenance] o.a.n.wali.SequentialAccessWriteAheadLog Checkpointed Write-Ahead Log with 18 Records and 0 Swap Files in 5 milliseconds (Stop-the-world time = 2 milliseconds), max Transaction ID 123
+2025-02-04 17:05:05,616 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:05:05,616 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2025-02-04 17:05:23,973 ERROR [Timer-Driven Process Thread-4] o.a.n.p.standard.QueryDatabaseTable QueryDatabaseTable[id=d26d966d-0194-1000-8940-ee4d2dfcb58f] Unable to execute SQL select query SELECT match_api_id, country_id, league_id, season, stage, date, home_team_goal, away_team_goal  FROM match due to org.postgresql.util.PSQLException: ERROR: relation "match" does not exist
+  Position: 103
+org.postgresql.util.PSQLException: ERROR: relation "match" does not exist
+  Position: 103
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:335)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:321)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:297)
+	at org.postgresql.jdbc.PgStatement.executeQuery(PgStatement.java:246)
+	at org.apache.commons.dbcp2.DelegatingStatement.executeQuery(DelegatingStatement.java:318)
+	at org.apache.commons.dbcp2.DelegatingStatement.executeQuery(DelegatingStatement.java:318)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.apache.nifi.controller.service.StandardControllerServiceInvocationHandler.invoke(StandardControllerServiceInvocationHandler.java:254)
+	at org.apache.nifi.controller.service.StandardControllerServiceInvocationHandler$ProxiedReturnObjectInvocationHandler.invoke(StandardControllerServiceInvocationHandler.java:240)
+	at jdk.proxy11/jdk.proxy11.$Proxy167.executeQuery(Unknown Source)
+	at org.apache.nifi.processors.standard.AbstractQueryDatabaseTable.onTrigger(AbstractQueryDatabaseTable.java:399)
+	at org.apache.nifi.controller.StandardProcessorNode.onTrigger(StandardProcessorNode.java:1274)
+	at org.apache.nifi.controller.tasks.ConnectableTask.invoke(ConnectableTask.java:244)
+	at org.apache.nifi.controller.scheduling.TimerDrivenSchedulingAgent$1.run(TimerDrivenSchedulingAgent.java:102)
+	at org.apache.nifi.engine.FlowEngine$2.run(FlowEngine.java:110)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-02-04 17:05:23,994 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2025-02-04 17:05:23,995 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 132.92 GB, bytes free = 305.09 GB, capacity = 438.01 GB
+2025-02-04 17:05:25,617 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:05:25,617 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2025-02-04 17:05:45,617 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:05:45,618 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2025-02-04 17:06:05,618 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:06:05,618 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2025-02-04 17:06:23,977 ERROR [Timer-Driven Process Thread-2] o.a.n.p.standard.QueryDatabaseTable QueryDatabaseTable[id=d26d966d-0194-1000-8940-ee4d2dfcb58f] Unable to execute SQL select query SELECT match_api_id, country_id, league_id, season, stage, date, home_team_goal, away_team_goal  FROM match due to org.postgresql.util.PSQLException: ERROR: relation "match" does not exist
+  Position: 103
+org.postgresql.util.PSQLException: ERROR: relation "match" does not exist
+  Position: 103
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:335)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:321)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:297)
+	at org.postgresql.jdbc.PgStatement.executeQuery(PgStatement.java:246)
+	at org.apache.commons.dbcp2.DelegatingStatement.executeQuery(DelegatingStatement.java:318)
+	at org.apache.commons.dbcp2.DelegatingStatement.executeQuery(DelegatingStatement.java:318)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.apache.nifi.controller.service.StandardControllerServiceInvocationHandler.invoke(StandardControllerServiceInvocationHandler.java:254)
+	at org.apache.nifi.controller.service.StandardControllerServiceInvocationHandler$ProxiedReturnObjectInvocationHandler.invoke(StandardControllerServiceInvocationHandler.java:240)
+	at jdk.proxy11/jdk.proxy11.$Proxy167.executeQuery(Unknown Source)
+	at org.apache.nifi.processors.standard.AbstractQueryDatabaseTable.onTrigger(AbstractQueryDatabaseTable.java:399)
+	at org.apache.nifi.controller.StandardProcessorNode.onTrigger(StandardProcessorNode.java:1274)
+	at org.apache.nifi.controller.tasks.ConnectableTask.invoke(ConnectableTask.java:244)
+	at org.apache.nifi.controller.scheduling.TimerDrivenSchedulingAgent$1.run(TimerDrivenSchedulingAgent.java:102)
+	at org.apache.nifi.engine.FlowEngine$2.run(FlowEngine.java:110)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-02-04 17:06:24,002 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2025-02-04 17:06:24,002 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 132.92 GB, bytes free = 305.09 GB, capacity = 438.01 GB
+2025-02-04 17:06:25,618 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:06:25,619 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2025-02-04 17:06:45,619 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:06:45,619 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2025-02-04 17:06:46,002 INFO [Write-Ahead Local State Provider Maintenance] o.a.n.wali.SequentialAccessWriteAheadLog Checkpointed Write-Ahead Log with 18 Records and 0 Swap Files in 7 milliseconds (Stop-the-world time = 3 milliseconds), max Transaction ID 125
+2025-02-04 17:07:05,620 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:07:05,620 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2025-02-04 17:07:23,980 ERROR [Timer-Driven Process Thread-6] o.a.n.p.standard.QueryDatabaseTable QueryDatabaseTable[id=d26d966d-0194-1000-8940-ee4d2dfcb58f] Unable to execute SQL select query SELECT match_api_id, country_id, league_id, season, stage, date, home_team_goal, away_team_goal  FROM match due to org.postgresql.util.PSQLException: ERROR: relation "match" does not exist
+  Position: 103
+org.postgresql.util.PSQLException: ERROR: relation "match" does not exist
+  Position: 103
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:335)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:321)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:297)
+	at org.postgresql.jdbc.PgStatement.executeQuery(PgStatement.java:246)
+	at org.apache.commons.dbcp2.DelegatingStatement.executeQuery(DelegatingStatement.java:318)
+	at org.apache.commons.dbcp2.DelegatingStatement.executeQuery(DelegatingStatement.java:318)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.apache.nifi.controller.service.StandardControllerServiceInvocationHandler.invoke(StandardControllerServiceInvocationHandler.java:254)
+	at org.apache.nifi.controller.service.StandardControllerServiceInvocationHandler$ProxiedReturnObjectInvocationHandler.invoke(StandardControllerServiceInvocationHandler.java:240)
+	at jdk.proxy11/jdk.proxy11.$Proxy167.executeQuery(Unknown Source)
+	at org.apache.nifi.processors.standard.AbstractQueryDatabaseTable.onTrigger(AbstractQueryDatabaseTable.java:399)
+	at org.apache.nifi.controller.StandardProcessorNode.onTrigger(StandardProcessorNode.java:1274)
+	at org.apache.nifi.controller.tasks.ConnectableTask.invoke(ConnectableTask.java:244)
+	at org.apache.nifi.controller.scheduling.TimerDrivenSchedulingAgent$1.run(TimerDrivenSchedulingAgent.java:102)
+	at org.apache.nifi.engine.FlowEngine$2.run(FlowEngine.java:110)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-02-04 17:07:24,012 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2025-02-04 17:07:24,013 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 132.92 GB, bytes free = 305.09 GB, capacity = 438.01 GB
+2025-02-04 17:07:25,620 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:07:25,620 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2025-02-04 17:07:45,621 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:07:45,621 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2025-02-04 17:08:05,621 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:08:05,621 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2025-02-04 17:08:12,243 INFO [NiFi Web Server-221] o.a.n.c.queue.AbstractFlowFileQueue Canceling ListFlowFile Request with ID d293d8b5-0194-1000-f351-f266e76422d0
+2025-02-04 17:08:15,900 INFO [NiFi Web Server-243] o.a.n.c.queue.AbstractFlowFileQueue Canceling ListFlowFile Request with ID d293e30f-0194-1000-0f08-cd070279ab95
+2025-02-04 17:08:23,985 ERROR [Timer-Driven Process Thread-3] o.a.n.p.standard.QueryDatabaseTable QueryDatabaseTable[id=d26d966d-0194-1000-8940-ee4d2dfcb58f] Unable to execute SQL select query SELECT match_api_id, country_id, league_id, season, stage, date, home_team_goal, away_team_goal  FROM match due to org.postgresql.util.PSQLException: ERROR: relation "match" does not exist
+  Position: 103
+org.postgresql.util.PSQLException: ERROR: relation "match" does not exist
+  Position: 103
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:335)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:321)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:297)
+	at org.postgresql.jdbc.PgStatement.executeQuery(PgStatement.java:246)
+	at org.apache.commons.dbcp2.DelegatingStatement.executeQuery(DelegatingStatement.java:318)
+	at org.apache.commons.dbcp2.DelegatingStatement.executeQuery(DelegatingStatement.java:318)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.apache.nifi.controller.service.StandardControllerServiceInvocationHandler.invoke(StandardControllerServiceInvocationHandler.java:254)
+	at org.apache.nifi.controller.service.StandardControllerServiceInvocationHandler$ProxiedReturnObjectInvocationHandler.invoke(StandardControllerServiceInvocationHandler.java:240)
+	at jdk.proxy11/jdk.proxy11.$Proxy167.executeQuery(Unknown Source)
+	at org.apache.nifi.processors.standard.AbstractQueryDatabaseTable.onTrigger(AbstractQueryDatabaseTable.java:399)
+	at org.apache.nifi.controller.StandardProcessorNode.onTrigger(StandardProcessorNode.java:1274)
+	at org.apache.nifi.controller.tasks.ConnectableTask.invoke(ConnectableTask.java:244)
+	at org.apache.nifi.controller.scheduling.TimerDrivenSchedulingAgent$1.run(TimerDrivenSchedulingAgent.java:102)
+	at org.apache.nifi.engine.FlowEngine$2.run(FlowEngine.java:110)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-02-04 17:08:24,022 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2025-02-04 17:08:24,024 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 132.92 GB, bytes free = 305.09 GB, capacity = 438.01 GB
+2025-02-04 17:08:25,621 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:08:25,622 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2025-02-04 17:08:45,622 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:08:45,622 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2025-02-04 17:08:46,010 INFO [Write-Ahead Local State Provider Maintenance] o.a.n.wali.SequentialAccessWriteAheadLog Checkpointed Write-Ahead Log with 18 Records and 0 Swap Files in 7 milliseconds (Stop-the-world time = 3 milliseconds), max Transaction ID 127
+2025-02-04 17:09:05,622 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:09:05,622 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2025-02-04 17:09:06,985 INFO [NiFi Web Server-243] o.a.n.c.s.StandardProcessScheduler Stopping QueryDatabaseTable[id=d26d966d-0194-1000-8940-ee4d2dfcb58f]
+2025-02-04 17:09:06,986 INFO [NiFi Web Server-243] o.a.n.controller.StandardProcessorNode Stopping processor: QueryDatabaseTable[id=d26d966d-0194-1000-8940-ee4d2dfcb58f]
+2025-02-04 17:09:06,987 INFO [Timer-Driven Process Thread-10] o.a.n.c.s.TimerDrivenSchedulingAgent Stopped scheduling QueryDatabaseTable[id=d26d966d-0194-1000-8940-ee4d2dfcb58f] to run
+2025-02-04 17:09:06,988 INFO [Timer-Driven Process Thread-10] o.a.n.controller.StandardProcessorNode QueryDatabaseTable[id=d26d966d-0194-1000-8940-ee4d2dfcb58f] has completely stopped. Completing any associated Futures.
+2025-02-04 17:09:07,067 INFO [Flow Service Tasks Thread-1] o.a.nifi.controller.StandardFlowService Saved flow controller org.apache.nifi.controller.FlowController@4b32f004 // Another save pending = false
+2025-02-04 17:09:12,426 INFO [NiFi Web Server-245] o.a.n.c.s.StandardProcessScheduler Starting QueryDatabaseTable[id=d26d966d-0194-1000-8940-ee4d2dfcb58f]
+2025-02-04 17:09:12,427 INFO [NiFi Web Server-245] o.a.n.controller.StandardProcessorNode Starting QueryDatabaseTable[id=d26d966d-0194-1000-8940-ee4d2dfcb58f]
+2025-02-04 17:09:12,427 INFO [Timer-Driven Process Thread-2] o.a.n.c.s.TimerDrivenSchedulingAgent Scheduled QueryDatabaseTable[id=d26d966d-0194-1000-8940-ee4d2dfcb58f] to run with 1 threads
+2025-02-04 17:09:12,430 ERROR [Timer-Driven Process Thread-9] o.a.n.p.standard.QueryDatabaseTable QueryDatabaseTable[id=d26d966d-0194-1000-8940-ee4d2dfcb58f] Unable to execute SQL select query SELECT match_api_id, country_id, league_id, season, stage, date, home_team_goal, away_team_goal  FROM match due to org.postgresql.util.PSQLException: ERROR: relation "match" does not exist
+  Position: 103
+org.postgresql.util.PSQLException: ERROR: relation "match" does not exist
+  Position: 103
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:335)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:321)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:297)
+	at org.postgresql.jdbc.PgStatement.executeQuery(PgStatement.java:246)
+	at org.apache.commons.dbcp2.DelegatingStatement.executeQuery(DelegatingStatement.java:318)
+	at org.apache.commons.dbcp2.DelegatingStatement.executeQuery(DelegatingStatement.java:318)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.apache.nifi.controller.service.StandardControllerServiceInvocationHandler.invoke(StandardControllerServiceInvocationHandler.java:254)
+	at org.apache.nifi.controller.service.StandardControllerServiceInvocationHandler$ProxiedReturnObjectInvocationHandler.invoke(StandardControllerServiceInvocationHandler.java:240)
+	at jdk.proxy11/jdk.proxy11.$Proxy167.executeQuery(Unknown Source)
+	at org.apache.nifi.processors.standard.AbstractQueryDatabaseTable.onTrigger(AbstractQueryDatabaseTable.java:399)
+	at org.apache.nifi.controller.StandardProcessorNode.onTrigger(StandardProcessorNode.java:1274)
+	at org.apache.nifi.controller.tasks.ConnectableTask.invoke(ConnectableTask.java:244)
+	at org.apache.nifi.controller.scheduling.TimerDrivenSchedulingAgent$1.run(TimerDrivenSchedulingAgent.java:102)
+	at org.apache.nifi.engine.FlowEngine$2.run(FlowEngine.java:110)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-02-04 17:09:12,583 INFO [Flow Service Tasks Thread-1] o.a.nifi.controller.StandardFlowService Saved flow controller org.apache.nifi.controller.FlowController@4b32f004 // Another save pending = false
+2025-02-04 17:09:24,029 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2025-02-04 17:09:24,030 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 132.92 GB, bytes free = 305.09 GB, capacity = 438.01 GB
+2025-02-04 17:09:25,623 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:09:25,623 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2025-02-04 17:09:45,623 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:09:45,623 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2025-02-04 17:10:05,624 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:10:05,624 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2025-02-04 17:10:12,436 ERROR [Timer-Driven Process Thread-3] o.a.n.p.standard.QueryDatabaseTable QueryDatabaseTable[id=d26d966d-0194-1000-8940-ee4d2dfcb58f] Unable to execute SQL select query SELECT match_api_id, country_id, league_id, season, stage, date, home_team_goal, away_team_goal  FROM match due to org.postgresql.util.PSQLException: ERROR: relation "match" does not exist
+  Position: 103
+org.postgresql.util.PSQLException: ERROR: relation "match" does not exist
+  Position: 103
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:335)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:321)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:297)
+	at org.postgresql.jdbc.PgStatement.executeQuery(PgStatement.java:246)
+	at org.apache.commons.dbcp2.DelegatingStatement.executeQuery(DelegatingStatement.java:318)
+	at org.apache.commons.dbcp2.DelegatingStatement.executeQuery(DelegatingStatement.java:318)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.apache.nifi.controller.service.StandardControllerServiceInvocationHandler.invoke(StandardControllerServiceInvocationHandler.java:254)
+	at org.apache.nifi.controller.service.StandardControllerServiceInvocationHandler$ProxiedReturnObjectInvocationHandler.invoke(StandardControllerServiceInvocationHandler.java:240)
+	at jdk.proxy11/jdk.proxy11.$Proxy167.executeQuery(Unknown Source)
+	at org.apache.nifi.processors.standard.AbstractQueryDatabaseTable.onTrigger(AbstractQueryDatabaseTable.java:399)
+	at org.apache.nifi.controller.StandardProcessorNode.onTrigger(StandardProcessorNode.java:1274)
+	at org.apache.nifi.controller.tasks.ConnectableTask.invoke(ConnectableTask.java:244)
+	at org.apache.nifi.controller.scheduling.TimerDrivenSchedulingAgent$1.run(TimerDrivenSchedulingAgent.java:102)
+	at org.apache.nifi.engine.FlowEngine$2.run(FlowEngine.java:110)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-02-04 17:10:24,035 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2025-02-04 17:10:24,035 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 132.92 GB, bytes free = 305.09 GB, capacity = 438.01 GB
+2025-02-04 17:10:25,624 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:10:25,625 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2025-02-04 17:10:45,625 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:10:45,625 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2025-02-04 17:10:46,020 INFO [Write-Ahead Local State Provider Maintenance] o.a.n.wali.SequentialAccessWriteAheadLog Checkpointed Write-Ahead Log with 18 Records and 0 Swap Files in 9 milliseconds (Stop-the-world time = 3 milliseconds), max Transaction ID 129
+2025-02-04 17:11:05,625 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:11:05,626 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2025-02-04 17:11:12,440 ERROR [Timer-Driven Process Thread-5] o.a.n.p.standard.QueryDatabaseTable QueryDatabaseTable[id=d26d966d-0194-1000-8940-ee4d2dfcb58f] Unable to execute SQL select query SELECT match_api_id, country_id, league_id, season, stage, date, home_team_goal, away_team_goal  FROM match due to org.postgresql.util.PSQLException: ERROR: relation "match" does not exist
+  Position: 103
+org.postgresql.util.PSQLException: ERROR: relation "match" does not exist
+  Position: 103
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:335)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:321)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:297)
+	at org.postgresql.jdbc.PgStatement.executeQuery(PgStatement.java:246)
+	at org.apache.commons.dbcp2.DelegatingStatement.executeQuery(DelegatingStatement.java:318)
+	at org.apache.commons.dbcp2.DelegatingStatement.executeQuery(DelegatingStatement.java:318)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.apache.nifi.controller.service.StandardControllerServiceInvocationHandler.invoke(StandardControllerServiceInvocationHandler.java:254)
+	at org.apache.nifi.controller.service.StandardControllerServiceInvocationHandler$ProxiedReturnObjectInvocationHandler.invoke(StandardControllerServiceInvocationHandler.java:240)
+	at jdk.proxy11/jdk.proxy11.$Proxy167.executeQuery(Unknown Source)
+	at org.apache.nifi.processors.standard.AbstractQueryDatabaseTable.onTrigger(AbstractQueryDatabaseTable.java:399)
+	at org.apache.nifi.controller.StandardProcessorNode.onTrigger(StandardProcessorNode.java:1274)
+	at org.apache.nifi.controller.tasks.ConnectableTask.invoke(ConnectableTask.java:244)
+	at org.apache.nifi.controller.scheduling.TimerDrivenSchedulingAgent$1.run(TimerDrivenSchedulingAgent.java:102)
+	at org.apache.nifi.engine.FlowEngine$2.run(FlowEngine.java:110)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-02-04 17:11:24,034 INFO [NiFi Web Server-240] o.a.n.c.s.StandardProcessScheduler Stopping QueryDatabaseTable[id=d26d966d-0194-1000-8940-ee4d2dfcb58f]
+2025-02-04 17:11:24,035 INFO [NiFi Web Server-240] o.a.n.controller.StandardProcessorNode Stopping processor: QueryDatabaseTable[id=d26d966d-0194-1000-8940-ee4d2dfcb58f]
+2025-02-04 17:11:24,035 INFO [Timer-Driven Process Thread-3] o.a.n.c.s.TimerDrivenSchedulingAgent Stopped scheduling QueryDatabaseTable[id=d26d966d-0194-1000-8940-ee4d2dfcb58f] to run
+2025-02-04 17:11:24,035 INFO [Timer-Driven Process Thread-3] o.a.n.controller.StandardProcessorNode QueryDatabaseTable[id=d26d966d-0194-1000-8940-ee4d2dfcb58f] has completely stopped. Completing any associated Futures.
+2025-02-04 17:11:24,044 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2025-02-04 17:11:24,044 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 132.92 GB, bytes free = 305.09 GB, capacity = 438.01 GB
+2025-02-04 17:11:24,130 INFO [Flow Service Tasks Thread-1] o.a.nifi.controller.StandardFlowService Saved flow controller org.apache.nifi.controller.FlowController@4b32f004 // Another save pending = false
+2025-02-04 17:11:25,626 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:11:25,626 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2025-02-04 17:11:45,626 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:11:45,626 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2025-02-04 17:11:53,062 INFO [NiFi Web Server-232] o.a.n.c.s.StandardProcessScheduler Starting QueryDatabaseTable[id=d26d966d-0194-1000-8940-ee4d2dfcb58f]
+2025-02-04 17:11:53,063 INFO [NiFi Web Server-232] o.a.n.controller.StandardProcessorNode Starting QueryDatabaseTable[id=d26d966d-0194-1000-8940-ee4d2dfcb58f]
+2025-02-04 17:11:53,063 INFO [Timer-Driven Process Thread-8] o.a.n.c.s.TimerDrivenSchedulingAgent Scheduled QueryDatabaseTable[id=d26d966d-0194-1000-8940-ee4d2dfcb58f] to run with 1 threads
+2025-02-04 17:11:53,069 ERROR [Timer-Driven Process Thread-8] o.a.n.p.standard.QueryDatabaseTable QueryDatabaseTable[id=d26d966d-0194-1000-8940-ee4d2dfcb58f] Unable to execute SQL select query SELECT match_api_id, country_id, league_id, season, stage, date, home_team_goal, away_team_goal  FROM match due to org.postgresql.util.PSQLException: ERROR: relation "match" does not exist
+  Position: 103
+org.postgresql.util.PSQLException: ERROR: relation "match" does not exist
+  Position: 103
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:335)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:321)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:297)
+	at org.postgresql.jdbc.PgStatement.executeQuery(PgStatement.java:246)
+	at org.apache.commons.dbcp2.DelegatingStatement.executeQuery(DelegatingStatement.java:318)
+	at org.apache.commons.dbcp2.DelegatingStatement.executeQuery(DelegatingStatement.java:318)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.apache.nifi.controller.service.StandardControllerServiceInvocationHandler.invoke(StandardControllerServiceInvocationHandler.java:254)
+	at org.apache.nifi.controller.service.StandardControllerServiceInvocationHandler$ProxiedReturnObjectInvocationHandler.invoke(StandardControllerServiceInvocationHandler.java:240)
+	at jdk.proxy11/jdk.proxy11.$Proxy167.executeQuery(Unknown Source)
+	at org.apache.nifi.processors.standard.AbstractQueryDatabaseTable.onTrigger(AbstractQueryDatabaseTable.java:399)
+	at org.apache.nifi.controller.StandardProcessorNode.onTrigger(StandardProcessorNode.java:1274)
+	at org.apache.nifi.controller.tasks.ConnectableTask.invoke(ConnectableTask.java:244)
+	at org.apache.nifi.controller.scheduling.TimerDrivenSchedulingAgent$1.run(TimerDrivenSchedulingAgent.java:102)
+	at org.apache.nifi.engine.FlowEngine$2.run(FlowEngine.java:110)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-02-04 17:11:53,165 INFO [Flow Service Tasks Thread-1] o.a.nifi.controller.StandardFlowService Saved flow controller org.apache.nifi.controller.FlowController@4b32f004 // Another save pending = false
+2025-02-04 17:11:56,017 INFO [NiFi Web Server-246] o.a.n.c.s.StandardProcessScheduler Stopping QueryDatabaseTable[id=d26d966d-0194-1000-8940-ee4d2dfcb58f]
+2025-02-04 17:11:56,018 INFO [NiFi Web Server-246] o.a.n.controller.StandardProcessorNode Stopping processor: QueryDatabaseTable[id=d26d966d-0194-1000-8940-ee4d2dfcb58f]
+2025-02-04 17:11:56,018 INFO [Timer-Driven Process Thread-7] o.a.n.c.s.TimerDrivenSchedulingAgent Stopped scheduling QueryDatabaseTable[id=d26d966d-0194-1000-8940-ee4d2dfcb58f] to run
+2025-02-04 17:11:56,019 INFO [Timer-Driven Process Thread-7] o.a.n.controller.StandardProcessorNode QueryDatabaseTable[id=d26d966d-0194-1000-8940-ee4d2dfcb58f] has completely stopped. Completing any associated Futures.
+2025-02-04 17:11:56,180 INFO [Flow Service Tasks Thread-1] o.a.nifi.controller.StandardFlowService Saved flow controller org.apache.nifi.controller.FlowController@4b32f004 // Another save pending = false
+2025-02-04 17:12:05,627 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:12:05,627 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2025-02-04 17:12:19,697 INFO [Flow Service Tasks Thread-1] o.a.nifi.controller.StandardFlowService Saved flow controller org.apache.nifi.controller.FlowController@4b32f004 // Another save pending = false
+2025-02-04 17:12:24,052 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2025-02-04 17:12:24,052 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 132.92 GB, bytes free = 305.09 GB, capacity = 438.01 GB
+2025-02-04 17:12:25,138 INFO [Provenance Query-1] o.a.nifi.provenance.StandardQueryResult Completed Query[ [d26d966d-0194-1000-8940-ee4d2dfcb58f] ] comprised of 1 steps in 192 millis. Index found 0 hits. Read 0 events from Event Files.
+2025-02-04 17:12:25,139 INFO [Provenance Query-1] o.a.n.provenance.index.lucene.QueryTask Successfully queried index ./provenance_repository/lucene-8-index-1718464903502 for query +processorId:d26d966d-0194-1000-8940-ee4d2dfcb58f; retrieved 0 events with a total of 0 hits in 69 millis
+2025-02-04 17:12:25,627 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:12:25,627 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2025-02-04 17:12:45,627 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:12:45,628 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2025-02-04 17:12:46,029 INFO [Write-Ahead Local State Provider Maintenance] o.a.n.wali.SequentialAccessWriteAheadLog Checkpointed Write-Ahead Log with 18 Records and 0 Swap Files in 8 milliseconds (Stop-the-world time = 2 milliseconds), max Transaction ID 131
+2025-02-04 17:13:05,628 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:13:05,628 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2025-02-04 17:13:24,059 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2025-02-04 17:13:24,059 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 132.92 GB, bytes free = 305.09 GB, capacity = 438.01 GB
+2025-02-04 17:13:25,629 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:13:25,629 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2025-02-04 17:13:45,629 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:13:45,629 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2025-02-04 17:14:05,630 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:14:05,630 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2025-02-04 17:14:24,069 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2025-02-04 17:14:24,070 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 132.92 GB, bytes free = 305.08 GB, capacity = 438.01 GB
+2025-02-04 17:14:25,630 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:14:25,630 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2025-02-04 17:14:45,631 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:14:45,631 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2025-02-04 17:14:54,632 INFO [NiFi Web Server-232] o.a.n.c.s.StandardProcessScheduler Disabling StandardControllerServiceNode[service=DBCPConnectionPool[id=d2074f4a-0194-1000-5828-0dbfaf5bba37], name=Postgres, active=true]
+2025-02-04 17:14:54,638 INFO [Timer-Driven Process Thread-4] o.a.n.c.service.ServiceStateTransition StandardControllerServiceNode[service=DBCPConnectionPool[id=d2074f4a-0194-1000-5828-0dbfaf5bba37], name=Postgres, active=false] is now fully DISABLED
+2025-02-04 17:14:54,751 INFO [Flow Service Tasks Thread-2] o.a.nifi.controller.StandardFlowService Saved flow controller org.apache.nifi.controller.FlowController@4b32f004 // Another save pending = false
+2025-02-04 17:15:05,631 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:15:05,631 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2025-02-04 17:15:24,081 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2025-02-04 17:15:24,082 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 132.92 GB, bytes free = 305.08 GB, capacity = 438.01 GB
+2025-02-04 17:15:25,632 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:15:25,632 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2025-02-04 17:15:45,632 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:15:45,632 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2025-02-04 17:15:53,290 INFO [Flow Service Tasks Thread-2] o.a.nifi.controller.StandardFlowService Saved flow controller org.apache.nifi.controller.FlowController@4b32f004 // Another save pending = false
+2025-02-04 17:15:57,606 INFO [NiFi Web Server-244] o.a.n.c.s.StandardProcessScheduler Enabling StandardControllerServiceNode[service=DBCPConnectionPool[id=d2074f4a-0194-1000-5828-0dbfaf5bba37], name=Postgres, active=false]
+2025-02-04 17:15:57,608 INFO [Timer-Driven Process Thread-6] o.a.n.c.s.StandardControllerServiceNode Successfully enabled StandardControllerServiceNode[service=DBCPConnectionPool[id=d2074f4a-0194-1000-5828-0dbfaf5bba37], name=Postgres, active=true]
+2025-02-04 17:15:57,803 INFO [Flow Service Tasks Thread-2] o.a.nifi.controller.StandardFlowService Saved flow controller org.apache.nifi.controller.FlowController@4b32f004 // Another save pending = false
+2025-02-04 17:16:05,633 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:16:05,633 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2025-02-04 17:16:05,670 INFO [NiFi Web Server-246] o.a.n.c.s.StandardProcessScheduler Disabling StandardControllerServiceNode[service=DBCPConnectionPool[id=d214be03-0194-1000-9b76-e40479339d33], name=Postgres dw, active=true]
+2025-02-04 17:16:05,671 INFO [Timer-Driven Process Thread-5] o.a.n.c.service.ServiceStateTransition StandardControllerServiceNode[service=DBCPConnectionPool[id=d214be03-0194-1000-9b76-e40479339d33], name=Postgres dw, active=false] is now fully DISABLED
+2025-02-04 17:16:05,815 INFO [Flow Service Tasks Thread-2] o.a.nifi.controller.StandardFlowService Saved flow controller org.apache.nifi.controller.FlowController@4b32f004 // Another save pending = false
+2025-02-04 17:16:24,089 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2025-02-04 17:16:24,089 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 132.92 GB, bytes free = 305.09 GB, capacity = 438.01 GB
+2025-02-04 17:16:25,633 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:16:25,633 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2025-02-04 17:16:26,829 INFO [Flow Service Tasks Thread-2] o.a.nifi.controller.StandardFlowService Saved flow controller org.apache.nifi.controller.FlowController@4b32f004 // Another save pending = false
+2025-02-04 17:16:29,202 INFO [NiFi Web Server-245] o.a.n.c.s.StandardProcessScheduler Enabling StandardControllerServiceNode[service=DBCPConnectionPool[id=d214be03-0194-1000-9b76-e40479339d33], name=Postgres dw, active=false]
+2025-02-04 17:16:29,203 INFO [Timer-Driven Process Thread-3] o.a.n.c.s.StandardControllerServiceNode Successfully enabled StandardControllerServiceNode[service=DBCPConnectionPool[id=d214be03-0194-1000-9b76-e40479339d33], name=Postgres dw, active=true]
+2025-02-04 17:16:29,344 INFO [Flow Service Tasks Thread-2] o.a.nifi.controller.StandardFlowService Saved flow controller org.apache.nifi.controller.FlowController@4b32f004 // Another save pending = false
+2025-02-04 17:16:45,634 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:16:45,634 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2025-02-04 17:17:02,539 INFO [NiFi Web Server-249] o.a.n.c.s.StandardProcessScheduler Starting QueryDatabaseTable[id=d26d966d-0194-1000-8940-ee4d2dfcb58f]
+2025-02-04 17:17:02,539 INFO [NiFi Web Server-249] o.a.n.controller.StandardProcessorNode Starting QueryDatabaseTable[id=d26d966d-0194-1000-8940-ee4d2dfcb58f]
+2025-02-04 17:17:02,540 INFO [Timer-Driven Process Thread-10] o.a.n.c.s.TimerDrivenSchedulingAgent Scheduled QueryDatabaseTable[id=d26d966d-0194-1000-8940-ee4d2dfcb58f] to run with 1 threads
+2025-02-04 17:17:02,792 INFO [Timer-Driven Process Thread-5] o.a.n.p.store.WriteAheadStorePartition Successfully rolled over Event Writer for Provenance Event Store Partition[directory=./provenance_repository] after writing 1 events due to MAX_TIME_REACHED
+2025-02-04 17:17:02,861 INFO [Flow Service Tasks Thread-2] o.a.nifi.controller.StandardFlowService Saved flow controller org.apache.nifi.controller.FlowController@4b32f004 // Another save pending = false
+2025-02-04 17:17:05,634 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:17:05,646 INFO [Checkpoint FlowFile Repository] o.a.n.wali.SequentialAccessWriteAheadLog Checkpointed Write-Ahead Log with 2 Records and 0 Swap Files in 11 milliseconds (Stop-the-world time = 7 milliseconds), max Transaction ID 169706
+2025-02-04 17:17:05,646 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 2 records in 11 milliseconds
+2025-02-04 17:17:09,758 INFO [NiFi Web Server-232] o.a.n.c.queue.AbstractFlowFileQueue Canceling ListFlowFile Request with ID d29c0c4d-0194-1000-29ac-d6d6be5af835
+2025-02-04 17:17:24,096 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2025-02-04 17:17:24,096 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 132.92 GB, bytes free = 305.09 GB, capacity = 438.01 GB
+2025-02-04 17:17:25,646 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:17:25,646 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 2 records in 0 milliseconds
+2025-02-04 17:17:45,647 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:17:45,647 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 2 records in 0 milliseconds
+2025-02-04 17:17:56,386 INFO [NiFi Web Server-254] o.a.n.c.s.StandardProcessScheduler Starting UpdateRecord[id=d27303b8-0194-1000-e65d-ade6ffab7ba7]
+2025-02-04 17:17:56,386 INFO [NiFi Web Server-254] o.a.n.controller.StandardProcessorNode Starting UpdateRecord[id=d27303b8-0194-1000-e65d-ade6ffab7ba7]
+2025-02-04 17:17:56,387 INFO [Timer-Driven Process Thread-1] o.a.n.c.s.TimerDrivenSchedulingAgent Scheduled UpdateRecord[id=d27303b8-0194-1000-e65d-ade6ffab7ba7] to run with 1 threads
+2025-02-04 17:17:56,882 INFO [Flow Service Tasks Thread-1] o.a.nifi.controller.StandardFlowService Saved flow controller org.apache.nifi.controller.FlowController@4b32f004 // Another save pending = false
+2025-02-04 17:18:05,648 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:18:05,662 INFO [Checkpoint FlowFile Repository] o.a.n.wali.SequentialAccessWriteAheadLog Checkpointed Write-Ahead Log with 3 Records and 0 Swap Files in 13 milliseconds (Stop-the-world time = 6 milliseconds), max Transaction ID 169709
+2025-02-04 17:18:05,662 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 3 records in 14 milliseconds
+2025-02-04 17:18:16,971 INFO [NiFi Web Server-244] o.a.n.c.s.StandardProcessScheduler Starting PutDatabaseRecord[id=d27f93ed-0194-1000-6c64-307a572c948a]
+2025-02-04 17:18:16,972 INFO [NiFi Web Server-244] o.a.n.controller.StandardProcessorNode Starting PutDatabaseRecord[id=d27f93ed-0194-1000-6c64-307a572c948a]
+2025-02-04 17:18:16,973 INFO [Timer-Driven Process Thread-1] o.a.n.c.s.TimerDrivenSchedulingAgent Scheduled PutDatabaseRecord[id=d27f93ed-0194-1000-6c64-307a572c948a] to run with 1 threads
+2025-02-04 17:18:17,294 ERROR [Timer-Driven Process Thread-9] o.a.n.p.standard.PutDatabaseRecord PutDatabaseRecord[id=d27f93ed-0194-1000-6c64-307a572c948a] Record does not have a value for the Required column 'id_bets_house'
+2025-02-04 17:18:17,295 ERROR [Timer-Driven Process Thread-9] o.a.n.p.standard.PutDatabaseRecord PutDatabaseRecord[id=d27f93ed-0194-1000-6c64-307a572c948a] Failed to put Records to database for StandardFlowFileRecord[uuid=3a9dcc53-a5f1-45d4-9cfc-c1ccca1a35f2,claim=StandardContentClaim [resourceClaim=StandardResourceClaim[id=1738700222662-1, container=default, section=1], offset=588, length=588],offset=0,name=3a9dcc53-a5f1-45d4-9cfc-c1ccca1a35f2,size=588]. Routing to failure.
+java.lang.IllegalArgumentException: Record does not have a value for the Required column 'id_bets_house'
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.checkValuesForRequiredColumns(PutDatabaseRecord.java:1551)
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.generateInsertIgnore(PutDatabaseRecord.java:1313)
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.executeDML(PutDatabaseRecord.java:813)
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.putToDatabase(PutDatabaseRecord.java:1145)
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.onTrigger(PutDatabaseRecord.java:567)
+	at org.apache.nifi.processor.AbstractProcessor.onTrigger(AbstractProcessor.java:27)
+	at org.apache.nifi.controller.StandardProcessorNode.onTrigger(StandardProcessorNode.java:1274)
+	at org.apache.nifi.controller.tasks.ConnectableTask.invoke(ConnectableTask.java:244)
+	at org.apache.nifi.controller.scheduling.TimerDrivenSchedulingAgent$1.run(TimerDrivenSchedulingAgent.java:102)
+	at org.apache.nifi.engine.FlowEngine$2.run(FlowEngine.java:110)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-02-04 17:18:17,304 ERROR [Timer-Driven Process Thread-9] o.a.n.p.standard.PutDatabaseRecord PutDatabaseRecord[id=d27f93ed-0194-1000-6c64-307a572c948a] Record does not have a value for the Required column 'id_bets_house'
+2025-02-04 17:18:17,304 ERROR [Timer-Driven Process Thread-9] o.a.n.p.standard.PutDatabaseRecord PutDatabaseRecord[id=d27f93ed-0194-1000-6c64-307a572c948a] Failed to put Records to database for StandardFlowFileRecord[uuid=fc447a54-7f80-44b3-b259-f7ea7535a440,claim=StandardContentClaim [resourceClaim=StandardResourceClaim[id=1738700222662-1, container=default, section=1], offset=1764, length=588],offset=0,name=fc447a54-7f80-44b3-b259-f7ea7535a440,size=588]. Routing to failure.
+java.lang.IllegalArgumentException: Record does not have a value for the Required column 'id_bets_house'
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.checkValuesForRequiredColumns(PutDatabaseRecord.java:1551)
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.generateInsertIgnore(PutDatabaseRecord.java:1313)
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.executeDML(PutDatabaseRecord.java:813)
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.putToDatabase(PutDatabaseRecord.java:1145)
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.onTrigger(PutDatabaseRecord.java:567)
+	at org.apache.nifi.processor.AbstractProcessor.onTrigger(AbstractProcessor.java:27)
+	at org.apache.nifi.controller.StandardProcessorNode.onTrigger(StandardProcessorNode.java:1274)
+	at org.apache.nifi.controller.tasks.ConnectableTask.invoke(ConnectableTask.java:244)
+	at org.apache.nifi.controller.scheduling.TimerDrivenSchedulingAgent$1.run(TimerDrivenSchedulingAgent.java:102)
+	at org.apache.nifi.engine.FlowEngine$2.run(FlowEngine.java:110)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-02-04 17:18:17,400 INFO [Flow Service Tasks Thread-2] o.a.nifi.controller.StandardFlowService Saved flow controller org.apache.nifi.controller.FlowController@4b32f004 // Another save pending = false
+2025-02-04 17:18:24,103 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2025-02-04 17:18:24,103 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 132.92 GB, bytes free = 305.08 GB, capacity = 438.01 GB
+2025-02-04 17:18:25,662 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:18:25,673 INFO [Checkpoint FlowFile Repository] o.a.n.wali.SequentialAccessWriteAheadLog Checkpointed Write-Ahead Log with 3 Records and 0 Swap Files in 10 milliseconds (Stop-the-world time = 6 milliseconds), max Transaction ID 169711
+2025-02-04 17:18:25,673 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 3 records in 10 milliseconds
+2025-02-04 17:18:45,673 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:18:45,673 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 3 records in 0 milliseconds
+2025-02-04 17:18:46,035 INFO [Write-Ahead Local State Provider Maintenance] o.a.n.wali.SequentialAccessWriteAheadLog Checkpointed Write-Ahead Log with 18 Records and 0 Swap Files in 5 milliseconds (Stop-the-world time = 0 milliseconds), max Transaction ID 133
+2025-02-04 17:19:02,863 ERROR [Timer-Driven Process Thread-6] o.a.n.p.standard.PutDatabaseRecord PutDatabaseRecord[id=d27f93ed-0194-1000-6c64-307a572c948a] Record does not have a value for the Required column 'id_bets_house'
+2025-02-04 17:19:02,864 ERROR [Timer-Driven Process Thread-6] o.a.n.p.standard.PutDatabaseRecord PutDatabaseRecord[id=d27f93ed-0194-1000-6c64-307a572c948a] Failed to put Records to database for StandardFlowFileRecord[uuid=69310260-641e-41e1-bf6a-f051710879fd,claim=StandardContentClaim [resourceClaim=StandardResourceClaim[id=1738700222662-1, container=default, section=1], offset=2940, length=588],offset=0,name=69310260-641e-41e1-bf6a-f051710879fd,size=588]. Routing to failure.
+java.lang.IllegalArgumentException: Record does not have a value for the Required column 'id_bets_house'
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.checkValuesForRequiredColumns(PutDatabaseRecord.java:1551)
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.generateInsertIgnore(PutDatabaseRecord.java:1313)
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.executeDML(PutDatabaseRecord.java:813)
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.putToDatabase(PutDatabaseRecord.java:1145)
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.onTrigger(PutDatabaseRecord.java:567)
+	at org.apache.nifi.processor.AbstractProcessor.onTrigger(AbstractProcessor.java:27)
+	at org.apache.nifi.controller.StandardProcessorNode.onTrigger(StandardProcessorNode.java:1274)
+	at org.apache.nifi.controller.tasks.ConnectableTask.invoke(ConnectableTask.java:244)
+	at org.apache.nifi.controller.scheduling.TimerDrivenSchedulingAgent$1.run(TimerDrivenSchedulingAgent.java:102)
+	at org.apache.nifi.engine.FlowEngine$2.run(FlowEngine.java:110)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-02-04 17:19:04,134 INFO [NiFi Web Server-254] o.a.n.c.queue.AbstractFlowFileQueue Canceling ListFlowFile Request with ID d29dc73b-0194-1000-3b45-f900d1e9cb36
+2025-02-04 17:19:05,674 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:19:05,685 INFO [Checkpoint FlowFile Repository] o.a.n.wali.SequentialAccessWriteAheadLog Checkpointed Write-Ahead Log with 4 Records and 0 Swap Files in 10 milliseconds (Stop-the-world time = 7 milliseconds), max Transaction ID 169714
+2025-02-04 17:19:05,685 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 4 records in 11 milliseconds
+2025-02-04 17:19:24,113 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2025-02-04 17:19:24,113 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 132.92 GB, bytes free = 305.08 GB, capacity = 438.01 GB
+2025-02-04 17:19:25,685 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:19:25,685 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 4 records in 0 milliseconds
+2025-02-04 17:19:45,686 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:19:45,686 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 4 records in 0 milliseconds
+2025-02-04 17:20:02,866 ERROR [Timer-Driven Process Thread-1] o.a.n.p.standard.PutDatabaseRecord PutDatabaseRecord[id=d27f93ed-0194-1000-6c64-307a572c948a] Record does not have a value for the Required column 'id_bets_house'
+2025-02-04 17:20:02,866 ERROR [Timer-Driven Process Thread-1] o.a.n.p.standard.PutDatabaseRecord PutDatabaseRecord[id=d27f93ed-0194-1000-6c64-307a572c948a] Failed to put Records to database for StandardFlowFileRecord[uuid=6770174d-6ff7-4a45-b2e3-5454c1935abb,claim=StandardContentClaim [resourceClaim=StandardResourceClaim[id=1738700222662-1, container=default, section=1], offset=4116, length=588],offset=0,name=6770174d-6ff7-4a45-b2e3-5454c1935abb,size=588]. Routing to failure.
+java.lang.IllegalArgumentException: Record does not have a value for the Required column 'id_bets_house'
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.checkValuesForRequiredColumns(PutDatabaseRecord.java:1551)
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.generateInsertIgnore(PutDatabaseRecord.java:1313)
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.executeDML(PutDatabaseRecord.java:813)
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.putToDatabase(PutDatabaseRecord.java:1145)
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.onTrigger(PutDatabaseRecord.java:567)
+	at org.apache.nifi.processor.AbstractProcessor.onTrigger(AbstractProcessor.java:27)
+	at org.apache.nifi.controller.StandardProcessorNode.onTrigger(StandardProcessorNode.java:1274)
+	at org.apache.nifi.controller.tasks.ConnectableTask.invoke(ConnectableTask.java:244)
+	at org.apache.nifi.controller.scheduling.TimerDrivenSchedulingAgent$1.run(TimerDrivenSchedulingAgent.java:102)
+	at org.apache.nifi.engine.FlowEngine$2.run(FlowEngine.java:110)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-02-04 17:20:05,686 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:20:05,696 INFO [Checkpoint FlowFile Repository] o.a.n.wali.SequentialAccessWriteAheadLog Checkpointed Write-Ahead Log with 5 Records and 0 Swap Files in 9 milliseconds (Stop-the-world time = 5 milliseconds), max Transaction ID 169717
+2025-02-04 17:20:05,696 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 5 records in 9 milliseconds
+2025-02-04 17:20:24,118 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2025-02-04 17:20:24,119 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 132.92 GB, bytes free = 305.08 GB, capacity = 438.01 GB
+2025-02-04 17:20:25,696 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:20:25,696 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 5 records in 0 milliseconds
+2025-02-04 17:20:45,697 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:20:45,697 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 5 records in 0 milliseconds
+2025-02-04 17:20:46,042 INFO [Write-Ahead Local State Provider Maintenance] o.a.n.wali.SequentialAccessWriteAheadLog Checkpointed Write-Ahead Log with 18 Records and 0 Swap Files in 6 milliseconds (Stop-the-world time = 2 milliseconds), max Transaction ID 135
+2025-02-04 17:21:02,864 ERROR [Timer-Driven Process Thread-5] o.a.n.p.standard.PutDatabaseRecord PutDatabaseRecord[id=d27f93ed-0194-1000-6c64-307a572c948a] Record does not have a value for the Required column 'id_bets_house'
+2025-02-04 17:21:02,865 ERROR [Timer-Driven Process Thread-5] o.a.n.p.standard.PutDatabaseRecord PutDatabaseRecord[id=d27f93ed-0194-1000-6c64-307a572c948a] Failed to put Records to database for StandardFlowFileRecord[uuid=7c5a8926-7607-4512-8d24-152332e76b0e,claim=StandardContentClaim [resourceClaim=StandardResourceClaim[id=1738700222662-1, container=default, section=1], offset=5292, length=588],offset=0,name=7c5a8926-7607-4512-8d24-152332e76b0e,size=588]. Routing to failure.
+java.lang.IllegalArgumentException: Record does not have a value for the Required column 'id_bets_house'
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.checkValuesForRequiredColumns(PutDatabaseRecord.java:1551)
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.generateInsertIgnore(PutDatabaseRecord.java:1313)
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.executeDML(PutDatabaseRecord.java:813)
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.putToDatabase(PutDatabaseRecord.java:1145)
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.onTrigger(PutDatabaseRecord.java:567)
+	at org.apache.nifi.processor.AbstractProcessor.onTrigger(AbstractProcessor.java:27)
+	at org.apache.nifi.controller.StandardProcessorNode.onTrigger(StandardProcessorNode.java:1274)
+	at org.apache.nifi.controller.tasks.ConnectableTask.invoke(ConnectableTask.java:244)
+	at org.apache.nifi.controller.scheduling.TimerDrivenSchedulingAgent$1.run(TimerDrivenSchedulingAgent.java:102)
+	at org.apache.nifi.engine.FlowEngine$2.run(FlowEngine.java:110)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-02-04 17:21:05,697 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:21:05,708 INFO [Checkpoint FlowFile Repository] o.a.n.wali.SequentialAccessWriteAheadLog Checkpointed Write-Ahead Log with 6 Records and 0 Swap Files in 11 milliseconds (Stop-the-world time = 7 milliseconds), max Transaction ID 169720
+2025-02-04 17:21:05,709 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 6 records in 11 milliseconds
+2025-02-04 17:21:16,267 INFO [NiFi Web Server-252] o.a.n.c.s.StandardProcessScheduler Stopping PutDatabaseRecord[id=d27f93ed-0194-1000-6c64-307a572c948a]
+2025-02-04 17:21:16,268 INFO [NiFi Web Server-252] o.a.n.controller.StandardProcessorNode Stopping processor: PutDatabaseRecord[id=d27f93ed-0194-1000-6c64-307a572c948a]
+2025-02-04 17:21:16,268 INFO [Timer-Driven Process Thread-3] o.a.n.c.s.TimerDrivenSchedulingAgent Stopped scheduling PutDatabaseRecord[id=d27f93ed-0194-1000-6c64-307a572c948a] to run
+2025-02-04 17:21:16,269 INFO [Timer-Driven Process Thread-3] o.a.n.controller.StandardProcessorNode PutDatabaseRecord[id=d27f93ed-0194-1000-6c64-307a572c948a] has completely stopped. Completing any associated Futures.
+2025-02-04 17:21:16,331 INFO [NiFi Web Server-250] o.a.n.c.s.StandardProcessScheduler Disabling StandardControllerServiceNode[service=DBCPConnectionPool[id=d214be03-0194-1000-9b76-e40479339d33], name=Postgres dw, active=true]
+2025-02-04 17:21:16,337 INFO [Timer-Driven Process Thread-5] o.a.n.c.service.ServiceStateTransition StandardControllerServiceNode[service=DBCPConnectionPool[id=d214be03-0194-1000-9b76-e40479339d33], name=Postgres dw, active=false] is now fully DISABLED
+2025-02-04 17:21:16,454 INFO [Flow Service Tasks Thread-1] o.a.nifi.controller.StandardFlowService Saved flow controller org.apache.nifi.controller.FlowController@4b32f004 // Another save pending = false
+2025-02-04 17:21:24,125 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2025-02-04 17:21:24,125 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 132.93 GB, bytes free = 305.08 GB, capacity = 438.01 GB
+2025-02-04 17:21:25,709 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:21:25,709 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 6 records in 0 milliseconds
+2025-02-04 17:21:45,709 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:21:45,710 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 6 records in 0 milliseconds
+2025-02-04 17:22:05,710 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:22:05,719 INFO [Checkpoint FlowFile Repository] o.a.n.wali.SequentialAccessWriteAheadLog Checkpointed Write-Ahead Log with 7 Records and 0 Swap Files in 8 milliseconds (Stop-the-world time = 3 milliseconds), max Transaction ID 169722
+2025-02-04 17:22:05,719 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 7 records in 9 milliseconds
+2025-02-04 17:22:23,478 INFO [Flow Service Tasks Thread-2] o.a.nifi.controller.StandardFlowService Saved flow controller org.apache.nifi.controller.FlowController@4b32f004 // Another save pending = false
+2025-02-04 17:22:24,140 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2025-02-04 17:22:24,141 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 132.92 GB, bytes free = 305.09 GB, capacity = 438.01 GB
+2025-02-04 17:22:25,700 INFO [NiFi Web Server-245] o.a.n.c.s.StandardProcessScheduler Enabling StandardControllerServiceNode[service=DBCPConnectionPool[id=d214be03-0194-1000-9b76-e40479339d33], name=Postgres dw, active=false]
+2025-02-04 17:22:25,703 INFO [Timer-Driven Process Thread-8] o.a.n.c.s.StandardControllerServiceNode Successfully enabled StandardControllerServiceNode[service=DBCPConnectionPool[id=d214be03-0194-1000-9b76-e40479339d33], name=Postgres dw, active=true]
+2025-02-04 17:22:25,719 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:22:25,720 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 7 records in 0 milliseconds
+2025-02-04 17:22:25,988 INFO [Flow Service Tasks Thread-2] o.a.nifi.controller.StandardFlowService Saved flow controller org.apache.nifi.controller.FlowController@4b32f004 // Another save pending = false
+2025-02-04 17:22:45,720 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:22:45,720 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 7 records in 0 milliseconds
+2025-02-04 17:22:46,046 INFO [Write-Ahead Local State Provider Maintenance] o.a.n.wali.SequentialAccessWriteAheadLog Checkpointed Write-Ahead Log with 18 Records and 0 Swap Files in 3 milliseconds (Stop-the-world time = 0 milliseconds), max Transaction ID 137
+2025-02-04 17:23:05,721 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:23:05,731 INFO [Checkpoint FlowFile Repository] o.a.n.wali.SequentialAccessWriteAheadLog Checkpointed Write-Ahead Log with 8 Records and 0 Swap Files in 10 milliseconds (Stop-the-world time = 3 milliseconds), max Transaction ID 169724
+2025-02-04 17:23:05,732 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 8 records in 10 milliseconds
+2025-02-04 17:23:24,150 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2025-02-04 17:23:24,150 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 132.92 GB, bytes free = 305.08 GB, capacity = 438.01 GB
+2025-02-04 17:23:25,732 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:23:25,732 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 8 records in 0 milliseconds
+2025-02-04 17:23:45,732 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:23:45,733 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 8 records in 0 milliseconds
+2025-02-04 17:23:57,960 INFO [NiFi Web Server-252] o.a.n.c.s.StandardProcessScheduler Starting PutDatabaseRecord[id=d27f93ed-0194-1000-6c64-307a572c948a]
+2025-02-04 17:23:57,961 INFO [NiFi Web Server-252] o.a.n.controller.StandardProcessorNode Starting PutDatabaseRecord[id=d27f93ed-0194-1000-6c64-307a572c948a]
+2025-02-04 17:23:57,963 INFO [Timer-Driven Process Thread-5] o.a.n.c.s.TimerDrivenSchedulingAgent Scheduled PutDatabaseRecord[id=d27f93ed-0194-1000-6c64-307a572c948a] to run with 1 threads
+2025-02-04 17:23:58,025 INFO [Flow Service Tasks Thread-2] o.a.nifi.controller.StandardFlowService Saved flow controller org.apache.nifi.controller.FlowController@4b32f004 // Another save pending = false
+2025-02-04 17:23:58,057 ERROR [Timer-Driven Process Thread-1] o.a.n.p.standard.PutDatabaseRecord PutDatabaseRecord[id=d27f93ed-0194-1000-6c64-307a572c948a] Record does not have a value for the Required column 'id_bets_house'
+2025-02-04 17:23:58,057 ERROR [Timer-Driven Process Thread-1] o.a.n.p.standard.PutDatabaseRecord PutDatabaseRecord[id=d27f93ed-0194-1000-6c64-307a572c948a] Failed to put Records to database for StandardFlowFileRecord[uuid=5edd0940-c690-4023-bdf9-e651925103c9,claim=StandardContentClaim [resourceClaim=StandardResourceClaim[id=1738700222662-1, container=default, section=1], offset=6468, length=588],offset=0,name=5edd0940-c690-4023-bdf9-e651925103c9,size=588]. Routing to failure.
+java.lang.IllegalArgumentException: Record does not have a value for the Required column 'id_bets_house'
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.checkValuesForRequiredColumns(PutDatabaseRecord.java:1551)
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.generateInsertIgnore(PutDatabaseRecord.java:1313)
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.executeDML(PutDatabaseRecord.java:813)
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.putToDatabase(PutDatabaseRecord.java:1145)
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.onTrigger(PutDatabaseRecord.java:567)
+	at org.apache.nifi.processor.AbstractProcessor.onTrigger(AbstractProcessor.java:27)
+	at org.apache.nifi.controller.StandardProcessorNode.onTrigger(StandardProcessorNode.java:1274)
+	at org.apache.nifi.controller.tasks.ConnectableTask.invoke(ConnectableTask.java:244)
+	at org.apache.nifi.controller.scheduling.TimerDrivenSchedulingAgent$1.run(TimerDrivenSchedulingAgent.java:102)
+	at org.apache.nifi.engine.FlowEngine$2.run(FlowEngine.java:110)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-02-04 17:23:58,062 ERROR [Timer-Driven Process Thread-1] o.a.n.p.standard.PutDatabaseRecord PutDatabaseRecord[id=d27f93ed-0194-1000-6c64-307a572c948a] Record does not have a value for the Required column 'id_bets_house'
+2025-02-04 17:23:58,062 ERROR [Timer-Driven Process Thread-1] o.a.n.p.standard.PutDatabaseRecord PutDatabaseRecord[id=d27f93ed-0194-1000-6c64-307a572c948a] Failed to put Records to database for StandardFlowFileRecord[uuid=7d7235a2-5ab2-4e93-8fe9-7fc2e5e2a7aa,claim=StandardContentClaim [resourceClaim=StandardResourceClaim[id=1738700222662-1, container=default, section=1], offset=7644, length=588],offset=0,name=7d7235a2-5ab2-4e93-8fe9-7fc2e5e2a7aa,size=588]. Routing to failure.
+java.lang.IllegalArgumentException: Record does not have a value for the Required column 'id_bets_house'
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.checkValuesForRequiredColumns(PutDatabaseRecord.java:1551)
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.generateInsertIgnore(PutDatabaseRecord.java:1313)
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.executeDML(PutDatabaseRecord.java:813)
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.putToDatabase(PutDatabaseRecord.java:1145)
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.onTrigger(PutDatabaseRecord.java:567)
+	at org.apache.nifi.processor.AbstractProcessor.onTrigger(AbstractProcessor.java:27)
+	at org.apache.nifi.controller.StandardProcessorNode.onTrigger(StandardProcessorNode.java:1274)
+	at org.apache.nifi.controller.tasks.ConnectableTask.invoke(ConnectableTask.java:244)
+	at org.apache.nifi.controller.scheduling.TimerDrivenSchedulingAgent$1.run(TimerDrivenSchedulingAgent.java:102)
+	at org.apache.nifi.engine.FlowEngine$2.run(FlowEngine.java:110)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-02-04 17:24:02,895 ERROR [Timer-Driven Process Thread-5] o.a.n.p.standard.PutDatabaseRecord PutDatabaseRecord[id=d27f93ed-0194-1000-6c64-307a572c948a] Record does not have a value for the Required column 'id_bets_house'
+2025-02-04 17:24:02,895 ERROR [Timer-Driven Process Thread-5] o.a.n.p.standard.PutDatabaseRecord PutDatabaseRecord[id=d27f93ed-0194-1000-6c64-307a572c948a] Failed to put Records to database for StandardFlowFileRecord[uuid=4f3c17e1-0cf5-4678-8c14-b2f3f245b71f,claim=StandardContentClaim [resourceClaim=StandardResourceClaim[id=1738700222662-1, container=default, section=1], offset=8820, length=588],offset=0,name=4f3c17e1-0cf5-4678-8c14-b2f3f245b71f,size=588]. Routing to failure.
+java.lang.IllegalArgumentException: Record does not have a value for the Required column 'id_bets_house'
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.checkValuesForRequiredColumns(PutDatabaseRecord.java:1551)
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.generateInsertIgnore(PutDatabaseRecord.java:1313)
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.executeDML(PutDatabaseRecord.java:813)
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.putToDatabase(PutDatabaseRecord.java:1145)
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.onTrigger(PutDatabaseRecord.java:567)
+	at org.apache.nifi.processor.AbstractProcessor.onTrigger(AbstractProcessor.java:27)
+	at org.apache.nifi.controller.StandardProcessorNode.onTrigger(StandardProcessorNode.java:1274)
+	at org.apache.nifi.controller.tasks.ConnectableTask.invoke(ConnectableTask.java:244)
+	at org.apache.nifi.controller.scheduling.TimerDrivenSchedulingAgent$1.run(TimerDrivenSchedulingAgent.java:102)
+	at org.apache.nifi.engine.FlowEngine$2.run(FlowEngine.java:110)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-02-04 17:24:05,733 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:24:05,743 INFO [Checkpoint FlowFile Repository] o.a.n.wali.SequentialAccessWriteAheadLog Checkpointed Write-Ahead Log with 9 Records and 0 Swap Files in 9 milliseconds (Stop-the-world time = 5 milliseconds), max Transaction ID 169729
+2025-02-04 17:24:05,743 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 9 records in 10 milliseconds
+2025-02-04 17:24:24,156 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2025-02-04 17:24:24,156 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 132.92 GB, bytes free = 305.08 GB, capacity = 438.01 GB
+2025-02-04 17:24:25,743 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:24:25,744 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 9 records in 0 milliseconds
+2025-02-04 17:24:26,599 INFO [Provenance Query-2] o.a.nifi.provenance.StandardQueryResult Completed Query[ [d27f93ed-0194-1000-6c64-307a572c948a] ] comprised of 1 steps in 110 millis. Index found 8 hits. Read 8 events from Event Files.
+2025-02-04 17:24:26,599 INFO [Provenance Query-2] o.a.n.provenance.index.lucene.QueryTask Successfully queried index ./provenance_repository/lucene-8-index-1718464903502 for query +processorId:d27f93ed-0194-1000-6c64-307a572c948a; retrieved 8 events with a total of 8 hits in 27 millis
+2025-02-04 17:24:33,136 INFO [Provenance Query-1] o.a.n.provenance.StandardLineageResult Completed computation of lineage for FlowFile UUID(s) [4f3c17e1-0cf5-4678-8c14-b2f3f245b71f] comprised of 1 steps in 15 millis
+2025-02-04 17:24:33,136 INFO [Provenance Query-1] o.a.n.provenance.index.lucene.QueryTask Successfully queried index ./provenance_repository/lucene-8-index-1718464903502 for query uuid:4f3c17e1-0cf5-4678-8c14-b2f3f245b71f; retrieved 3 events with a total of 3 hits in 14 millis
+2025-02-04 17:24:45,744 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:24:45,744 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 9 records in 0 milliseconds
+2025-02-04 17:24:46,053 INFO [Write-Ahead Local State Provider Maintenance] o.a.n.wali.SequentialAccessWriteAheadLog Checkpointed Write-Ahead Log with 18 Records and 0 Swap Files in 6 milliseconds (Stop-the-world time = 2 milliseconds), max Transaction ID 139
+2025-02-04 17:25:02,905 ERROR [Timer-Driven Process Thread-4] o.a.n.p.standard.PutDatabaseRecord PutDatabaseRecord[id=d27f93ed-0194-1000-6c64-307a572c948a] Record does not have a value for the Required column 'id_bets_house'
+2025-02-04 17:25:02,906 ERROR [Timer-Driven Process Thread-4] o.a.n.p.standard.PutDatabaseRecord PutDatabaseRecord[id=d27f93ed-0194-1000-6c64-307a572c948a] Failed to put Records to database for StandardFlowFileRecord[uuid=96977b62-1d2a-4c73-be26-edf6c6a27f69,claim=StandardContentClaim [resourceClaim=StandardResourceClaim[id=1738700222662-1, container=default, section=1], offset=9996, length=588],offset=0,name=96977b62-1d2a-4c73-be26-edf6c6a27f69,size=588]. Routing to failure.
+java.lang.IllegalArgumentException: Record does not have a value for the Required column 'id_bets_house'
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.checkValuesForRequiredColumns(PutDatabaseRecord.java:1551)
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.generateInsertIgnore(PutDatabaseRecord.java:1313)
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.executeDML(PutDatabaseRecord.java:813)
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.putToDatabase(PutDatabaseRecord.java:1145)
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.onTrigger(PutDatabaseRecord.java:567)
+	at org.apache.nifi.processor.AbstractProcessor.onTrigger(AbstractProcessor.java:27)
+	at org.apache.nifi.controller.StandardProcessorNode.onTrigger(StandardProcessorNode.java:1274)
+	at org.apache.nifi.controller.tasks.ConnectableTask.invoke(ConnectableTask.java:244)
+	at org.apache.nifi.controller.scheduling.TimerDrivenSchedulingAgent$1.run(TimerDrivenSchedulingAgent.java:102)
+	at org.apache.nifi.engine.FlowEngine$2.run(FlowEngine.java:110)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-02-04 17:25:05,744 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:25:05,756 INFO [Checkpoint FlowFile Repository] o.a.n.wali.SequentialAccessWriteAheadLog Checkpointed Write-Ahead Log with 10 Records and 0 Swap Files in 11 milliseconds (Stop-the-world time = 6 milliseconds), max Transaction ID 169732
+2025-02-04 17:25:05,757 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 10 records in 11 milliseconds
+2025-02-04 17:25:24,164 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2025-02-04 17:25:24,164 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 132.93 GB, bytes free = 305.08 GB, capacity = 438.01 GB
+2025-02-04 17:25:25,757 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:25:25,757 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 10 records in 0 milliseconds
+2025-02-04 17:25:45,757 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:25:45,757 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 10 records in 0 milliseconds
+2025-02-04 17:26:02,905 ERROR [Timer-Driven Process Thread-1] o.a.n.p.standard.PutDatabaseRecord PutDatabaseRecord[id=d27f93ed-0194-1000-6c64-307a572c948a] Record does not have a value for the Required column 'id_bets_house'
+2025-02-04 17:26:02,906 ERROR [Timer-Driven Process Thread-1] o.a.n.p.standard.PutDatabaseRecord PutDatabaseRecord[id=d27f93ed-0194-1000-6c64-307a572c948a] Failed to put Records to database for StandardFlowFileRecord[uuid=b1dd4bb6-5461-4175-b7e1-541063f35fa7,claim=StandardContentClaim [resourceClaim=StandardResourceClaim[id=1738700222662-1, container=default, section=1], offset=11172, length=588],offset=0,name=b1dd4bb6-5461-4175-b7e1-541063f35fa7,size=588]. Routing to failure.
+java.lang.IllegalArgumentException: Record does not have a value for the Required column 'id_bets_house'
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.checkValuesForRequiredColumns(PutDatabaseRecord.java:1551)
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.generateInsertIgnore(PutDatabaseRecord.java:1313)
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.executeDML(PutDatabaseRecord.java:813)
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.putToDatabase(PutDatabaseRecord.java:1145)
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.onTrigger(PutDatabaseRecord.java:567)
+	at org.apache.nifi.processor.AbstractProcessor.onTrigger(AbstractProcessor.java:27)
+	at org.apache.nifi.controller.StandardProcessorNode.onTrigger(StandardProcessorNode.java:1274)
+	at org.apache.nifi.controller.tasks.ConnectableTask.invoke(ConnectableTask.java:244)
+	at org.apache.nifi.controller.scheduling.TimerDrivenSchedulingAgent$1.run(TimerDrivenSchedulingAgent.java:102)
+	at org.apache.nifi.engine.FlowEngine$2.run(FlowEngine.java:110)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-02-04 17:26:05,758 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:26:05,770 INFO [Checkpoint FlowFile Repository] o.a.n.wali.SequentialAccessWriteAheadLog Checkpointed Write-Ahead Log with 11 Records and 0 Swap Files in 12 milliseconds (Stop-the-world time = 5 milliseconds), max Transaction ID 169735
+2025-02-04 17:26:05,771 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 11 records in 12 milliseconds
+2025-02-04 17:26:24,180 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2025-02-04 17:26:24,180 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 132.93 GB, bytes free = 305.08 GB, capacity = 438.01 GB
+2025-02-04 17:26:25,771 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:26:25,771 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 11 records in 0 milliseconds
+2025-02-04 17:26:45,771 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:26:45,772 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 11 records in 0 milliseconds
+2025-02-04 17:26:46,059 INFO [Write-Ahead Local State Provider Maintenance] o.a.n.wali.SequentialAccessWriteAheadLog Checkpointed Write-Ahead Log with 18 Records and 0 Swap Files in 5 milliseconds (Stop-the-world time = 2 milliseconds), max Transaction ID 141
+2025-02-04 17:27:02,897 INFO [Timer-Driven Process Thread-8] o.a.n.p.store.WriteAheadStorePartition Successfully rolled over Event Writer for Provenance Event Store Partition[directory=./provenance_repository] due to MAX_TIME_REACHED. Event File was 25.93 KB and contained 30 events.
+2025-02-04 17:27:02,916 ERROR [Timer-Driven Process Thread-5] o.a.n.p.standard.PutDatabaseRecord PutDatabaseRecord[id=d27f93ed-0194-1000-6c64-307a572c948a] Record does not have a value for the Required column 'id_bets_house'
+2025-02-04 17:27:02,917 ERROR [Timer-Driven Process Thread-5] o.a.n.p.standard.PutDatabaseRecord PutDatabaseRecord[id=d27f93ed-0194-1000-6c64-307a572c948a] Failed to put Records to database for StandardFlowFileRecord[uuid=edd8c2e0-4f8f-4cfe-b076-c86abf357685,claim=StandardContentClaim [resourceClaim=StandardResourceClaim[id=1738700222662-1, container=default, section=1], offset=12348, length=588],offset=0,name=edd8c2e0-4f8f-4cfe-b076-c86abf357685,size=588]. Routing to failure.
+java.lang.IllegalArgumentException: Record does not have a value for the Required column 'id_bets_house'
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.checkValuesForRequiredColumns(PutDatabaseRecord.java:1551)
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.generateInsertIgnore(PutDatabaseRecord.java:1313)
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.executeDML(PutDatabaseRecord.java:813)
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.putToDatabase(PutDatabaseRecord.java:1145)
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.onTrigger(PutDatabaseRecord.java:567)
+	at org.apache.nifi.processor.AbstractProcessor.onTrigger(AbstractProcessor.java:27)
+	at org.apache.nifi.controller.StandardProcessorNode.onTrigger(StandardProcessorNode.java:1274)
+	at org.apache.nifi.controller.tasks.ConnectableTask.invoke(ConnectableTask.java:244)
+	at org.apache.nifi.controller.scheduling.TimerDrivenSchedulingAgent$1.run(TimerDrivenSchedulingAgent.java:102)
+	at org.apache.nifi.engine.FlowEngine$2.run(FlowEngine.java:110)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-02-04 17:27:05,772 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:27:05,780 INFO [Checkpoint FlowFile Repository] o.a.n.wali.SequentialAccessWriteAheadLog Checkpointed Write-Ahead Log with 12 Records and 0 Swap Files in 8 milliseconds (Stop-the-world time = 4 milliseconds), max Transaction ID 169738
+2025-02-04 17:27:05,781 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 12 records in 8 milliseconds
+2025-02-04 17:27:24,193 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2025-02-04 17:27:24,194 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 132.93 GB, bytes free = 305.08 GB, capacity = 438.01 GB
+2025-02-04 17:27:25,782 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:27:25,782 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 12 records in 0 milliseconds
+2025-02-04 17:27:45,782 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:27:45,782 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 12 records in 0 milliseconds
+2025-02-04 17:28:02,927 ERROR [Timer-Driven Process Thread-5] o.a.n.p.standard.PutDatabaseRecord PutDatabaseRecord[id=d27f93ed-0194-1000-6c64-307a572c948a] Record does not have a value for the Required column 'id_bets_house'
+2025-02-04 17:28:02,928 ERROR [Timer-Driven Process Thread-5] o.a.n.p.standard.PutDatabaseRecord PutDatabaseRecord[id=d27f93ed-0194-1000-6c64-307a572c948a] Failed to put Records to database for StandardFlowFileRecord[uuid=d62df081-31f5-49c1-a322-25fe7845eecb,claim=StandardContentClaim [resourceClaim=StandardResourceClaim[id=1738700222662-1, container=default, section=1], offset=13524, length=588],offset=0,name=d62df081-31f5-49c1-a322-25fe7845eecb,size=588]. Routing to failure.
+java.lang.IllegalArgumentException: Record does not have a value for the Required column 'id_bets_house'
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.checkValuesForRequiredColumns(PutDatabaseRecord.java:1551)
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.generateInsertIgnore(PutDatabaseRecord.java:1313)
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.executeDML(PutDatabaseRecord.java:813)
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.putToDatabase(PutDatabaseRecord.java:1145)
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.onTrigger(PutDatabaseRecord.java:567)
+	at org.apache.nifi.processor.AbstractProcessor.onTrigger(AbstractProcessor.java:27)
+	at org.apache.nifi.controller.StandardProcessorNode.onTrigger(StandardProcessorNode.java:1274)
+	at org.apache.nifi.controller.tasks.ConnectableTask.invoke(ConnectableTask.java:244)
+	at org.apache.nifi.controller.scheduling.TimerDrivenSchedulingAgent$1.run(TimerDrivenSchedulingAgent.java:102)
+	at org.apache.nifi.engine.FlowEngine$2.run(FlowEngine.java:110)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-02-04 17:28:05,782 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:28:18,393 INFO [Checkpoint FlowFile Repository] o.a.n.wali.SequentialAccessWriteAheadLog Checkpointed Write-Ahead Log with 13 Records and 0 Swap Files in 42 milliseconds (Stop-the-world time = 20 milliseconds), max Transaction ID 169741
+2025-02-04 17:28:18,393 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 13 records in 42 milliseconds
+2025-02-04 17:28:24,199 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2025-02-04 17:28:24,199 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 132.92 GB, bytes free = 305.08 GB, capacity = 438.01 GB
+2025-02-04 17:28:25,602 INFO [Flow Service Tasks Thread-1] o.a.nifi.controller.StandardFlowService Saved flow controller org.apache.nifi.controller.FlowController@4b32f004 // Another save pending = false
+2025-02-04 17:28:38,394 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:28:38,394 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 13 records in 0 milliseconds
+2025-02-04 17:28:46,068 INFO [Write-Ahead Local State Provider Maintenance] o.a.n.wali.SequentialAccessWriteAheadLog Checkpointed Write-Ahead Log with 18 Records and 0 Swap Files in 9 milliseconds (Stop-the-world time = 2 milliseconds), max Transaction ID 143
+2025-02-04 17:28:58,394 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:28:58,394 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 13 records in 0 milliseconds
+2025-02-04 17:29:02,936 ERROR [Timer-Driven Process Thread-2] o.a.n.p.standard.PutDatabaseRecord PutDatabaseRecord[id=d27f93ed-0194-1000-6c64-307a572c948a] Record does not have a value for the Required column 'id_bets_house'
+2025-02-04 17:29:02,937 ERROR [Timer-Driven Process Thread-2] o.a.n.p.standard.PutDatabaseRecord PutDatabaseRecord[id=d27f93ed-0194-1000-6c64-307a572c948a] Failed to put Records to database for StandardFlowFileRecord[uuid=1dd49ab8-4bc2-4585-bad9-a56a698cf0c0,claim=StandardContentClaim [resourceClaim=StandardResourceClaim[id=1738700222662-1, container=default, section=1], offset=14700, length=588],offset=0,name=1dd49ab8-4bc2-4585-bad9-a56a698cf0c0,size=588]. Routing to failure.
+java.lang.IllegalArgumentException: Record does not have a value for the Required column 'id_bets_house'
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.checkValuesForRequiredColumns(PutDatabaseRecord.java:1551)
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.generateInsertIgnore(PutDatabaseRecord.java:1313)
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.executeDML(PutDatabaseRecord.java:813)
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.putToDatabase(PutDatabaseRecord.java:1145)
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.onTrigger(PutDatabaseRecord.java:567)
+	at org.apache.nifi.processor.AbstractProcessor.onTrigger(AbstractProcessor.java:27)
+	at org.apache.nifi.controller.StandardProcessorNode.onTrigger(StandardProcessorNode.java:1274)
+	at org.apache.nifi.controller.tasks.ConnectableTask.invoke(ConnectableTask.java:244)
+	at org.apache.nifi.controller.scheduling.TimerDrivenSchedulingAgent$1.run(TimerDrivenSchedulingAgent.java:102)
+	at org.apache.nifi.engine.FlowEngine$2.run(FlowEngine.java:110)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-02-04 17:29:07,573 INFO [NiFi Web Server-277] o.a.n.c.s.StandardProcessScheduler Starting LogMessage[id=d27d81ae-0194-1000-ab2c-79c3a5256ea5]
+2025-02-04 17:29:07,573 INFO [NiFi Web Server-277] o.a.n.controller.StandardProcessorNode Starting LogMessage[id=d27d81ae-0194-1000-ab2c-79c3a5256ea5]
+2025-02-04 17:29:07,574 INFO [Timer-Driven Process Thread-9] o.a.n.c.s.TimerDrivenSchedulingAgent Scheduled LogMessage[id=d27d81ae-0194-1000-ab2c-79c3a5256ea5] to run with 1 threads
+2025-02-04 17:29:07,624 INFO [Flow Service Tasks Thread-2] o.a.nifi.controller.StandardFlowService Saved flow controller org.apache.nifi.controller.FlowController@4b32f004 // Another save pending = false
+2025-02-04 17:29:18,395 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:29:18,406 INFO [Checkpoint FlowFile Repository] o.a.n.wali.SequentialAccessWriteAheadLog Checkpointed Write-Ahead Log with 14 Records and 0 Swap Files in 10 milliseconds (Stop-the-world time = 6 milliseconds), max Transaction ID 169744
+2025-02-04 17:29:18,406 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 14 records in 11 milliseconds
+2025-02-04 17:29:24,207 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2025-02-04 17:29:24,207 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 132.93 GB, bytes free = 305.08 GB, capacity = 438.01 GB
+2025-02-04 17:29:38,406 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:29:38,407 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 14 records in 0 milliseconds
+2025-02-04 17:29:58,407 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:29:58,407 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 14 records in 0 milliseconds
+2025-02-04 17:30:02,948 ERROR [Timer-Driven Process Thread-7] o.a.n.p.standard.PutDatabaseRecord PutDatabaseRecord[id=d27f93ed-0194-1000-6c64-307a572c948a] Record does not have a value for the Required column 'id_bets_house'
+2025-02-04 17:30:02,950 ERROR [Timer-Driven Process Thread-7] o.a.n.p.standard.PutDatabaseRecord PutDatabaseRecord[id=d27f93ed-0194-1000-6c64-307a572c948a] Failed to put Records to database for StandardFlowFileRecord[uuid=9d5e2814-0d26-4bca-8764-a50bc4e07199,claim=StandardContentClaim [resourceClaim=StandardResourceClaim[id=1738700222662-1, container=default, section=1], offset=15876, length=588],offset=0,name=9d5e2814-0d26-4bca-8764-a50bc4e07199,size=588]. Routing to failure.
+java.lang.IllegalArgumentException: Record does not have a value for the Required column 'id_bets_house'
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.checkValuesForRequiredColumns(PutDatabaseRecord.java:1551)
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.generateInsertIgnore(PutDatabaseRecord.java:1313)
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.executeDML(PutDatabaseRecord.java:813)
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.putToDatabase(PutDatabaseRecord.java:1145)
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.onTrigger(PutDatabaseRecord.java:567)
+	at org.apache.nifi.processor.AbstractProcessor.onTrigger(AbstractProcessor.java:27)
+	at org.apache.nifi.controller.StandardProcessorNode.onTrigger(StandardProcessorNode.java:1274)
+	at org.apache.nifi.controller.tasks.ConnectableTask.invoke(ConnectableTask.java:244)
+	at org.apache.nifi.controller.scheduling.TimerDrivenSchedulingAgent$1.run(TimerDrivenSchedulingAgent.java:102)
+	at org.apache.nifi.engine.FlowEngine$2.run(FlowEngine.java:110)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-02-04 17:30:18,408 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:30:18,415 INFO [Checkpoint FlowFile Repository] o.a.n.wali.SequentialAccessWriteAheadLog Checkpointed Write-Ahead Log with 15 Records and 0 Swap Files in 7 milliseconds (Stop-the-world time = 2 milliseconds), max Transaction ID 169747
+2025-02-04 17:30:18,416 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 15 records in 7 milliseconds
+2025-02-04 17:30:24,215 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2025-02-04 17:30:24,215 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 132.93 GB, bytes free = 305.08 GB, capacity = 438.01 GB
+2025-02-04 17:30:38,416 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:30:38,417 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 15 records in 0 milliseconds
+2025-02-04 17:30:46,074 INFO [Write-Ahead Local State Provider Maintenance] o.a.n.wali.SequentialAccessWriteAheadLog Checkpointed Write-Ahead Log with 18 Records and 0 Swap Files in 5 milliseconds (Stop-the-world time = 2 milliseconds), max Transaction ID 145
+2025-02-04 17:30:58,417 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:30:58,417 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 15 records in 0 milliseconds
+2025-02-04 17:31:02,956 ERROR [Timer-Driven Process Thread-6] o.a.n.p.standard.PutDatabaseRecord PutDatabaseRecord[id=d27f93ed-0194-1000-6c64-307a572c948a] Record does not have a value for the Required column 'id_bets_house'
+2025-02-04 17:31:02,956 ERROR [Timer-Driven Process Thread-6] o.a.n.p.standard.PutDatabaseRecord PutDatabaseRecord[id=d27f93ed-0194-1000-6c64-307a572c948a] Failed to put Records to database for StandardFlowFileRecord[uuid=fa779182-8a0d-4ef3-9361-2607b5549db1,claim=StandardContentClaim [resourceClaim=StandardResourceClaim[id=1738700222662-1, container=default, section=1], offset=17052, length=588],offset=0,name=fa779182-8a0d-4ef3-9361-2607b5549db1,size=588]. Routing to failure.
+java.lang.IllegalArgumentException: Record does not have a value for the Required column 'id_bets_house'
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.checkValuesForRequiredColumns(PutDatabaseRecord.java:1551)
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.generateInsertIgnore(PutDatabaseRecord.java:1313)
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.executeDML(PutDatabaseRecord.java:813)
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.putToDatabase(PutDatabaseRecord.java:1145)
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.onTrigger(PutDatabaseRecord.java:567)
+	at org.apache.nifi.processor.AbstractProcessor.onTrigger(AbstractProcessor.java:27)
+	at org.apache.nifi.controller.StandardProcessorNode.onTrigger(StandardProcessorNode.java:1274)
+	at org.apache.nifi.controller.tasks.ConnectableTask.invoke(ConnectableTask.java:244)
+	at org.apache.nifi.controller.scheduling.TimerDrivenSchedulingAgent$1.run(TimerDrivenSchedulingAgent.java:102)
+	at org.apache.nifi.engine.FlowEngine$2.run(FlowEngine.java:110)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-02-04 17:31:18,417 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:31:18,426 INFO [Checkpoint FlowFile Repository] o.a.n.wali.SequentialAccessWriteAheadLog Checkpointed Write-Ahead Log with 16 Records and 0 Swap Files in 8 milliseconds (Stop-the-world time = 4 milliseconds), max Transaction ID 169750
+2025-02-04 17:31:18,426 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 16 records in 8 milliseconds
+2025-02-04 17:31:24,220 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2025-02-04 17:31:24,221 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 132.93 GB, bytes free = 305.08 GB, capacity = 438.01 GB
+2025-02-04 17:31:38,427 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:31:38,427 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 16 records in 0 milliseconds
+2025-02-04 17:31:58,427 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:31:58,427 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 16 records in 0 milliseconds
+2025-02-04 17:32:02,959 ERROR [Timer-Driven Process Thread-5] o.a.n.p.standard.PutDatabaseRecord PutDatabaseRecord[id=d27f93ed-0194-1000-6c64-307a572c948a] Record does not have a value for the Required column 'id_bets_house'
+2025-02-04 17:32:02,959 ERROR [Timer-Driven Process Thread-5] o.a.n.p.standard.PutDatabaseRecord PutDatabaseRecord[id=d27f93ed-0194-1000-6c64-307a572c948a] Failed to put Records to database for StandardFlowFileRecord[uuid=a9526806-f1ea-4092-a8fe-741db8b74cb0,claim=StandardContentClaim [resourceClaim=StandardResourceClaim[id=1738700222662-1, container=default, section=1], offset=18228, length=588],offset=0,name=a9526806-f1ea-4092-a8fe-741db8b74cb0,size=588]. Routing to failure.
+java.lang.IllegalArgumentException: Record does not have a value for the Required column 'id_bets_house'
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.checkValuesForRequiredColumns(PutDatabaseRecord.java:1551)
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.generateInsertIgnore(PutDatabaseRecord.java:1313)
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.executeDML(PutDatabaseRecord.java:813)
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.putToDatabase(PutDatabaseRecord.java:1145)
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.onTrigger(PutDatabaseRecord.java:567)
+	at org.apache.nifi.processor.AbstractProcessor.onTrigger(AbstractProcessor.java:27)
+	at org.apache.nifi.controller.StandardProcessorNode.onTrigger(StandardProcessorNode.java:1274)
+	at org.apache.nifi.controller.tasks.ConnectableTask.invoke(ConnectableTask.java:244)
+	at org.apache.nifi.controller.scheduling.TimerDrivenSchedulingAgent$1.run(TimerDrivenSchedulingAgent.java:102)
+	at org.apache.nifi.engine.FlowEngine$2.run(FlowEngine.java:110)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-02-04 17:32:18,428 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:32:24,228 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2025-02-04 17:32:24,228 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 132.93 GB, bytes free = 305.08 GB, capacity = 438.01 GB
+2025-02-04 17:32:33,459 INFO [Checkpoint FlowFile Repository] o.a.n.wali.SequentialAccessWriteAheadLog Checkpointed Write-Ahead Log with 17 Records and 0 Swap Files in 15031 milliseconds (Stop-the-world time = 15016 milliseconds), max Transaction ID 169753
+2025-02-04 17:32:33,459 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 17 records in 15031 milliseconds
+2025-02-04 17:32:46,080 INFO [Write-Ahead Local State Provider Maintenance] o.a.n.wali.SequentialAccessWriteAheadLog Checkpointed Write-Ahead Log with 18 Records and 0 Swap Files in 5 milliseconds (Stop-the-world time = 1 milliseconds), max Transaction ID 147
+2025-02-04 17:32:53,460 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:32:53,460 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 17 records in 0 milliseconds
+2025-02-04 17:33:02,964 ERROR [Timer-Driven Process Thread-3] o.a.n.p.standard.PutDatabaseRecord PutDatabaseRecord[id=d27f93ed-0194-1000-6c64-307a572c948a] Record does not have a value for the Required column 'id_bets_house'
+2025-02-04 17:33:02,965 ERROR [Timer-Driven Process Thread-3] o.a.n.p.standard.PutDatabaseRecord PutDatabaseRecord[id=d27f93ed-0194-1000-6c64-307a572c948a] Failed to put Records to database for StandardFlowFileRecord[uuid=a05faa6e-8c90-45b1-87af-201296a1e23e,claim=StandardContentClaim [resourceClaim=StandardResourceClaim[id=1738700222662-1, container=default, section=1], offset=19404, length=588],offset=0,name=a05faa6e-8c90-45b1-87af-201296a1e23e,size=588]. Routing to failure.
+java.lang.IllegalArgumentException: Record does not have a value for the Required column 'id_bets_house'
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.checkValuesForRequiredColumns(PutDatabaseRecord.java:1551)
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.generateInsertIgnore(PutDatabaseRecord.java:1313)
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.executeDML(PutDatabaseRecord.java:813)
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.putToDatabase(PutDatabaseRecord.java:1145)
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.onTrigger(PutDatabaseRecord.java:567)
+	at org.apache.nifi.processor.AbstractProcessor.onTrigger(AbstractProcessor.java:27)
+	at org.apache.nifi.controller.StandardProcessorNode.onTrigger(StandardProcessorNode.java:1274)
+	at org.apache.nifi.controller.tasks.ConnectableTask.invoke(ConnectableTask.java:244)
+	at org.apache.nifi.controller.scheduling.TimerDrivenSchedulingAgent$1.run(TimerDrivenSchedulingAgent.java:102)
+	at org.apache.nifi.engine.FlowEngine$2.run(FlowEngine.java:110)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-02-04 17:33:13,460 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:33:13,469 INFO [Checkpoint FlowFile Repository] o.a.n.wali.SequentialAccessWriteAheadLog Checkpointed Write-Ahead Log with 18 Records and 0 Swap Files in 8 milliseconds (Stop-the-world time = 3 milliseconds), max Transaction ID 169756
+2025-02-04 17:33:13,469 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 18 records in 9 milliseconds
+2025-02-04 17:33:24,237 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2025-02-04 17:33:24,237 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 132.93 GB, bytes free = 305.08 GB, capacity = 438.01 GB
+2025-02-04 17:33:33,469 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:33:33,470 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 18 records in 0 milliseconds
+2025-02-04 17:33:53,470 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:33:53,470 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 18 records in 0 milliseconds
+2025-02-04 17:34:02,967 ERROR [Timer-Driven Process Thread-2] o.a.n.p.standard.PutDatabaseRecord PutDatabaseRecord[id=d27f93ed-0194-1000-6c64-307a572c948a] Record does not have a value for the Required column 'id_bets_house'
+2025-02-04 17:34:02,968 ERROR [Timer-Driven Process Thread-2] o.a.n.p.standard.PutDatabaseRecord PutDatabaseRecord[id=d27f93ed-0194-1000-6c64-307a572c948a] Failed to put Records to database for StandardFlowFileRecord[uuid=db3bbe6a-9217-431b-b47c-c799c1531d6e,claim=StandardContentClaim [resourceClaim=StandardResourceClaim[id=1738700222662-1, container=default, section=1], offset=20580, length=588],offset=0,name=db3bbe6a-9217-431b-b47c-c799c1531d6e,size=588]. Routing to failure.
+java.lang.IllegalArgumentException: Record does not have a value for the Required column 'id_bets_house'
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.checkValuesForRequiredColumns(PutDatabaseRecord.java:1551)
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.generateInsertIgnore(PutDatabaseRecord.java:1313)
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.executeDML(PutDatabaseRecord.java:813)
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.putToDatabase(PutDatabaseRecord.java:1145)
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.onTrigger(PutDatabaseRecord.java:567)
+	at org.apache.nifi.processor.AbstractProcessor.onTrigger(AbstractProcessor.java:27)
+	at org.apache.nifi.controller.StandardProcessorNode.onTrigger(StandardProcessorNode.java:1274)
+	at org.apache.nifi.controller.tasks.ConnectableTask.invoke(ConnectableTask.java:244)
+	at org.apache.nifi.controller.scheduling.TimerDrivenSchedulingAgent$1.run(TimerDrivenSchedulingAgent.java:102)
+	at org.apache.nifi.engine.FlowEngine$2.run(FlowEngine.java:110)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-02-04 17:34:13,470 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:34:13,481 INFO [Checkpoint FlowFile Repository] o.a.n.wali.SequentialAccessWriteAheadLog Checkpointed Write-Ahead Log with 19 Records and 0 Swap Files in 10 milliseconds (Stop-the-world time = 6 milliseconds), max Transaction ID 169759
+2025-02-04 17:34:13,481 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 19 records in 10 milliseconds
+2025-02-04 17:34:24,246 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2025-02-04 17:34:24,247 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 132.93 GB, bytes free = 305.08 GB, capacity = 438.01 GB
+2025-02-04 17:34:33,481 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:34:33,481 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 19 records in 0 milliseconds

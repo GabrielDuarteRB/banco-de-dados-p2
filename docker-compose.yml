@@ -1,16 +1,15 @@
-version: "3.9"
-
 services:
   postgres:
     container_name: postgres
     build: ./app
     volumes:
       - ./postgres-database:/var/lib/postgresql/data
-      -  ./app/config/postgresql.conf:/var/lib/postgresql/data/postgres-database/postgresql.conf
+      - ./app/config/postgresql.conf:/var/lib/postgresql/data/postgres-database/postgresql.conf
       - ./sqlite:/data
-      - ./ssh/id_rsa.pub:/home/barman/.ssh/id_rsa.pub
-      - ./ssh/id_rsa:/home/barman/.ssh/id_rsa
       - ./pgbadger/pg_log:/var/lib/postgresql/data/pg_log
+      - ./ssh/postgres/id_rsa:/root/.ssh/id_rsa
+      - ./ssh/postgres/id_rsa.pub:/root/.ssh/id_rsa.pub
+      - ./ssh/barman/id_rsa.pub:/root/.ssh/authorized_keys
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
@@ -20,7 +19,6 @@ services:
       PGPORT: "5432"
     ports:
       - "15432:5432"
-      - "222:22"  
       - "2345:2345"
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U postgres"]
@@ -29,27 +27,30 @@ services:
     networks:
       - postgres-network 
 
-  pgloader:
-    build: ./pgloader
-    container_name: pgloader
-    volumes:
-      - ./sqlite:/data
-      - ./postgres-database:/var/lib/postgresql/data
-    depends_on:
-      - postgres
-    entrypoint: ["/usr/local/bin/entrypoint.sh"]
-    mem_limit: 8g
-    mem_reservation: 7g
-    networks:
-      - postgres-network
+  #pgloader:
+  #  build: ./pgloader
+  #  container_name: pgloader
+  #  volumes:
+  #    - ./sqlite:/data
+  #    - ./postgres-database:/var/lib/postgresql/data
+  #  depends_on:
+  #    - postgres
+  #  entrypoint: ["/usr/local/bin/entrypoint.sh"]
+  #  mem_limit: 8g
+  #  mem_reservation: 7g
+  #  networks:
+  #    - postgres-network
 
   barman:
     build: ./barman
     container_name: barman
     volumes:
-      - ./ssh/id_rsa:/home/barman/.ssh/id_rsa
-      - ./ssh/id_rsa.pub:/home/barman/.ssh/id_rsa.pub
       - ./barman/backup:/var/lib/barman
+      - ./ssh/barman/id_rsa:/root/.ssh/id_rsa
+      - ./ssh/barman/id_rsa.pub:/root/.ssh/id_rsa.pub
+      - ./ssh/postgres/id_rsa.pub:/root/.ssh/authorized_keys
+    ports:
+      - "222:22"  
     environment:
       - BARMAN_DB_HOST=postgres
       - BARMAN_DB_USER=postgres

@@ -1,9 +1,8 @@
 #!/bin/bash
 set -e
 
-#cp /usr/share/postgresql/postgresql.conf.sample /var/lib/postgresql/data/postgres-database/postgresql.conf
+cp /usr/share/postgresql/postgresql.conf.sample /var/lib/postgresql/data/postgres-database/postgresql.conf
 cp /usr/share/postgresql/pg_hba.conf /var/lib/postgresql/data
-cp /home/barman/.ssh/id_rsa.pub /home/barman/.ssh/authorized_keys
 
 service ssh start
 
@@ -28,10 +27,27 @@ function runTemboardAgente {
     sudo -u postgres temboard-agent -c /etc/temboard-agent/data/postgres-database/temboard-agent.conf;
 }
 
+#function runBarman {
+#
+#	su - root << 'EOF' 
+#
+#	chwon -R barman:barman /var/lib/barman
+#	
+#	echo "0 3 * * 1 barman backup postgres" > /etc/cron.d/barman-backup
+#	chmod 0644 /etc/cron.d/barman-backup
+#
+#	echo "*/5 * * * * barman backup postgres" > /etc/cron.d/barman-incremental
+#	chmod 0644 /etc/cron.d/barman-incremental
+#
+#	service cron start	
+#} 
+
 
 /usr/local/bin/docker-entrypoint.sh postgres &
 
 waitForPostgres
+
+#runBarman &
 
 runTemboardAgente &
 

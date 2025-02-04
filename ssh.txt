@@ -1,0 +1,5 @@
+docker exec -it postgres bash
+
+ssh-keygen -b 4096 -t rsa -N '' -f ~/.ssh/id_rsa
+chmod 600 ~/.ssh/id_rsa
+

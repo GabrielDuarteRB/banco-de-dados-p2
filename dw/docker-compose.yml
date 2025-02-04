@@ -1,0 +1,52 @@
+version: '3.9'
+
+services:
+  nifi:
+    container_name: nifi
+    hostname: nifi
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: nifi
+    ports:
+      - 8443:8443
+    environment:
+      NIFI_WEB_HTTPS_PORT: "8443"
+      SINGLE_USER_CREDENTIALS_USERNAME: "admin" 
+      SINGLE_USER_CREDENTIALS_PASSWORD: "ILvhISLIkaTlBACLUfhesmtTg"
+      TZ: "America/Bahia"
+    volumes:
+      - ./drivers:/opt/nifi/nifi-current/jdbc:rw
+      - ./data:/opt/nifi/data:rw
+      - ./database_repository:/opt/nifi/nifi-current/database_repository
+      - ./flowfile_repository:/opt/nifi/nifi-current/flowfile_repository
+      - ./content_repository:/opt/nifi/nifi-current/content_repository
+      - ./provenance_repository:/opt/nifi/nifi-current/provenance_repository
+      - ./state:/opt/nifi/nifi-current/state
+      - ./logs:/opt/nifi/nifi-current/logs
+    networks:
+      - postgres-network
+    logging:
+      driver: "json-file"
+      options:
+        max-file: "2"
+        max-size: "25m"
+    cpus: 2
+    mem_limit: 2g
+    memswap_limit: 2g
+    shm_size: 256m
+    restart: always
+  postgres-compose:
+    image: postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: "postgres"
+      POSTGRES_DB: dw
+    ports:
+      - "5432:5432"
+    networks:
+      - postgres-network
+
+networks:
+  postgres-network:
+    external: true
