@@ -1135,3 +1135,53 @@ java.lang.IllegalArgumentException: Record does not have a value for the Require
 2025-02-04 17:34:24,247 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 132.93 GB, bytes free = 305.08 GB, capacity = 438.01 GB
 2025-02-04 17:34:33,481 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
 2025-02-04 17:34:33,481 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 19 records in 0 milliseconds
+2025-02-04 17:34:46,088 INFO [Write-Ahead Local State Provider Maintenance] o.a.n.wali.SequentialAccessWriteAheadLog Checkpointed Write-Ahead Log with 18 Records and 0 Swap Files in 7 milliseconds (Stop-the-world time = 2 milliseconds), max Transaction ID 149
+2025-02-04 17:34:53,482 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:34:53,482 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 19 records in 0 milliseconds
+2025-02-04 17:35:02,972 ERROR [Timer-Driven Process Thread-8] o.a.n.p.standard.PutDatabaseRecord PutDatabaseRecord[id=d27f93ed-0194-1000-6c64-307a572c948a] Record does not have a value for the Required column 'id_bets_house'
+2025-02-04 17:35:02,972 ERROR [Timer-Driven Process Thread-8] o.a.n.p.standard.PutDatabaseRecord PutDatabaseRecord[id=d27f93ed-0194-1000-6c64-307a572c948a] Failed to put Records to database for StandardFlowFileRecord[uuid=afb18ad2-1b79-428b-a6ea-1681e6f1e1a8,claim=StandardContentClaim [resourceClaim=StandardResourceClaim[id=1738700222662-1, container=default, section=1], offset=21756, length=588],offset=0,name=afb18ad2-1b79-428b-a6ea-1681e6f1e1a8,size=588]. Routing to failure.
+java.lang.IllegalArgumentException: Record does not have a value for the Required column 'id_bets_house'
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.checkValuesForRequiredColumns(PutDatabaseRecord.java:1551)
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.generateInsertIgnore(PutDatabaseRecord.java:1313)
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.executeDML(PutDatabaseRecord.java:813)
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.putToDatabase(PutDatabaseRecord.java:1145)
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.onTrigger(PutDatabaseRecord.java:567)
+	at org.apache.nifi.processor.AbstractProcessor.onTrigger(AbstractProcessor.java:27)
+	at org.apache.nifi.controller.StandardProcessorNode.onTrigger(StandardProcessorNode.java:1274)
+	at org.apache.nifi.controller.tasks.ConnectableTask.invoke(ConnectableTask.java:244)
+	at org.apache.nifi.controller.scheduling.TimerDrivenSchedulingAgent$1.run(TimerDrivenSchedulingAgent.java:102)
+	at org.apache.nifi.engine.FlowEngine$2.run(FlowEngine.java:110)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-02-04 17:35:13,482 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:35:13,495 INFO [Checkpoint FlowFile Repository] o.a.n.wali.SequentialAccessWriteAheadLog Checkpointed Write-Ahead Log with 20 Records and 0 Swap Files in 12 milliseconds (Stop-the-world time = 7 milliseconds), max Transaction ID 169762
+2025-02-04 17:35:13,495 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 20 records in 12 milliseconds
+2025-02-04 17:35:24,253 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2025-02-04 17:35:24,254 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 132.94 GB, bytes free = 305.07 GB, capacity = 438.01 GB
+2025-02-04 17:35:33,495 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:35:33,495 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 20 records in 0 milliseconds
+2025-02-04 17:35:53,496 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2025-02-04 17:35:53,496 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 20 records in 0 milliseconds
+2025-02-04 17:36:03,067 ERROR [Timer-Driven Process Thread-9] o.a.n.p.standard.PutDatabaseRecord PutDatabaseRecord[id=d27f93ed-0194-1000-6c64-307a572c948a] Record does not have a value for the Required column 'id_bets_house'
+2025-02-04 17:36:03,067 ERROR [Timer-Driven Process Thread-9] o.a.n.p.standard.PutDatabaseRecord PutDatabaseRecord[id=d27f93ed-0194-1000-6c64-307a572c948a] Failed to put Records to database for StandardFlowFileRecord[uuid=a7f29a13-5bb9-436e-904d-1e132aeb49bc,claim=StandardContentClaim [resourceClaim=StandardResourceClaim[id=1738700222662-1, container=default, section=1], offset=22932, length=588],offset=0,name=a7f29a13-5bb9-436e-904d-1e132aeb49bc,size=588]. Routing to failure.
+java.lang.IllegalArgumentException: Record does not have a value for the Required column 'id_bets_house'
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.checkValuesForRequiredColumns(PutDatabaseRecord.java:1551)
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.generateInsertIgnore(PutDatabaseRecord.java:1313)
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.executeDML(PutDatabaseRecord.java:813)
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.putToDatabase(PutDatabaseRecord.java:1145)
+	at org.apache.nifi.processors.standard.PutDatabaseRecord.onTrigger(PutDatabaseRecord.java:567)
+	at org.apache.nifi.processor.AbstractProcessor.onTrigger(AbstractProcessor.java:27)
+	at org.apache.nifi.controller.StandardProcessorNode.onTrigger(StandardProcessorNode.java:1274)
+	at org.apache.nifi.controller.tasks.ConnectableTask.invoke(ConnectableTask.java:244)
+	at org.apache.nifi.controller.scheduling.TimerDrivenSchedulingAgent$1.run(TimerDrivenSchedulingAgent.java:102)
+	at org.apache.nifi.engine.FlowEngine$2.run(FlowEngine.java:110)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
