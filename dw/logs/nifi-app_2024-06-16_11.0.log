@@ -1,0 +1,11 @@
+2024-06-16 11:00:03,951 INFO [pool-1-thread-2] org.apache.nifi.BootstrapListener Received SHUTDOWN request from Bootstrap
+2024-06-16 11:00:03,977 INFO [pool-1-thread-2] org.apache.nifi.NiFi Application Server shutdown started
+2024-06-16 11:00:03,980 INFO [pool-1-thread-2] org.eclipse.jetty.server.Server Stopped oejs.Server@3cf8a235{STOPPING}[12.0.9,sto=0]
+2024-06-16 11:00:04,030 INFO [pool-1-thread-2] o.eclipse.jetty.server.AbstractConnector Stopped ServerConnector@7d51e3df{SSL, (ssl, alpn, h2, http/1.1)}{nifi:8443}
+2024-06-16 11:00:04,254 INFO [pool-1-thread-2] o.e.j.ee10.servlet.ServletContextHandler Stopped oeje10w.WebAppContext@69519536{nifi-error,/,b=null,a=AVAILABLE,h=oeje10s.SessionHandler@7211ab39{STOPPED}}{./work/nar/extensions/nifi-server-nar-2.0.0-M3.nar-unpacked/NAR-INF/bundled-dependencies/nifi-web-error-2.0.0-M3.war}
+2024-06-16 11:00:04,454 INFO [pool-1-thread-2] o.e.j.ee10.servlet.ServletContextHandler Stopped oeje10w.WebAppContext@55ab20e1{nifi-web-frontend,/nf,b=null,a=AVAILABLE,h=oeje10s.SessionHandler@75bd2c82{STOPPED}}{./work/nar/extensions/nifi-server-nar-2.0.0-M3.nar-unpacked/NAR-INF/bundled-dependencies/nifi-web-frontend-2.0.0-M3.war}
+2024-06-16 11:00:04,487 INFO [pool-1-thread-2] o.e.j.ee10.servlet.ServletContextHandler Stopped oeje10w.WebAppContext@c334f3b{nifi-docs,/nifi-docs,b=null,a=AVAILABLE,h=oeje10s.SessionHandler@5c4d30a5{STOPPED}}{./work/nar/extensions/nifi-server-nar-2.0.0-M3.nar-unpacked/NAR-INF/bundled-dependencies/nifi-web-docs-2.0.0-M3.war}
+2024-06-16 11:00:04,511 INFO [pool-1-thread-2] o.e.j.ee10.servlet.ServletContextHandler Stopped oeje10w.WebAppContext@1b44c342{nifi-content-viewer,/nifi-content-viewer,b=null,a=AVAILABLE,h=oeje10s.SessionHandler@6afa4a3d{STOPPED}}{./work/nar/extensions/nifi-server-nar-2.0.0-M3.nar-unpacked/NAR-INF/bundled-dependencies/nifi-web-content-viewer-2.0.0-M3.war}
+2024-06-16 11:00:04,590 INFO [pool-1-thread-2] o.a.n.w.c.ApplicationStartupContextListener Flow Service shutdown started
+2024-06-16 11:00:04,591 INFO [pool-1-thread-2] o.apache.nifi.controller.FlowController Initiating shutdown of FlowController...
+2024-06-16 11:00:04,655 INFO [pool-1-thread-2] o.apache.nifi.controller.FlowController Initiated graceful shutdown of flow controller...waiting up to 10 seconds

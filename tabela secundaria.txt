@@ -1,0 +1,237 @@
+CREATE TABLE bets_house (
+	id_bets_house serial4 NOT NULL,
+	"name" varchar(100) NOT NULL,
+	CONSTRAINT bets_house_name_key UNIQUE (name),
+	CONSTRAINT bets_house_pkey PRIMARY KEY (id_bets_house)
+);
+
+
+-- public.country definição
+
+-- Drop table
+
+-- DROP TABLE country;
+
+CREATE TABLE country (
+	id bigserial NOT NULL,
+	"name" text NULL,
+	CONSTRAINT idx_3047453_country_pkey PRIMARY KEY (id)
+);
+
+CREATE TABLE league (
+	id bigserial NOT NULL,
+	country_id int8 NULL,
+	"name" text NULL,
+	CONSTRAINT idx_3047446_league_pkey PRIMARY KEY (id)
+);
+
+CREATE TABLE player (
+	id bigserial NOT NULL,
+	player_api_id int8 NULL,
+	player_name text NULL,
+	player_fifa_api_id int8 NULL,
+	birthday text NULL,
+	height float8 NULL,
+	weight int8 NULL,
+	CONSTRAINT idx_3047432_player_pkey PRIMARY KEY (id)
+);
+
+CREATE TABLE team (
+	id bigserial NOT NULL,
+	team_api_id int8 NULL,
+	team_fifa_api_id int8 NULL,
+	team_long_name text NULL,
+	team_short_name text NULL,
+	CONSTRAINT idx_3047460_team_pkey PRIMARY KEY (id)
+);
+
+CREATE TABLE "match" (
+	id bigserial NOT NULL,
+	country_id int8 NULL,
+	league_id int8 NULL,
+	season text NULL,
+	stage int8 NULL,
+	"date" text NULL,
+	match_api_id int8 NULL,
+	home_team_api_id int8 NULL,
+	away_team_api_id int8 NULL,
+	home_team_goal int8 NULL,
+	away_team_goal int8 NULL,
+	"cross" text NULL,
+	CONSTRAINT idx_3047439_match_pkey PRIMARY KEY (id),
+	CONSTRAINT match_away_team_api_id_fkey FOREIGN KEY (away_team_api_id) REFERENCES team(team_api_id),
+	CONSTRAINT match_home_team_api_id_fkey FOREIGN KEY (home_team_api_id) REFERENCES team(team_api_id),
+	CONSTRAINT match_league_id_fkey FOREIGN KEY (league_id) REFERENCES league(id)
+);
+
+-- Remover a chave estrangeira de away_team_api_id
+ALTER TABLE secundario."match" DROP CONSTRAINT match_away_team_api_id__fkey;
+
+-- Remover a chave estrangeira de home_team_api_id
+ALTER TABLE secundario."match" DROP CONSTRAINT match_home_team_api_id__fkey;
+
+-- Remover a chave estrangeira de league_id
+ALTER TABLE secundario."match" DROP CONSTRAINT match_league_id_fkey;
+
+CREATE TABLE match_cross (
+	id serial4 NOT NULL,
+	match_api_id int4 NULL,
+	team_api_id int4 NULL,
+	player_api_id int4 NULL,
+	event_incident_typefk int4 NULL,
+	elapsed int4 NULL,
+	subtype varchar(50) NULL,
+	"type" varchar(50) NULL,
+	n int4 NULL,
+	CONSTRAINT match_cross_pkey PRIMARY KEY (id),
+	CONSTRAINT fk_match_cross_match_api_id FOREIGN KEY (match_api_id) REFERENCES "match"(match_api_id),
+	CONSTRAINT fk_match_cross_team_api_id FOREIGN KEY (team_api_id) REFERENCES team(team_api_id)
+);
+
+REATE TABLE match_foulcommit (
+	id serial4 NOT NULL,
+	match_api_id int4 NULL,
+	team_api_id int4 NULL,
+	player_api_id int4 NULL,
+	player2_id int4 NULL,
+	event_incident_typefk int4 NULL,
+	elapsed int4 NULL,
+	subtype varchar(50) NULL,
+	"type" varchar(50) NULL,
+	n int4 NULL,
+	CONSTRAINT match_foulcommit_pkey PRIMARY KEY (id),
+	CONSTRAINT fk_match_foulcommit_match_api_id FOREIGN KEY (match_api_id) REFERENCES "match"(match_api_id),
+	CONSTRAINT fk_match_foulcommit_player2_id FOREIGN KEY (player2_id) REFERENCES player(player_api_id),
+	CONSTRAINT fk_match_foulcommit_player_api_id FOREIGN KEY (player_api_id) REFERENCES player(player_api_id),
+	CONSTRAINT fk_match_foulcommit_team_api_id FOREIGN KEY (team_api_id) REFERENCES team(team_api_id)
+);
+
+CREATE TABLE match_goals (
+	id serial4 NOT NULL,
+	match_api_id int4 NULL,
+	team_api_id int4 NULL,
+	player_api_id int4 NULL,
+	goal_type varchar(50) NULL,
+	event_incident_typefk int4 NULL,
+	elapsed int4 NULL,
+	n int4 NULL,
+	CONSTRAINT match_goals_pkey PRIMARY KEY (id),
+	CONSTRAINT fk_match_goals_match_api_id FOREIGN KEY (match_api_id) REFERENCES "match"(match_api_id),
+	CONSTRAINT fk_match_goals_team_api_id FOREIGN KEY (team_api_id) REFERENCES team(team_api_id)
+);
+
+CREATE TABLE match_odds (
+	id serial4 NOT NULL,
+	match_api_id int8 NOT NULL,
+	id_bets_house int4 NOT NULL,
+	home_win_odds numeric NULL,
+	draw_odds numeric NULL,
+	away_win_odds numeric NULL,
+	CONSTRAINT match_odds_pkey PRIMARY KEY (id),
+	CONSTRAINT fk_id_bets_house FOREIGN KEY (id_bets_house) REFERENCES bets_house(id_bets_house),
+	CONSTRAINT match_odds_id_bets_house_fkey FOREIGN KEY (id_bets_house) REFERENCES bets_house(id_bets_house)
+);
+
+CREATE TABLE match_player_position (
+	id serial4 NOT NULL,
+	match_api_id int8 NOT NULL,
+	team_id int8 NOT NULL,
+	player_id int8 NULL,
+	position_x int8 NULL,
+	position_y int8 NULL,
+	CONSTRAINT match_player_position_pkey PRIMARY KEY (id),
+	CONSTRAINT fk_match_api_id FOREIGN KEY (match_api_id) REFERENCES "match"(match_api_id),
+	CONSTRAINT fk_team_api_id FOREIGN KEY (team_id) REFERENCES team(team_api_id)
+);
+
+CREATE TABLE match_shoton (
+	id serial4 NOT NULL,
+	match_api_id int4 NULL,
+	team_api_id int4 NULL,
+	player_api_id int4 NULL,
+	event_incident_typefk int4 NULL,
+	elapsed int4 NULL,
+	subtype varchar(50) NULL,
+	"type" varchar(50) NULL,
+	n int4 NULL,
+	CONSTRAINT match_shoton_pkey PRIMARY KEY (id),
+	CONSTRAINT fk_match_shoton_match_api_id FOREIGN KEY (match_api_id) REFERENCES "match"(match_api_id),
+	CONSTRAINT fk_match_shoton_team_api_id FOREIGN KEY (team_api_id) REFERENCES team(team_api_id)
+);
+
+CREATE TABLE player_attributes (
+	id bigserial NOT NULL,
+	player_fifa_api_id int8 NULL,
+	player_api_id int8 NULL,
+	"date" text NULL,
+	overall_rating int8 NULL,
+	potential int8 NULL,
+	preferred_foot text NULL,
+	attacking_work_rate text NULL,
+	defensive_work_rate text NULL,
+	crossing int8 NULL,
+	finishing int8 NULL,
+	heading_accuracy int8 NULL,
+	short_passing int8 NULL,
+	volleys int8 NULL,
+	dribbling int8 NULL,
+	curve int8 NULL,
+	free_kick_accuracy int8 NULL,
+	long_passing int8 NULL,
+	ball_control int8 NULL,
+	acceleration int8 NULL,
+	sprint_speed int8 NULL,
+	agility int8 NULL,
+	reactions int8 NULL,
+	balance int8 NULL,
+	shot_power int8 NULL,
+	jumping int8 NULL,
+	stamina int8 NULL,
+	strength int8 NULL,
+	long_shots int8 NULL,
+	aggression int8 NULL,
+	interceptions int8 NULL,
+	positioning int8 NULL,
+	vision int8 NULL,
+	penalties int8 NULL,
+	marking int8 NULL,
+	standing_tackle int8 NULL,
+	sliding_tackle int8 NULL,
+	gk_diving int8 NULL,
+	gk_handling int8 NULL,
+	gk_kicking int8 NULL,
+	gk_positioning int8 NULL,
+	gk_reflexes int8 NULL,
+	CONSTRAINT idx_3047425_player_attributes_pkey PRIMARY KEY (id),
+	CONSTRAINT player_attributes_player_api_id_fkey FOREIGN KEY (player_api_id) REFERENCES player(player_api_id)
+);
+
+CREATE TABLE team_attributes (
+	id bigserial NOT NULL,
+	team_fifa_api_id int8 NULL,
+	team_api_id int8 NULL,
+	"date" text NULL,
+	buildupplayspeed int8 NULL,
+	buildupplayspeedclass text NULL,
+	buildupplaydribbling int8 NULL,
+	buildupplaydribblingclass text NULL,
+	buildupplaypassing int8 NULL,
+	buildupplaypassingclass text NULL,
+	buildupplaypositioningclass text NULL,
+	chancecreationpassing int8 NULL,
+	chancecreationpassingclass text NULL,
+	chancecreationcrossing int8 NULL,
+	chancecreationcrossingclass text NULL,
+	chancecreationshooting int8 NULL,
+	chancecreationshootingclass text NULL,
+	chancecreationpositioningclass text NULL,
+	defencepressure int8 NULL,
+	defencepressureclass text NULL,
+	defenceaggression int8 NULL,
+	defenceaggressionclass text NULL,
+	defenceteamwidth int8 NULL,
+	defenceteamwidthclass text NULL,
+	defencedefenderlineclass text NULL,
+	CONSTRAINT idx_3047467_team_attributes_pkey PRIMARY KEY (id),
+	CONSTRAINT team_attributes_team_api_id_fkey FOREIGN KEY (team_api_id) REFERENCES team(team_api_id)
+);

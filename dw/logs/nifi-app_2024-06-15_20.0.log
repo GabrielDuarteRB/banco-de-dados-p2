@@ -1,0 +1,1107 @@
+2024-06-15 20:00:04,192 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:00:04,221 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:00:24,225 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:00:24,227 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:00:26,904 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2024-06-15 20:00:26,948 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 216.2 GB, bytes free = 21.64 GB, capacity = 237.84 GB
+2024-06-15 20:00:44,236 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:00:44,239 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:01:04,241 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:01:04,245 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:01:24,247 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:01:24,249 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:01:31,701 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2024-06-15 20:01:31,706 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 216.2 GB, bytes free = 21.64 GB, capacity = 237.84 GB
+2024-06-15 20:01:44,252 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:01:44,253 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:02:04,254 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:02:04,258 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:02:09,984 INFO [NiFi Web Server-115] o.a.nifi.controller.ExtensionBuilder Created Controller Service of type org.apache.nifi.dbcp.DBCPConnectionPool with identifier 1e230509-0190-1000-2c37-ab9612061dd7
+2024-06-15 20:02:10,034 INFO [NiFi Web Server-115] o.a.nifi.groups.StandardProcessGroup StandardControllerServiceNode[service=DBCPConnectionPool[id=1e230509-0190-1000-2c37-ab9612061dd7], name=DBCPConnectionPool, active=false] added to StandardProcessGroup[identifier=1e1c9441-0190-1000-c369-f7867c3b5907,name=NiFi Flow]
+2024-06-15 20:02:10,718 INFO [Flow Service Tasks Thread-1] o.a.nifi.controller.StandardFlowService Saved flow controller org.apache.nifi.controller.FlowController@1a0f2955 // Another save pending = false
+2024-06-15 20:02:24,260 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:02:24,262 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:02:36,479 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2024-06-15 20:02:36,485 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 216.21 GB, bytes free = 21.64 GB, capacity = 237.84 GB
+2024-06-15 20:02:44,266 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:02:44,268 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:03:03,880 ERROR [Verify Controller Service Config Thread-1] o.a.n.n.StandardExtensionDiscoveringManager Could not instantiate class of type DBCPConnectionPool using ClassLoader for bundle org.apache.nifi:nifi-dbcp-service-nar:2.0.0-M3
+java.lang.ClassNotFoundException: DBCPConnectionPool
+	at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:593)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:534)
+	at java.base/java.lang.Class.forName(Class.java:513)
+	at org.apache.nifi.nar.StandardExtensionDiscoveringManager.getTempComponent(StandardExtensionDiscoveringManager.java:737)
+	at org.apache.nifi.nar.StandardExtensionDiscoveringManager.isInstanceClassLoaderRequired(StandardExtensionDiscoveringManager.java:475)
+	at org.apache.nifi.nar.StandardExtensionDiscoveringManager.createInstanceClassLoader(StandardExtensionDiscoveringManager.java:505)
+	at org.apache.nifi.controller.service.StandardControllerServiceNode.verifyConfiguration(StandardControllerServiceNode.java:521)
+	at org.apache.nifi.web.dao.impl.StandardControllerServiceDAO.verifyConfiguration(StandardControllerServiceDAO.java:433)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720)
+	at org.apache.nifi.web.dao.impl.StandardControllerServiceDAO$$SpringCGLIB$$0.verifyConfiguration(<generated>)
+	at org.apache.nifi.web.StandardNiFiServiceFacade.performControllerServiceConfigVerification(StandardNiFiServiceFacade.java:2950)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720)
+	at org.apache.nifi.web.StandardNiFiServiceFacade$$SpringCGLIB$$0.performControllerServiceConfigVerification(<generated>)
+	at org.apache.nifi.web.api.ControllerServiceResource.lambda$performAsyncConfigVerification$28(ControllerServiceResource.java:1108)
+	at org.apache.nifi.web.api.concurrent.AsyncRequestManager$2.run(AsyncRequestManager.java:119)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2024-06-15 20:03:04,038 ERROR [Verify Controller Service Config Thread-1] org.apache.nifi.dbcp.DBCPConnectionPool DBCPConnectionPool[id=1e230509-0190-1000-2c37-ab9612061dd7] Failed to configure Data Source.  Ensure changes to the 'Database Driver Location(s)' property are applied before verifying
+org.apache.nifi.processor.exception.ProcessException: Driver class org.postgresql.Driver is not found
+	at org.apache.nifi.dbcp.DBCPConnectionPool.getDriver(DBCPConnectionPool.java:295)
+	at org.apache.nifi.dbcp.AbstractDBCPConnectionPool.configureDataSource(AbstractDBCPConnectionPool.java:161)
+	at org.apache.nifi.dbcp.AbstractDBCPConnectionPool.verify(AbstractDBCPConnectionPool.java:82)
+	at org.apache.nifi.controller.service.StandardControllerServiceNode.verifyConfiguration(StandardControllerServiceNode.java:524)
+	at org.apache.nifi.web.dao.impl.StandardControllerServiceDAO.verifyConfiguration(StandardControllerServiceDAO.java:433)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720)
+	at org.apache.nifi.web.dao.impl.StandardControllerServiceDAO$$SpringCGLIB$$0.verifyConfiguration(<generated>)
+	at org.apache.nifi.web.StandardNiFiServiceFacade.performControllerServiceConfigVerification(StandardNiFiServiceFacade.java:2950)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720)
+	at org.apache.nifi.web.StandardNiFiServiceFacade$$SpringCGLIB$$0.performControllerServiceConfigVerification(<generated>)
+	at org.apache.nifi.web.api.ControllerServiceResource.lambda$performAsyncConfigVerification$28(ControllerServiceResource.java:1108)
+	at org.apache.nifi.web.api.concurrent.AsyncRequestManager$2.run(AsyncRequestManager.java:119)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.ClassNotFoundException: org.postgresql.Driver
+	at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:593)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:421)
+	at java.base/java.lang.Class.forName(Class.java:412)
+	at org.apache.nifi.dbcp.DBCPConnectionPool.getDriver(DBCPConnectionPool.java:293)
+	... 34 common frames omitted
+2024-06-15 20:03:04,270 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:03:04,272 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:03:24,274 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:03:24,275 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:03:41,214 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2024-06-15 20:03:41,218 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 216.2 GB, bytes free = 21.64 GB, capacity = 237.84 GB
+2024-06-15 20:03:44,278 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:03:44,279 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:04:02,221 INFO [NiFi Web Server-114] o.a.n.controller.AbstractComponentNode Updating classpath for DBCPConnectionPool with the ID 1e230509-0190-1000-2c37-ab9612061dd7
+2024-06-15 20:04:02,273 INFO [NiFi Web Server-114] o.a.nifi.controller.ExtensionBuilder Created Controller Service of type org.apache.nifi.dbcp.DBCPConnectionPool with identifier 1e230509-0190-1000-2c37-ab9612061dd7
+2024-06-15 20:04:02,885 INFO [Flow Service Tasks Thread-2] o.a.nifi.controller.StandardFlowService Saved flow controller org.apache.nifi.controller.FlowController@1a0f2955 // Another save pending = false
+2024-06-15 20:04:04,281 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:04:04,285 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:04:24,286 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:04:24,290 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:04:25,643 ERROR [Verify Controller Service Config Thread-1] o.a.n.n.StandardExtensionDiscoveringManager Could not instantiate class of type DBCPConnectionPool using ClassLoader for bundle org.apache.nifi:nifi-dbcp-service-nar:2.0.0-M3
+java.lang.ClassNotFoundException: DBCPConnectionPool
+	at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:593)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:534)
+	at java.base/java.lang.Class.forName(Class.java:513)
+	at org.apache.nifi.nar.StandardExtensionDiscoveringManager.getTempComponent(StandardExtensionDiscoveringManager.java:737)
+	at org.apache.nifi.nar.StandardExtensionDiscoveringManager.isInstanceClassLoaderRequired(StandardExtensionDiscoveringManager.java:475)
+	at org.apache.nifi.nar.StandardExtensionDiscoveringManager.createInstanceClassLoader(StandardExtensionDiscoveringManager.java:505)
+	at org.apache.nifi.controller.service.StandardControllerServiceNode.verifyConfiguration(StandardControllerServiceNode.java:521)
+	at org.apache.nifi.web.dao.impl.StandardControllerServiceDAO.verifyConfiguration(StandardControllerServiceDAO.java:433)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720)
+	at org.apache.nifi.web.dao.impl.StandardControllerServiceDAO$$SpringCGLIB$$0.verifyConfiguration(<generated>)
+	at org.apache.nifi.web.StandardNiFiServiceFacade.performControllerServiceConfigVerification(StandardNiFiServiceFacade.java:2950)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720)
+	at org.apache.nifi.web.StandardNiFiServiceFacade$$SpringCGLIB$$0.performControllerServiceConfigVerification(<generated>)
+	at org.apache.nifi.web.api.ControllerServiceResource.lambda$performAsyncConfigVerification$28(ControllerServiceResource.java:1108)
+	at org.apache.nifi.web.api.concurrent.AsyncRequestManager$2.run(AsyncRequestManager.java:119)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2024-06-15 20:04:25,675 ERROR [Verify Controller Service Config Thread-1] org.apache.nifi.dbcp.DBCPConnectionPool DBCPConnectionPool[id=1e230509-0190-1000-2c37-ab9612061dd7] Failed to configure Data Source.  Ensure changes to the 'Database Driver Location(s)' property are applied before verifying
+org.apache.nifi.processor.exception.ProcessException: Driver class org.postgresql.Driver is not found
+	at org.apache.nifi.dbcp.DBCPConnectionPool.getDriver(DBCPConnectionPool.java:295)
+	at org.apache.nifi.dbcp.AbstractDBCPConnectionPool.configureDataSource(AbstractDBCPConnectionPool.java:161)
+	at org.apache.nifi.dbcp.AbstractDBCPConnectionPool.verify(AbstractDBCPConnectionPool.java:82)
+	at org.apache.nifi.controller.service.StandardControllerServiceNode.verifyConfiguration(StandardControllerServiceNode.java:524)
+	at org.apache.nifi.web.dao.impl.StandardControllerServiceDAO.verifyConfiguration(StandardControllerServiceDAO.java:433)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720)
+	at org.apache.nifi.web.dao.impl.StandardControllerServiceDAO$$SpringCGLIB$$0.verifyConfiguration(<generated>)
+	at org.apache.nifi.web.StandardNiFiServiceFacade.performControllerServiceConfigVerification(StandardNiFiServiceFacade.java:2950)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720)
+	at org.apache.nifi.web.StandardNiFiServiceFacade$$SpringCGLIB$$0.performControllerServiceConfigVerification(<generated>)
+	at org.apache.nifi.web.api.ControllerServiceResource.lambda$performAsyncConfigVerification$28(ControllerServiceResource.java:1108)
+	at org.apache.nifi.web.api.concurrent.AsyncRequestManager$2.run(AsyncRequestManager.java:119)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.ClassNotFoundException: org.postgresql.Driver
+	at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:593)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:421)
+	at java.base/java.lang.Class.forName(Class.java:412)
+	at org.apache.nifi.dbcp.DBCPConnectionPool.getDriver(DBCPConnectionPool.java:293)
+	... 34 common frames omitted
+2024-06-15 20:04:44,293 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:04:44,295 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:04:46,757 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2024-06-15 20:04:46,761 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 216.2 GB, bytes free = 21.64 GB, capacity = 237.84 GB
+2024-06-15 20:05:04,297 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:05:04,300 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:05:24,303 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:05:24,305 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:05:40,327 ERROR [Verify Controller Service Config Thread-1] o.a.n.n.StandardExtensionDiscoveringManager Could not instantiate class of type DBCPConnectionPool using ClassLoader for bundle org.apache.nifi:nifi-dbcp-service-nar:2.0.0-M3
+java.lang.ClassNotFoundException: DBCPConnectionPool
+	at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:593)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:534)
+	at java.base/java.lang.Class.forName(Class.java:513)
+	at org.apache.nifi.nar.StandardExtensionDiscoveringManager.getTempComponent(StandardExtensionDiscoveringManager.java:737)
+	at org.apache.nifi.nar.StandardExtensionDiscoveringManager.isInstanceClassLoaderRequired(StandardExtensionDiscoveringManager.java:475)
+	at org.apache.nifi.nar.StandardExtensionDiscoveringManager.createInstanceClassLoader(StandardExtensionDiscoveringManager.java:505)
+	at org.apache.nifi.controller.service.StandardControllerServiceNode.verifyConfiguration(StandardControllerServiceNode.java:521)
+	at org.apache.nifi.web.dao.impl.StandardControllerServiceDAO.verifyConfiguration(StandardControllerServiceDAO.java:433)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720)
+	at org.apache.nifi.web.dao.impl.StandardControllerServiceDAO$$SpringCGLIB$$0.verifyConfiguration(<generated>)
+	at org.apache.nifi.web.StandardNiFiServiceFacade.performControllerServiceConfigVerification(StandardNiFiServiceFacade.java:2950)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720)
+	at org.apache.nifi.web.StandardNiFiServiceFacade$$SpringCGLIB$$0.performControllerServiceConfigVerification(<generated>)
+	at org.apache.nifi.web.api.ControllerServiceResource.lambda$performAsyncConfigVerification$28(ControllerServiceResource.java:1108)
+	at org.apache.nifi.web.api.concurrent.AsyncRequestManager$2.run(AsyncRequestManager.java:119)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2024-06-15 20:05:40,339 ERROR [Verify Controller Service Config Thread-1] org.apache.nifi.dbcp.DBCPConnectionPool DBCPConnectionPool[id=1e230509-0190-1000-2c37-ab9612061dd7] Failed to configure Data Source.  Ensure changes to the 'Database Driver Location(s)' property are applied before verifying
+org.apache.nifi.processor.exception.ProcessException: Driver class org.postgresql.Driver is not found
+	at org.apache.nifi.dbcp.DBCPConnectionPool.getDriver(DBCPConnectionPool.java:295)
+	at org.apache.nifi.dbcp.AbstractDBCPConnectionPool.configureDataSource(AbstractDBCPConnectionPool.java:161)
+	at org.apache.nifi.dbcp.AbstractDBCPConnectionPool.verify(AbstractDBCPConnectionPool.java:82)
+	at org.apache.nifi.controller.service.StandardControllerServiceNode.verifyConfiguration(StandardControllerServiceNode.java:524)
+	at org.apache.nifi.web.dao.impl.StandardControllerServiceDAO.verifyConfiguration(StandardControllerServiceDAO.java:433)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720)
+	at org.apache.nifi.web.dao.impl.StandardControllerServiceDAO$$SpringCGLIB$$0.verifyConfiguration(<generated>)
+	at org.apache.nifi.web.StandardNiFiServiceFacade.performControllerServiceConfigVerification(StandardNiFiServiceFacade.java:2950)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720)
+	at org.apache.nifi.web.StandardNiFiServiceFacade$$SpringCGLIB$$0.performControllerServiceConfigVerification(<generated>)
+	at org.apache.nifi.web.api.ControllerServiceResource.lambda$performAsyncConfigVerification$28(ControllerServiceResource.java:1108)
+	at org.apache.nifi.web.api.concurrent.AsyncRequestManager$2.run(AsyncRequestManager.java:119)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.ClassNotFoundException: org.postgresql.Driver
+	at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:593)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:421)
+	at java.base/java.lang.Class.forName(Class.java:412)
+	at org.apache.nifi.dbcp.DBCPConnectionPool.getDriver(DBCPConnectionPool.java:293)
+	... 34 common frames omitted
+2024-06-15 20:05:44,308 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:05:44,309 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:05:51,401 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2024-06-15 20:05:51,406 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 216.2 GB, bytes free = 21.64 GB, capacity = 237.84 GB
+2024-06-15 20:06:04,311 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:06:04,314 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:06:24,317 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:06:24,319 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:06:44,321 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:06:44,323 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:06:56,517 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2024-06-15 20:06:56,519 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 216.2 GB, bytes free = 21.64 GB, capacity = 237.84 GB
+2024-06-15 20:07:04,326 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:07:04,329 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:07:24,331 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:07:24,334 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:07:44,336 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:07:44,338 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:07:59,890 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2024-06-15 20:07:59,893 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 216.2 GB, bytes free = 21.64 GB, capacity = 237.84 GB
+2024-06-15 20:08:04,340 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:08:04,342 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:08:24,343 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:08:24,345 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:08:32,125 ERROR [Verify Controller Service Config Thread-1] o.a.n.n.StandardExtensionDiscoveringManager Could not instantiate class of type DBCPConnectionPool using ClassLoader for bundle org.apache.nifi:nifi-dbcp-service-nar:2.0.0-M3
+java.lang.ClassNotFoundException: DBCPConnectionPool
+	at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:593)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:534)
+	at java.base/java.lang.Class.forName(Class.java:513)
+	at org.apache.nifi.nar.StandardExtensionDiscoveringManager.getTempComponent(StandardExtensionDiscoveringManager.java:737)
+	at org.apache.nifi.nar.StandardExtensionDiscoveringManager.isInstanceClassLoaderRequired(StandardExtensionDiscoveringManager.java:475)
+	at org.apache.nifi.nar.StandardExtensionDiscoveringManager.createInstanceClassLoader(StandardExtensionDiscoveringManager.java:505)
+	at org.apache.nifi.controller.service.StandardControllerServiceNode.verifyConfiguration(StandardControllerServiceNode.java:521)
+	at org.apache.nifi.web.dao.impl.StandardControllerServiceDAO.verifyConfiguration(StandardControllerServiceDAO.java:433)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720)
+	at org.apache.nifi.web.dao.impl.StandardControllerServiceDAO$$SpringCGLIB$$0.verifyConfiguration(<generated>)
+	at org.apache.nifi.web.StandardNiFiServiceFacade.performControllerServiceConfigVerification(StandardNiFiServiceFacade.java:2950)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720)
+	at org.apache.nifi.web.StandardNiFiServiceFacade$$SpringCGLIB$$0.performControllerServiceConfigVerification(<generated>)
+	at org.apache.nifi.web.api.ControllerServiceResource.lambda$performAsyncConfigVerification$28(ControllerServiceResource.java:1108)
+	at org.apache.nifi.web.api.concurrent.AsyncRequestManager$2.run(AsyncRequestManager.java:119)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2024-06-15 20:08:32,135 ERROR [Verify Controller Service Config Thread-1] org.apache.nifi.dbcp.DBCPConnectionPool DBCPConnectionPool[id=1e230509-0190-1000-2c37-ab9612061dd7] Failed to configure Data Source.  Ensure changes to the 'Database Driver Location(s)' property are applied before verifying
+org.apache.nifi.processor.exception.ProcessException: Driver class org.postgresql.Driver is not found
+	at org.apache.nifi.dbcp.DBCPConnectionPool.getDriver(DBCPConnectionPool.java:295)
+	at org.apache.nifi.dbcp.AbstractDBCPConnectionPool.configureDataSource(AbstractDBCPConnectionPool.java:161)
+	at org.apache.nifi.dbcp.AbstractDBCPConnectionPool.verify(AbstractDBCPConnectionPool.java:82)
+	at org.apache.nifi.controller.service.StandardControllerServiceNode.verifyConfiguration(StandardControllerServiceNode.java:524)
+	at org.apache.nifi.web.dao.impl.StandardControllerServiceDAO.verifyConfiguration(StandardControllerServiceDAO.java:433)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720)
+	at org.apache.nifi.web.dao.impl.StandardControllerServiceDAO$$SpringCGLIB$$0.verifyConfiguration(<generated>)
+	at org.apache.nifi.web.StandardNiFiServiceFacade.performControllerServiceConfigVerification(StandardNiFiServiceFacade.java:2950)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720)
+	at org.apache.nifi.web.StandardNiFiServiceFacade$$SpringCGLIB$$0.performControllerServiceConfigVerification(<generated>)
+	at org.apache.nifi.web.api.ControllerServiceResource.lambda$performAsyncConfigVerification$28(ControllerServiceResource.java:1108)
+	at org.apache.nifi.web.api.concurrent.AsyncRequestManager$2.run(AsyncRequestManager.java:119)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.ClassNotFoundException: org.postgresql.Driver
+	at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:593)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:421)
+	at java.base/java.lang.Class.forName(Class.java:412)
+	at org.apache.nifi.dbcp.DBCPConnectionPool.getDriver(DBCPConnectionPool.java:293)
+	... 34 common frames omitted
+2024-06-15 20:08:44,347 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:08:44,349 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:09:04,350 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:09:04,352 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:09:04,478 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2024-06-15 20:09:04,482 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 216.2 GB, bytes free = 21.65 GB, capacity = 237.84 GB
+2024-06-15 20:09:24,354 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:09:24,355 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:09:44,356 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:09:44,358 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:10:01,952 ERROR [Verify Controller Service Config Thread-1] o.a.n.n.StandardExtensionDiscoveringManager Could not instantiate class of type DBCPConnectionPool using ClassLoader for bundle org.apache.nifi:nifi-dbcp-service-nar:2.0.0-M3
+java.lang.ClassNotFoundException: DBCPConnectionPool
+	at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:593)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:534)
+	at java.base/java.lang.Class.forName(Class.java:513)
+	at org.apache.nifi.nar.StandardExtensionDiscoveringManager.getTempComponent(StandardExtensionDiscoveringManager.java:737)
+	at org.apache.nifi.nar.StandardExtensionDiscoveringManager.isInstanceClassLoaderRequired(StandardExtensionDiscoveringManager.java:475)
+	at org.apache.nifi.nar.StandardExtensionDiscoveringManager.createInstanceClassLoader(StandardExtensionDiscoveringManager.java:505)
+	at org.apache.nifi.controller.service.StandardControllerServiceNode.verifyConfiguration(StandardControllerServiceNode.java:521)
+	at org.apache.nifi.web.dao.impl.StandardControllerServiceDAO.verifyConfiguration(StandardControllerServiceDAO.java:433)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720)
+	at org.apache.nifi.web.dao.impl.StandardControllerServiceDAO$$SpringCGLIB$$0.verifyConfiguration(<generated>)
+	at org.apache.nifi.web.StandardNiFiServiceFacade.performControllerServiceConfigVerification(StandardNiFiServiceFacade.java:2950)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720)
+	at org.apache.nifi.web.StandardNiFiServiceFacade$$SpringCGLIB$$0.performControllerServiceConfigVerification(<generated>)
+	at org.apache.nifi.web.api.ControllerServiceResource.lambda$performAsyncConfigVerification$28(ControllerServiceResource.java:1108)
+	at org.apache.nifi.web.api.concurrent.AsyncRequestManager$2.run(AsyncRequestManager.java:119)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2024-06-15 20:10:01,964 ERROR [Verify Controller Service Config Thread-1] org.apache.nifi.dbcp.DBCPConnectionPool DBCPConnectionPool[id=1e230509-0190-1000-2c37-ab9612061dd7] Failed to configure Data Source.  Ensure changes to the 'Database Driver Location(s)' property are applied before verifying
+org.apache.nifi.processor.exception.ProcessException: Driver class org.postgresql.Driver is not found
+	at org.apache.nifi.dbcp.DBCPConnectionPool.getDriver(DBCPConnectionPool.java:295)
+	at org.apache.nifi.dbcp.AbstractDBCPConnectionPool.configureDataSource(AbstractDBCPConnectionPool.java:161)
+	at org.apache.nifi.dbcp.AbstractDBCPConnectionPool.verify(AbstractDBCPConnectionPool.java:82)
+	at org.apache.nifi.controller.service.StandardControllerServiceNode.verifyConfiguration(StandardControllerServiceNode.java:524)
+	at org.apache.nifi.web.dao.impl.StandardControllerServiceDAO.verifyConfiguration(StandardControllerServiceDAO.java:433)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720)
+	at org.apache.nifi.web.dao.impl.StandardControllerServiceDAO$$SpringCGLIB$$0.verifyConfiguration(<generated>)
+	at org.apache.nifi.web.StandardNiFiServiceFacade.performControllerServiceConfigVerification(StandardNiFiServiceFacade.java:2950)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720)
+	at org.apache.nifi.web.StandardNiFiServiceFacade$$SpringCGLIB$$0.performControllerServiceConfigVerification(<generated>)
+	at org.apache.nifi.web.api.ControllerServiceResource.lambda$performAsyncConfigVerification$28(ControllerServiceResource.java:1108)
+	at org.apache.nifi.web.api.concurrent.AsyncRequestManager$2.run(AsyncRequestManager.java:119)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.ClassNotFoundException: org.postgresql.Driver
+	at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:593)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:421)
+	at java.base/java.lang.Class.forName(Class.java:412)
+	at org.apache.nifi.dbcp.DBCPConnectionPool.getDriver(DBCPConnectionPool.java:293)
+	... 34 common frames omitted
+2024-06-15 20:10:04,360 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:10:04,363 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:10:10,122 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2024-06-15 20:10:10,125 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 216.2 GB, bytes free = 21.65 GB, capacity = 237.84 GB
+2024-06-15 20:10:24,365 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:10:24,367 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:10:44,369 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:10:44,370 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:11:04,373 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:11:04,376 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:11:14,629 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2024-06-15 20:11:14,631 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 216.2 GB, bytes free = 21.65 GB, capacity = 237.84 GB
+2024-06-15 20:11:24,378 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:11:24,380 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:11:25,501 ERROR [Verify Controller Service Config Thread-1] o.a.n.n.StandardExtensionDiscoveringManager Could not instantiate class of type DBCPConnectionPool using ClassLoader for bundle org.apache.nifi:nifi-dbcp-service-nar:2.0.0-M3
+java.lang.ClassNotFoundException: DBCPConnectionPool
+	at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:593)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:534)
+	at java.base/java.lang.Class.forName(Class.java:513)
+	at org.apache.nifi.nar.StandardExtensionDiscoveringManager.getTempComponent(StandardExtensionDiscoveringManager.java:737)
+	at org.apache.nifi.nar.StandardExtensionDiscoveringManager.isInstanceClassLoaderRequired(StandardExtensionDiscoveringManager.java:475)
+	at org.apache.nifi.nar.StandardExtensionDiscoveringManager.createInstanceClassLoader(StandardExtensionDiscoveringManager.java:505)
+	at org.apache.nifi.controller.service.StandardControllerServiceNode.verifyConfiguration(StandardControllerServiceNode.java:521)
+	at org.apache.nifi.web.dao.impl.StandardControllerServiceDAO.verifyConfiguration(StandardControllerServiceDAO.java:433)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720)
+	at org.apache.nifi.web.dao.impl.StandardControllerServiceDAO$$SpringCGLIB$$0.verifyConfiguration(<generated>)
+	at org.apache.nifi.web.StandardNiFiServiceFacade.performControllerServiceConfigVerification(StandardNiFiServiceFacade.java:2950)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720)
+	at org.apache.nifi.web.StandardNiFiServiceFacade$$SpringCGLIB$$0.performControllerServiceConfigVerification(<generated>)
+	at org.apache.nifi.web.api.ControllerServiceResource.lambda$performAsyncConfigVerification$28(ControllerServiceResource.java:1108)
+	at org.apache.nifi.web.api.concurrent.AsyncRequestManager$2.run(AsyncRequestManager.java:119)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2024-06-15 20:11:25,512 ERROR [Verify Controller Service Config Thread-1] org.apache.nifi.dbcp.DBCPConnectionPool DBCPConnectionPool[id=1e230509-0190-1000-2c37-ab9612061dd7] Failed to configure Data Source.  Ensure changes to the 'Database Driver Location(s)' property are applied before verifying
+org.apache.nifi.processor.exception.ProcessException: Driver class org.postgresql.Driver is not found
+	at org.apache.nifi.dbcp.DBCPConnectionPool.getDriver(DBCPConnectionPool.java:295)
+	at org.apache.nifi.dbcp.AbstractDBCPConnectionPool.configureDataSource(AbstractDBCPConnectionPool.java:161)
+	at org.apache.nifi.dbcp.AbstractDBCPConnectionPool.verify(AbstractDBCPConnectionPool.java:82)
+	at org.apache.nifi.controller.service.StandardControllerServiceNode.verifyConfiguration(StandardControllerServiceNode.java:524)
+	at org.apache.nifi.web.dao.impl.StandardControllerServiceDAO.verifyConfiguration(StandardControllerServiceDAO.java:433)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720)
+	at org.apache.nifi.web.dao.impl.StandardControllerServiceDAO$$SpringCGLIB$$0.verifyConfiguration(<generated>)
+	at org.apache.nifi.web.StandardNiFiServiceFacade.performControllerServiceConfigVerification(StandardNiFiServiceFacade.java:2950)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720)
+	at org.apache.nifi.web.StandardNiFiServiceFacade$$SpringCGLIB$$0.performControllerServiceConfigVerification(<generated>)
+	at org.apache.nifi.web.api.ControllerServiceResource.lambda$performAsyncConfigVerification$28(ControllerServiceResource.java:1108)
+	at org.apache.nifi.web.api.concurrent.AsyncRequestManager$2.run(AsyncRequestManager.java:119)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.ClassNotFoundException: org.postgresql.Driver
+	at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:593)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:421)
+	at java.base/java.lang.Class.forName(Class.java:412)
+	at org.apache.nifi.dbcp.DBCPConnectionPool.getDriver(DBCPConnectionPool.java:293)
+	... 34 common frames omitted
+2024-06-15 20:11:44,383 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:11:44,384 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:11:54,013 INFO [NiFi Web Server-41] o.a.n.controller.AbstractComponentNode Updating classpath for DBCPConnectionPool with the ID 1e230509-0190-1000-2c37-ab9612061dd7
+2024-06-15 20:11:54,061 INFO [NiFi Web Server-41] o.a.nifi.controller.ExtensionBuilder Created Controller Service of type org.apache.nifi.dbcp.DBCPConnectionPool with identifier 1e230509-0190-1000-2c37-ab9612061dd7
+2024-06-15 20:11:54,380 INFO [Flow Service Tasks Thread-2] o.a.nifi.controller.StandardFlowService Saved flow controller org.apache.nifi.controller.FlowController@1a0f2955 // Another save pending = false
+2024-06-15 20:12:04,386 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:12:04,390 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:12:11,232 INFO [NiFi Web Server-118] o.a.nifi.controller.ExtensionBuilder Created Controller Service of type org.apache.nifi.dbcp.DBCPConnectionPool with identifier 1e2c31ba-0190-1000-7b61-6c01a8111cd4
+2024-06-15 20:12:11,239 INFO [NiFi Web Server-118] o.a.nifi.groups.StandardProcessGroup StandardControllerServiceNode[service=DBCPConnectionPool[id=1e2c31ba-0190-1000-7b61-6c01a8111cd4], name=DBCPConnectionPool, active=false] added to StandardProcessGroup[identifier=1e1c9441-0190-1000-c369-f7867c3b5907,name=NiFi Flow]
+2024-06-15 20:12:11,404 INFO [Flow Service Tasks Thread-2] o.a.nifi.controller.StandardFlowService Saved flow controller org.apache.nifi.controller.FlowController@1a0f2955 // Another save pending = false
+2024-06-15 20:12:19,397 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2024-06-15 20:12:19,399 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 216.2 GB, bytes free = 21.65 GB, capacity = 237.84 GB
+2024-06-15 20:12:24,392 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:12:24,394 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:12:44,404 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:12:44,412 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:12:58,146 ERROR [Verify Controller Service Config Thread-1] o.a.n.n.StandardExtensionDiscoveringManager Could not instantiate class of type DBCPConnectionPool using ClassLoader for bundle org.apache.nifi:nifi-dbcp-service-nar:2.0.0-M3
+java.lang.ClassNotFoundException: DBCPConnectionPool
+	at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:593)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:534)
+	at java.base/java.lang.Class.forName(Class.java:513)
+	at org.apache.nifi.nar.StandardExtensionDiscoveringManager.getTempComponent(StandardExtensionDiscoveringManager.java:737)
+	at org.apache.nifi.nar.StandardExtensionDiscoveringManager.isInstanceClassLoaderRequired(StandardExtensionDiscoveringManager.java:475)
+	at org.apache.nifi.nar.StandardExtensionDiscoveringManager.createInstanceClassLoader(StandardExtensionDiscoveringManager.java:505)
+	at org.apache.nifi.controller.service.StandardControllerServiceNode.verifyConfiguration(StandardControllerServiceNode.java:521)
+	at org.apache.nifi.web.dao.impl.StandardControllerServiceDAO.verifyConfiguration(StandardControllerServiceDAO.java:433)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720)
+	at org.apache.nifi.web.dao.impl.StandardControllerServiceDAO$$SpringCGLIB$$0.verifyConfiguration(<generated>)
+	at org.apache.nifi.web.StandardNiFiServiceFacade.performControllerServiceConfigVerification(StandardNiFiServiceFacade.java:2950)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720)
+	at org.apache.nifi.web.StandardNiFiServiceFacade$$SpringCGLIB$$0.performControllerServiceConfigVerification(<generated>)
+	at org.apache.nifi.web.api.ControllerServiceResource.lambda$performAsyncConfigVerification$28(ControllerServiceResource.java:1108)
+	at org.apache.nifi.web.api.concurrent.AsyncRequestManager$2.run(AsyncRequestManager.java:119)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2024-06-15 20:12:58,205 ERROR [Verify Controller Service Config Thread-1] org.apache.nifi.dbcp.DBCPConnectionPool DBCPConnectionPool[id=1e2c31ba-0190-1000-7b61-6c01a8111cd4] Failed to configure Data Source.  Ensure changes to the 'Database Driver Location(s)' property are applied before verifying
+org.apache.nifi.processor.exception.ProcessException: Driver class com.mysql.cj.jdbc.Driver is not found
+	at org.apache.nifi.dbcp.DBCPConnectionPool.getDriver(DBCPConnectionPool.java:295)
+	at org.apache.nifi.dbcp.AbstractDBCPConnectionPool.configureDataSource(AbstractDBCPConnectionPool.java:161)
+	at org.apache.nifi.dbcp.AbstractDBCPConnectionPool.verify(AbstractDBCPConnectionPool.java:82)
+	at org.apache.nifi.controller.service.StandardControllerServiceNode.verifyConfiguration(StandardControllerServiceNode.java:524)
+	at org.apache.nifi.web.dao.impl.StandardControllerServiceDAO.verifyConfiguration(StandardControllerServiceDAO.java:433)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720)
+	at org.apache.nifi.web.dao.impl.StandardControllerServiceDAO$$SpringCGLIB$$0.verifyConfiguration(<generated>)
+	at org.apache.nifi.web.StandardNiFiServiceFacade.performControllerServiceConfigVerification(StandardNiFiServiceFacade.java:2950)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720)
+	at org.apache.nifi.web.StandardNiFiServiceFacade$$SpringCGLIB$$0.performControllerServiceConfigVerification(<generated>)
+	at org.apache.nifi.web.api.ControllerServiceResource.lambda$performAsyncConfigVerification$28(ControllerServiceResource.java:1108)
+	at org.apache.nifi.web.api.concurrent.AsyncRequestManager$2.run(AsyncRequestManager.java:119)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.ClassNotFoundException: com.mysql.cj.jdbc.Driver
+	at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:593)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:421)
+	at java.base/java.lang.Class.forName(Class.java:412)
+	at org.apache.nifi.dbcp.DBCPConnectionPool.getDriver(DBCPConnectionPool.java:293)
+	... 34 common frames omitted
+2024-06-15 20:13:02,752 INFO [NiFi Web Server-114] o.a.n.controller.AbstractComponentNode Updating classpath for DBCPConnectionPool with the ID 1e2c31ba-0190-1000-7b61-6c01a8111cd4
+2024-06-15 20:13:02,800 INFO [NiFi Web Server-114] o.a.nifi.controller.ExtensionBuilder Created Controller Service of type org.apache.nifi.dbcp.DBCPConnectionPool with identifier 1e2c31ba-0190-1000-7b61-6c01a8111cd4
+2024-06-15 20:13:02,954 INFO [Flow Service Tasks Thread-1] o.a.nifi.controller.StandardFlowService Saved flow controller org.apache.nifi.controller.FlowController@1a0f2955 // Another save pending = false
+2024-06-15 20:13:04,415 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:13:04,417 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:13:22,516 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2024-06-15 20:13:22,521 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 216.21 GB, bytes free = 21.63 GB, capacity = 237.84 GB
+2024-06-15 20:13:24,425 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:13:24,469 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:13:44,474 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:13:44,477 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:14:04,478 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:14:04,481 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:14:23,538 INFO [Flow Service Tasks Thread-1] o.a.nifi.controller.StandardFlowService Saved flow controller org.apache.nifi.controller.FlowController@1a0f2955 // Another save pending = false
+2024-06-15 20:14:24,483 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:14:24,485 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:14:27,155 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2024-06-15 20:14:27,158 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 216.21 GB, bytes free = 21.64 GB, capacity = 237.84 GB
+2024-06-15 20:14:34,557 INFO [Flow Service Tasks Thread-2] o.a.nifi.controller.StandardFlowService Saved flow controller org.apache.nifi.controller.FlowController@1a0f2955 // Another save pending = false
+2024-06-15 20:14:39,403 INFO [NiFi Web Server-118] o.a.n.c.s.StandardProcessScheduler Enabling StandardControllerServiceNode[service=DBCPConnectionPool[id=1e2c31ba-0190-1000-7b61-6c01a8111cd4], name=Mysql, active=false]
+2024-06-15 20:14:39,432 INFO [Timer-Driven Process Thread-8] o.a.n.c.s.StandardControllerServiceNode Successfully enabled StandardControllerServiceNode[service=DBCPConnectionPool[id=1e2c31ba-0190-1000-7b61-6c01a8111cd4], name=Mysql, active=true]
+2024-06-15 20:14:39,576 INFO [Flow Service Tasks Thread-2] o.a.nifi.controller.StandardFlowService Saved flow controller org.apache.nifi.controller.FlowController@1a0f2955 // Another save pending = false
+2024-06-15 20:14:44,487 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:14:44,489 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:15:04,491 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:15:04,495 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:15:24,497 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:15:24,499 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:15:31,446 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2024-06-15 20:15:31,448 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 216.21 GB, bytes free = 21.63 GB, capacity = 237.84 GB
+2024-06-15 20:15:44,501 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:15:44,503 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:16:04,505 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:16:04,509 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:16:05,654 INFO [Flow Service Tasks Thread-1] o.a.nifi.controller.StandardFlowService Saved flow controller org.apache.nifi.controller.FlowController@1a0f2955 // Another save pending = false
+2024-06-15 20:16:10,207 INFO [NiFi Web Server-114] o.a.n.c.s.StandardProcessScheduler Enabling StandardControllerServiceNode[service=DBCPConnectionPool[id=1e230509-0190-1000-2c37-ab9612061dd7], name=Postgres, active=false]
+2024-06-15 20:16:10,215 INFO [Timer-Driven Process Thread-5] o.a.n.c.s.StandardControllerServiceNode Successfully enabled StandardControllerServiceNode[service=DBCPConnectionPool[id=1e230509-0190-1000-2c37-ab9612061dd7], name=Postgres, active=true]
+2024-06-15 20:16:10,667 INFO [Flow Service Tasks Thread-1] o.a.nifi.controller.StandardFlowService Saved flow controller org.apache.nifi.controller.FlowController@1a0f2955 // Another save pending = false
+2024-06-15 20:16:24,511 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:16:24,513 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:16:36,566 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2024-06-15 20:16:36,570 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 216.21 GB, bytes free = 21.64 GB, capacity = 237.84 GB
+2024-06-15 20:16:44,515 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:16:44,517 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:17:04,519 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:17:04,521 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:17:24,522 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:17:24,523 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:17:41,246 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2024-06-15 20:17:41,248 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 216.21 GB, bytes free = 21.64 GB, capacity = 237.84 GB
+2024-06-15 20:17:44,525 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:17:44,527 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:18:04,529 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:18:04,532 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:18:24,534 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:18:24,536 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:18:39,198 INFO [NiFi Web Server-119] o.a.nifi.groups.StandardProcessGroup ExecuteSQL[id=1e321d06-0190-1000-557c-9281603c2a99] added to StandardProcessGroup[identifier=1e1c9441-0190-1000-c369-f7867c3b5907,name=NiFi Flow]
+2024-06-15 20:18:39,361 INFO [Flow Service Tasks Thread-1] o.a.nifi.controller.StandardFlowService Saved flow controller org.apache.nifi.controller.FlowController@1a0f2955 // Another save pending = false
+2024-06-15 20:18:44,494 INFO [NiFi Web Server-133] o.a.nifi.groups.StandardProcessGroup ExecuteSQL[id=1e321d06-0190-1000-557c-9281603c2a99] removed from flow
+2024-06-15 20:18:44,537 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:18:44,538 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:18:44,875 INFO [Flow Service Tasks Thread-1] o.a.nifi.controller.StandardFlowService Saved flow controller org.apache.nifi.controller.FlowController@1a0f2955 // Another save pending = false
+2024-06-15 20:18:46,232 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2024-06-15 20:18:46,235 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 216.21 GB, bytes free = 21.63 GB, capacity = 237.84 GB
+2024-06-15 20:19:04,539 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:19:04,543 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:19:06,481 INFO [Write-Ahead Local State Provider Maintenance] o.a.n.wali.SequentialAccessWriteAheadLog Checkpointed Write-Ahead Log with 3 Records and 0 Swap Files in 66 milliseconds (Stop-the-world time = 35 milliseconds), max Transaction ID 8
+2024-06-15 20:19:24,544 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:19:24,546 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:19:44,547 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:19:44,551 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:19:52,269 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2024-06-15 20:19:52,274 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 216.21 GB, bytes free = 21.63 GB, capacity = 237.84 GB
+2024-06-15 20:20:04,553 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:20:04,556 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:20:24,557 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:20:24,557 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:20:44,558 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:20:44,561 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:20:55,167 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2024-06-15 20:20:55,170 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 216.21 GB, bytes free = 21.63 GB, capacity = 237.84 GB
+2024-06-15 20:21:04,563 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:21:04,566 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:21:24,567 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:21:24,568 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:21:44,569 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:21:44,573 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:21:58,140 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2024-06-15 20:21:58,142 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 216.2 GB, bytes free = 21.64 GB, capacity = 237.84 GB
+2024-06-15 20:22:04,575 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:22:04,582 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:22:24,585 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:22:24,587 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:22:27,329 INFO [NiFi Web Server-119] o.a.nifi.groups.StandardProcessGroup ExecuteSQLRecord[id=1e35987d-0190-1000-5073-ece80ad532eb] added to StandardProcessGroup[identifier=1e1c9441-0190-1000-c369-f7867c3b5907,name=NiFi Flow]
+2024-06-15 20:22:27,563 INFO [Flow Service Tasks Thread-2] o.a.nifi.controller.StandardFlowService Saved flow controller org.apache.nifi.controller.FlowController@1a0f2955 // Another save pending = false
+2024-06-15 20:22:44,589 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:22:44,591 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:23:00,103 INFO [Flow Service Tasks Thread-2] o.a.nifi.controller.StandardFlowService Saved flow controller org.apache.nifi.controller.FlowController@1a0f2955 // Another save pending = false
+2024-06-15 20:23:01,505 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2024-06-15 20:23:01,507 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 216.21 GB, bytes free = 21.64 GB, capacity = 237.84 GB
+2024-06-15 20:23:02,617 INFO [Flow Service Tasks Thread-2] o.a.nifi.controller.StandardFlowService Saved flow controller org.apache.nifi.controller.FlowController@1a0f2955 // Another save pending = false
+2024-06-15 20:23:04,592 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:23:04,595 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:23:24,596 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:23:24,597 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:23:44,598 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:23:44,600 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:24:04,601 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:24:04,603 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:24:05,320 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2024-06-15 20:24:05,326 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 216.2 GB, bytes free = 21.64 GB, capacity = 237.84 GB
+2024-06-15 20:24:24,604 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:24:24,606 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:24:43,307 INFO [NiFi Web Server-114] o.a.nifi.groups.StandardProcessGroup ExecuteSQLRecord[id=1e35987d-0190-1000-5073-ece80ad532eb] removed from flow
+2024-06-15 20:24:43,698 INFO [Flow Service Tasks Thread-2] o.a.nifi.controller.StandardFlowService Saved flow controller org.apache.nifi.controller.FlowController@1a0f2955 // Another save pending = false
+2024-06-15 20:24:44,608 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:24:44,609 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:24:51,683 INFO [NiFi Web Server-132] o.a.nifi.groups.StandardProcessGroup QueryDatabaseTable[id=1e37cc57-0190-1000-30ec-c728ad84d728] added to StandardProcessGroup[identifier=1e1c9441-0190-1000-c369-f7867c3b5907,name=NiFi Flow]
+2024-06-15 20:24:52,212 INFO [Flow Service Tasks Thread-2] o.a.nifi.controller.StandardFlowService Saved flow controller org.apache.nifi.controller.FlowController@1a0f2955 // Another save pending = false
+2024-06-15 20:25:04,612 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:25:04,615 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:25:06,592 INFO [Write-Ahead Local State Provider Maintenance] o.a.n.wali.SequentialAccessWriteAheadLog Checkpointed Write-Ahead Log with 4 Records and 0 Swap Files in 113 milliseconds (Stop-the-world time = 59 milliseconds), max Transaction ID 11
+2024-06-15 20:25:10,325 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2024-06-15 20:25:10,328 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 216.2 GB, bytes free = 21.64 GB, capacity = 237.84 GB
+2024-06-15 20:25:13,238 INFO [Flow Service Tasks Thread-2] o.a.nifi.controller.StandardFlowService Saved flow controller org.apache.nifi.controller.FlowController@1a0f2955 // Another save pending = false
+2024-06-15 20:25:24,616 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:25:24,618 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:25:25,258 INFO [Flow Service Tasks Thread-2] o.a.nifi.controller.StandardFlowService Saved flow controller org.apache.nifi.controller.FlowController@1a0f2955 // Another save pending = false
+2024-06-15 20:25:27,271 INFO [Flow Service Tasks Thread-2] o.a.nifi.controller.StandardFlowService Saved flow controller org.apache.nifi.controller.FlowController@1a0f2955 // Another save pending = false
+2024-06-15 20:25:28,288 INFO [Flow Service Tasks Thread-2] o.a.nifi.controller.StandardFlowService Saved flow controller org.apache.nifi.controller.FlowController@1a0f2955 // Another save pending = false
+2024-06-15 20:25:44,620 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:25:44,622 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:26:04,624 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:26:04,627 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:26:14,805 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2024-06-15 20:26:14,809 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 216.21 GB, bytes free = 21.64 GB, capacity = 237.84 GB
+2024-06-15 20:26:24,629 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:26:24,631 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:26:24,878 INFO [NiFi Web Server-135] o.a.nifi.groups.StandardProcessGroup UpdateRecord[id=1e393867-0190-1000-1138-c38eb3683909] added to StandardProcessGroup[identifier=1e1c9441-0190-1000-c369-f7867c3b5907,name=NiFi Flow]
+2024-06-15 20:26:25,352 INFO [Flow Service Tasks Thread-1] o.a.nifi.controller.StandardFlowService Saved flow controller org.apache.nifi.controller.FlowController@1a0f2955 // Another save pending = false
+2024-06-15 20:26:28,880 INFO [Flow Service Tasks Thread-1] o.a.nifi.controller.StandardFlowService Saved flow controller org.apache.nifi.controller.FlowController@1a0f2955 // Another save pending = false
+2024-06-15 20:26:31,897 INFO [Flow Service Tasks Thread-1] o.a.nifi.controller.StandardFlowService Saved flow controller org.apache.nifi.controller.FlowController@1a0f2955 // Another save pending = false
+2024-06-15 20:26:35,970 INFO [Flow Service Tasks Thread-1] o.a.nifi.controller.StandardFlowService Saved flow controller org.apache.nifi.controller.FlowController@1a0f2955 // Another save pending = false
+2024-06-15 20:26:38,490 INFO [Flow Service Tasks Thread-1] o.a.nifi.controller.StandardFlowService Saved flow controller org.apache.nifi.controller.FlowController@1a0f2955 // Another save pending = false
+2024-06-15 20:26:39,503 INFO [Flow Service Tasks Thread-1] o.a.nifi.controller.StandardFlowService Saved flow controller org.apache.nifi.controller.FlowController@1a0f2955 // Another save pending = false
+2024-06-15 20:26:41,521 INFO [Flow Service Tasks Thread-1] o.a.nifi.controller.StandardFlowService Saved flow controller org.apache.nifi.controller.FlowController@1a0f2955 // Another save pending = false
+2024-06-15 20:26:44,633 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:26:44,636 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:27:04,638 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:27:04,640 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:27:19,240 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2024-06-15 20:27:19,245 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 216.2 GB, bytes free = 21.64 GB, capacity = 237.84 GB
+2024-06-15 20:27:24,640 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:27:24,642 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:27:36,566 INFO [NiFi Web Server-124] o.a.nifi.controller.ExtensionBuilder Created Controller Service of type org.apache.nifi.json.JsonTreeReader with identifier 1e3a5066-0190-1000-f54d-a77fe73d6258
+2024-06-15 20:27:36,988 INFO [NiFi Web Server-124] o.a.nifi.groups.StandardProcessGroup StandardControllerServiceNode[service=JsonTreeReader[id=1e3a5066-0190-1000-f54d-a77fe73d6258], name=Leitor_alunos, active=false] added to StandardProcessGroup[identifier=1e1c9441-0190-1000-c369-f7867c3b5907,name=NiFi Flow]
+2024-06-15 20:27:37,075 INFO [Flow Service Tasks Thread-1] o.a.nifi.controller.StandardFlowService Saved flow controller org.apache.nifi.controller.FlowController@1a0f2955 // Another save pending = false
+2024-06-15 20:27:44,644 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:27:44,646 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:28:04,647 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:28:04,650 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:28:21,941 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2024-06-15 20:28:21,943 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 216.21 GB, bytes free = 21.64 GB, capacity = 237.84 GB
+2024-06-15 20:28:24,653 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:28:24,654 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:28:44,655 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:28:44,657 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:29:04,176 INFO [NiFi Web Server-136] o.a.nifi.controller.ExtensionBuilder Created Controller Service of type org.apache.nifi.json.JsonRecordSetWriter with identifier 1e3ba6a1-0190-1000-6521-08567f3b7f0c
+2024-06-15 20:29:04,189 INFO [NiFi Web Server-136] o.a.nifi.groups.StandardProcessGroup StandardControllerServiceNode[service=JsonRecordSetWriter[id=1e3ba6a1-0190-1000-6521-08567f3b7f0c], name=Transformar_dados_alunos, active=false] added to StandardProcessGroup[identifier=1e1c9441-0190-1000-c369-f7867c3b5907,name=NiFi Flow]
+2024-06-15 20:29:04,660 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:29:04,661 INFO [Flow Service Tasks Thread-2] o.a.nifi.controller.StandardFlowService Saved flow controller org.apache.nifi.controller.FlowController@1a0f2955 // Another save pending = false
+2024-06-15 20:29:04,663 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:29:06,189 INFO [Flow Service Tasks Thread-2] o.a.nifi.controller.StandardFlowService Saved flow controller org.apache.nifi.controller.FlowController@1a0f2955 // Another save pending = false
+2024-06-15 20:29:24,666 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:29:24,668 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:29:26,954 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2024-06-15 20:29:26,958 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 216.21 GB, bytes free = 21.63 GB, capacity = 237.84 GB
+2024-06-15 20:29:44,670 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:29:44,672 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:30:04,674 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:30:04,678 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:30:14,271 INFO [Flow Service Tasks Thread-2] o.a.nifi.controller.StandardFlowService Saved flow controller org.apache.nifi.controller.FlowController@1a0f2955 // Another save pending = false
+2024-06-15 20:30:24,681 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:30:24,683 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:30:31,986 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2024-06-15 20:30:31,990 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 216.21 GB, bytes free = 21.64 GB, capacity = 237.84 GB
+2024-06-15 20:30:44,685 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:30:44,687 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:31:04,689 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:31:04,692 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:31:24,694 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:31:24,696 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:31:26,135 INFO [NiFi Web Server-124] o.a.nifi.controller.ExtensionBuilder Created Controller Service of type org.apache.nifi.json.JsonTreeReader with identifier 1e3dd127-0190-1000-5588-166741d6d2c8
+2024-06-15 20:31:26,144 INFO [NiFi Web Server-124] o.a.nifi.groups.StandardProcessGroup StandardControllerServiceNode[service=JsonTreeReader[id=1e3dd127-0190-1000-5588-166741d6d2c8], name=JsonTreeReader, active=false] added to StandardProcessGroup[identifier=1e1c9441-0190-1000-c369-f7867c3b5907,name=NiFi Flow]
+2024-06-15 20:31:26,352 INFO [Flow Service Tasks Thread-1] o.a.nifi.controller.StandardFlowService Saved flow controller org.apache.nifi.controller.FlowController@1a0f2955 // Another save pending = false
+2024-06-15 20:31:37,247 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2024-06-15 20:31:37,250 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 216.2 GB, bytes free = 21.64 GB, capacity = 237.84 GB
+2024-06-15 20:31:41,666 INFO [NiFi Web Server-135] o.a.nifi.controller.ExtensionBuilder Created Controller Service of type org.apache.nifi.json.JsonRecordSetWriter with identifier 1e3e0dd2-0190-1000-4818-ad9f3c61a995
+2024-06-15 20:31:41,675 INFO [NiFi Web Server-135] o.a.nifi.groups.StandardProcessGroup StandardControllerServiceNode[service=JsonRecordSetWriter[id=1e3e0dd2-0190-1000-4818-ad9f3c61a995], name=JsonRecordSetWriter, active=false] added to StandardProcessGroup[identifier=1e1c9441-0190-1000-c369-f7867c3b5907,name=NiFi Flow]
+2024-06-15 20:31:41,894 INFO [Flow Service Tasks Thread-2] o.a.nifi.controller.StandardFlowService Saved flow controller org.apache.nifi.controller.FlowController@1a0f2955 // Another save pending = false
+2024-06-15 20:31:44,986 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:31:44,988 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:32:04,989 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:32:04,992 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:32:16,048 INFO [Flow Service Tasks Thread-1] o.a.nifi.controller.StandardFlowService Saved flow controller org.apache.nifi.controller.FlowController@1a0f2955 // Another save pending = false
+2024-06-15 20:32:24,994 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:32:24,996 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:32:42,145 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2024-06-15 20:32:42,150 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 216.21 GB, bytes free = 21.64 GB, capacity = 237.84 GB
+2024-06-15 20:32:44,998 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:32:45,000 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:33:05,002 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:33:05,005 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:33:10,631 INFO [Flow Service Tasks Thread-1] o.a.nifi.controller.StandardFlowService Saved flow controller org.apache.nifi.controller.FlowController@1a0f2955 // Another save pending = false
+2024-06-15 20:33:25,006 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:33:25,007 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:33:45,008 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:33:45,010 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:33:46,881 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2024-06-15 20:33:46,883 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 216.21 GB, bytes free = 21.64 GB, capacity = 237.84 GB
+2024-06-15 20:34:05,012 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:34:05,015 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:34:25,018 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:34:25,019 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:34:45,021 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:34:45,023 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:34:51,220 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2024-06-15 20:34:51,226 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 216.21 GB, bytes free = 21.64 GB, capacity = 237.84 GB
+2024-06-15 20:35:05,024 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:35:05,027 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:35:25,029 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:35:25,031 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:35:38,774 INFO [Flow Service Tasks Thread-2] o.a.nifi.controller.StandardFlowService Saved flow controller org.apache.nifi.controller.FlowController@1a0f2955 // Another save pending = false
+2024-06-15 20:35:45,032 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:35:45,034 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:35:48,477 INFO [NiFi Web Server-136] o.a.nifi.groups.StandardProcessGroup StandardControllerServiceNode[service=JsonTreeReader[id=1e3a5066-0190-1000-f54d-a77fe73d6258], name=Leitor_alunos, active=false] removed from StandardProcessGroup[identifier=1e1c9441-0190-1000-c369-f7867c3b5907,name=NiFi Flow]
+2024-06-15 20:35:48,799 INFO [Flow Service Tasks Thread-1] o.a.nifi.controller.StandardFlowService Saved flow controller org.apache.nifi.controller.FlowController@1a0f2955 // Another save pending = false
+2024-06-15 20:35:55,474 INFO [NiFi Web Server-136] o.a.n.c.s.StandardProcessScheduler Enabling StandardControllerServiceNode[service=JsonTreeReader[id=1e3dd127-0190-1000-5588-166741d6d2c8], name=JsonTreeReader, active=false]
+2024-06-15 20:35:55,522 INFO [Timer-Driven Process Thread-4] o.a.n.c.s.StandardControllerServiceNode Successfully enabled StandardControllerServiceNode[service=JsonTreeReader[id=1e3dd127-0190-1000-5588-166741d6d2c8], name=JsonTreeReader, active=true]
+2024-06-15 20:35:55,816 INFO [Flow Service Tasks Thread-1] o.a.nifi.controller.StandardFlowService Saved flow controller org.apache.nifi.controller.FlowController@1a0f2955 // Another save pending = false
+2024-06-15 20:35:56,615 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2024-06-15 20:35:56,618 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 216.21 GB, bytes free = 21.64 GB, capacity = 237.84 GB
+2024-06-15 20:36:05,036 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:36:05,038 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:36:25,040 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:36:25,042 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:36:45,044 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:36:45,047 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:36:56,573 INFO [NiFi Web Server-132] o.a.n.c.s.StandardProcessScheduler Enabling StandardControllerServiceNode[service=JsonRecordSetWriter[id=1e3e0dd2-0190-1000-4818-ad9f3c61a995], name=JsonRecordSetWriter, active=false]
+2024-06-15 20:36:56,882 INFO [Flow Service Tasks Thread-1] o.a.nifi.controller.StandardFlowService Saved flow controller org.apache.nifi.controller.FlowController@1a0f2955 // Another save pending = false
+2024-06-15 20:36:57,605 INFO [Timer-Driven Process Thread-5] o.a.n.c.s.StandardControllerServiceNode Successfully enabled StandardControllerServiceNode[service=JsonRecordSetWriter[id=1e3e0dd2-0190-1000-4818-ad9f3c61a995], name=JsonRecordSetWriter, active=true]
+2024-06-15 20:37:01,651 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2024-06-15 20:37:01,655 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 216.2 GB, bytes free = 21.64 GB, capacity = 237.84 GB
+2024-06-15 20:37:05,048 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:37:05,052 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:37:06,710 INFO [Write-Ahead Local State Provider Maintenance] o.a.n.wali.SequentialAccessWriteAheadLog Checkpointed Write-Ahead Log with 5 Records and 0 Swap Files in 120 milliseconds (Stop-the-world time = 58 milliseconds), max Transaction ID 14
+2024-06-15 20:37:10,527 INFO [NiFi Web Server-135] o.a.nifi.groups.StandardProcessGroup StandardControllerServiceNode[service=JsonRecordSetWriter[id=1e3ba6a1-0190-1000-6521-08567f3b7f0c], name=Transformar_dados_alunos, active=false] removed from StandardProcessGroup[identifier=1e1c9441-0190-1000-c369-f7867c3b5907,name=NiFi Flow]
+2024-06-15 20:37:10,912 INFO [Flow Service Tasks Thread-2] o.a.nifi.controller.StandardFlowService Saved flow controller org.apache.nifi.controller.FlowController@1a0f2955 // Another save pending = false
+2024-06-15 20:37:25,054 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:37:25,056 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:37:45,058 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:37:45,060 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:38:05,062 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:38:05,064 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:38:06,645 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2024-06-15 20:38:06,648 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 216.2 GB, bytes free = 21.64 GB, capacity = 237.84 GB
+2024-06-15 20:38:25,066 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:38:25,067 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:38:45,068 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:38:45,070 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:39:05,072 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:39:05,074 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:39:06,828 INFO [Write-Ahead Local State Provider Maintenance] o.a.n.wali.SequentialAccessWriteAheadLog Checkpointed Write-Ahead Log with 6 Records and 0 Swap Files in 115 milliseconds (Stop-the-world time = 59 milliseconds), max Transaction ID 17
+2024-06-15 20:39:11,847 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2024-06-15 20:39:11,852 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 216.2 GB, bytes free = 21.64 GB, capacity = 237.84 GB
+2024-06-15 20:39:25,075 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:39:25,077 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:39:45,080 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:39:45,082 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:40:05,084 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:40:05,087 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:40:16,927 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2024-06-15 20:40:16,930 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 216.21 GB, bytes free = 21.64 GB, capacity = 237.84 GB
+2024-06-15 20:40:25,090 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:40:25,092 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:40:33,597 INFO [Flow Service Tasks Thread-1] o.a.nifi.controller.StandardFlowService Saved flow controller org.apache.nifi.controller.FlowController@1a0f2955 // Another save pending = false
+2024-06-15 20:40:45,094 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:40:45,096 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:41:05,098 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:41:05,101 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:41:20,356 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2024-06-15 20:41:20,362 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 216.21 GB, bytes free = 21.63 GB, capacity = 237.84 GB
+2024-06-15 20:41:25,102 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:41:25,104 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:41:45,107 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:41:45,109 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:42:05,111 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:42:05,114 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:42:24,508 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2024-06-15 20:42:24,511 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 216.21 GB, bytes free = 21.63 GB, capacity = 237.84 GB
+2024-06-15 20:42:25,114 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:42:25,116 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:42:45,118 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:42:45,119 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:43:05,121 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:43:05,125 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:43:25,126 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:43:25,127 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:43:27,392 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2024-06-15 20:43:27,397 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 216.23 GB, bytes free = 21.61 GB, capacity = 237.84 GB
+2024-06-15 20:43:45,128 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:43:45,130 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:44:05,131 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:44:05,134 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:44:25,136 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:44:25,137 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:44:31,867 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2024-06-15 20:44:31,868 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 216.24 GB, bytes free = 21.61 GB, capacity = 237.84 GB
+2024-06-15 20:44:45,139 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:44:45,141 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:44:56,874 INFO [Flow Service Tasks Thread-1] o.a.nifi.controller.StandardFlowService Saved flow controller org.apache.nifi.controller.FlowController@1a0f2955 // Another save pending = false
+2024-06-15 20:45:05,143 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:45:05,147 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:45:25,149 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:45:25,150 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:45:36,609 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2024-06-15 20:45:36,611 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 216.23 GB, bytes free = 21.61 GB, capacity = 237.84 GB
+2024-06-15 20:45:45,152 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:45:45,154 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:46:03,143 INFO [NiFi Web Server-146] o.a.nifi.groups.StandardProcessGroup PutDatabaseRecord[id=1e4b3300-0190-1000-18a0-7962cf6ab46f] added to StandardProcessGroup[identifier=1e1c9441-0190-1000-c369-f7867c3b5907,name=NiFi Flow]
+2024-06-15 20:46:03,444 INFO [Flow Service Tasks Thread-1] o.a.nifi.controller.StandardFlowService Saved flow controller org.apache.nifi.controller.FlowController@1a0f2955 // Another save pending = false
+2024-06-15 20:46:05,156 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:46:05,159 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:46:05,464 INFO [Flow Service Tasks Thread-1] o.a.nifi.controller.StandardFlowService Saved flow controller org.apache.nifi.controller.FlowController@1a0f2955 // Another save pending = false
+2024-06-15 20:46:21,494 INFO [Flow Service Tasks Thread-2] o.a.nifi.controller.StandardFlowService Saved flow controller org.apache.nifi.controller.FlowController@1a0f2955 // Another save pending = false
+2024-06-15 20:46:25,161 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:46:25,163 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:46:31,518 INFO [Flow Service Tasks Thread-1] o.a.nifi.controller.StandardFlowService Saved flow controller org.apache.nifi.controller.FlowController@1a0f2955 // Another save pending = false
+2024-06-15 20:46:34,034 INFO [Flow Service Tasks Thread-1] o.a.nifi.controller.StandardFlowService Saved flow controller org.apache.nifi.controller.FlowController@1a0f2955 // Another save pending = false
+2024-06-15 20:46:37,555 INFO [Flow Service Tasks Thread-1] o.a.nifi.controller.StandardFlowService Saved flow controller org.apache.nifi.controller.FlowController@1a0f2955 // Another save pending = false
+2024-06-15 20:46:41,518 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2024-06-15 20:46:41,521 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 216.23 GB, bytes free = 21.61 GB, capacity = 237.84 GB
+2024-06-15 20:46:45,164 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:46:45,166 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:47:05,168 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:47:05,172 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:47:25,174 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:47:25,176 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:47:45,178 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:47:45,180 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:47:45,978 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2024-06-15 20:47:45,981 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 216.23 GB, bytes free = 21.61 GB, capacity = 237.84 GB
+2024-06-15 20:48:05,182 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:48:05,185 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:48:25,186 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:48:25,188 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:48:45,190 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:48:45,193 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:48:50,407 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2024-06-15 20:48:50,410 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 216.23 GB, bytes free = 21.61 GB, capacity = 237.84 GB
+2024-06-15 20:49:05,195 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:49:05,198 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:49:25,200 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:49:25,203 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:49:45,205 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:49:45,205 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
+2024-06-15 20:49:54,949 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Successfully deleted 0 files (0 bytes) from archive
+2024-06-15 20:49:54,953 INFO [Cleanup Archive for default] o.a.n.c.repository.FileSystemRepository Archive cleanup completed for container default; will now allow writing to this container. Bytes used = 216.23 GB, bytes free = 21.61 GB, capacity = 237.84 GB
+2024-06-15 20:50:05,207 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Initiating checkpoint of FlowFile Repository
+2024-06-15 20:50:05,210 INFO [Checkpoint FlowFile Repository] o.a.n.c.r.WriteAheadFlowFileRepository Successfully checkpointed FlowFile Repository with 1 records in 0 milliseconds
