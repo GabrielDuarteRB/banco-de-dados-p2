@@ -47,6 +47,16 @@ Antes de começar, certifique-se de ter os seguintes itens instalados:
      
 3. Após essa sequência de passos, seu banco de dados PostgreSQL estará funcionando e com todos os dados do banco SQLite selecionado.
 
+## 📂 **Pastas do Projeto**
+- [Barman](./barman/README.md) – Detalhes sobre a configuração e uso do Barman para backup.
+- [PostgreSQL](./postgresql/README.md) – Explicações sobre a configuração do PostgreSQL no projeto.
+- [TemBoard](./temboard/README.md) – Como configurar o monitoramento ativo com o TemBoard.
+- [PgBadger](./pgbadger/README.md) – Como configurar o PgBadger para análise de logs.
+- [PgLoader](./pgloader/README.md) – Detalhes sobre como usar o PgLoader para migrar dados do SQLite para PostgreSQL.
+- [Data Warehouse (DW)](./dw/README.md) – Transformação da base PostgreSQL em um Data Warehouse usando Star Schema.
+
+## 🔗 **Links relacionados**
+
 ## 🔗 **Links relacionados**
 
 - 📄 [Documentação do projeto](https://docs.google.com/document/d/1MABuknbwydqBFIjl0rFmO8vZBFO2LNYIE70eg8fiy2s/edit?usp=sharing);
