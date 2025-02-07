@@ -18,8 +18,8 @@
 ## 🚀 **Como rodar**
 
 1. **Configuração inicial:**
-   - Crie uma pasta `sqlite` no diretório raiz da aplicação.
-   - Adicione o arquivo do banco SQLite com o nome `database.sqlite`.
+   -  Execute o comando bash init.sh createDirs
+   - Adicione o arquivo do banco SQLite com o nome `database.sqlite` dentro da pasta sqlite criada.
 
 2. **Rodando a aplicação:**
    - Acesse o terminal e execute os seguintes comandos:
