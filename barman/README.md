@@ -39,8 +39,7 @@ No servidor PostgreSQL, edite o arquivo *[postgresql.conf](../app/config/postgre
 | `max_wal_senders = 10` | Define o número máximo de processos que enviam logs WAL para réplicas. |
 | `max_replication_slots = 10` | Define o número máximo de slots de replicação para retenção de WALs. |
 
-### 👤 Criação de usuários
-Crie o usuário `barman` no PostgreSQL e conceda as permissões:## ⚙️ Configuração do PostgreSQL
+### ⚙️ Configuração do PostgreSQL
 
 No servidor PostgreSQL, edite o arquivo *[postgresql.conf](../app/config/postgresql.conf)* e habilite o WAL com os comandos a seguir 🔄:
 
