@@ -39,23 +39,6 @@ No servidor PostgreSQL, edite o arquivo *[postgresql.conf](../app/config/postgre
 | `max_wal_senders = 10` | Define o número máximo de processos que enviam logs WAL para réplicas. |
 | `max_replication_slots = 10` | Define o número máximo de slots de replicação para retenção de WALs. |
 
-### ⚙️ Configuração do PostgreSQL
-
-No servidor PostgreSQL, edite o arquivo *[postgresql.conf](../app/config/postgresql.conf)* e habilite o WAL com os comandos a seguir 🔄:
-
-| Configuração | Descrição |
-|-------------|-----------|
-| `listen_addresses = '*'` | Permite que o PostgreSQL aceite conexões de qualquer IP. |
-| `wal_level = replica` | Define o nível de gravação de logs para permitir replicação. |
-| `shared_preload_libraries = 'pg_stat_statements'` | Carrega a extensão para análise de estatísticas de consultas. |
-| `log_connections = on` | Registra todas as conexões ao banco de dados. |
-| `log_statement = all` | Registra todas as consultas SQL executadas. |
-| `log_line_prefix = '%m [%p]: [%l-1] app=%a,db=%d,client=%h,user=%u'` | Define um formato detalhado para os logs. |
-| `cluster_name = 'postgres'` | Nomeia o cluster do PostgreSQL. |
-| `archive_mode = on` | Habilita o arquivamento de logs WAL. |
-| `max_wal_senders = 10` | Define o número máximo de processos que enviam logs WAL para réplicas. |
-| `max_replication_slots = 10` | Define o número máximo de slots de replicação para retenção de WALs. |
-
 ### 👤 Criação de usuários
 
 Crie o usuário `barman` no PostgreSQL e conceda as permissões:
