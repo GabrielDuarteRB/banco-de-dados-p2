@@ -57,7 +57,5 @@ Antes de começar, certifique-se de ter os seguintes itens instalados:
 
 ## 🔗 **Links relacionados**
 
-## 🔗 **Links relacionados**
-
 - 📄 [Documentação do projeto](https://docs.google.com/document/d/1MABuknbwydqBFIjl0rFmO8vZBFO2LNYIE70eg8fiy2s/edit?usp=sharing);
 - 📦 [Banco de dados - Europe League](https://www.kaggle.com/datasets/jorgeccollanaorosco/data-europa-ligue?resource=download)
