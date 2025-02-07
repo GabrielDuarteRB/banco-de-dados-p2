@@ -1,4 +1,6 @@
-# Trabalho de banco de dados
+# Trabalho de Banco de Dados
+
+Este projeto visa a implementação de um banco de dados em PostgreSQL a partir de uma base SQLite, com a criação de diversas funcionalidades como views, funções, triggers e backup, além de desafios adicionais como monitoramento ativo e criação de um Data Warehouse (DW).
 
 ## 🎯 **Objetivos**
   ✅ **Escolher uma das bases em SQlite disponibilizadas nesse trabalho.** Dois grupos não podem escolher a mesma  
@@ -15,6 +17,21 @@
 
 ---
 
+## 📋 **Pré-requisitos**
+
+Antes de começar, certifique-se de ter os seguintes itens instalados:
+
+- Docker: [Instruções de instalação](https://docs.docker.com/get-docker/)
+- Docker Compose: [Instruções de instalação](https://docs.docker.com/compose/install/)
+
+## 📦 **Versões de Plugins e Dependências**
+
+- **PostgreSQL**: 14.15
+- **Barman**: 3.12.1
+- **Temboard**: 8.2.1
+- **Pgbadger**: 12.2
+- **Python**: 3.9.2
+
 ## 🚀 **Como rodar**
 
 1. **Configuração inicial:**
@@ -27,7 +44,7 @@
      docker-compose build
      docker-compose up
      ```
-
+     
 3. Após essa sequência de passos, seu banco de dados PostgreSQL estará funcionando e com todos os dados do banco SQLite selecionado.
 
 ## 🔗 **Links relacionados**
