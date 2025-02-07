@@ -1,0 +1,27 @@
+2025-02-04 12:28:42,704 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Initializing Authorizer
+2025-02-04 12:28:42,798 INFO [main] o.a.n.a.FileUserGroupProvider Creating new users file at /opt/nifi/nifi-current/./conf/users.xml
+2025-02-04 12:28:42,825 INFO [main] o.a.n.a.FileAccessPolicyProvider Creating new authorizations file at /opt/nifi/nifi-current/./conf/authorizations.xml
+2025-02-04 12:28:42,837 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Configuring Authorizer
+2025-02-04 12:36:54,364 INFO [pool-1-thread-2] o.a.n.a.single.user.SingleUserAuthorizer Destroying Authorizer
+2025-02-04 12:40:04,675 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Initializing Authorizer
+2025-02-04 12:40:04,890 INFO [main] o.a.n.a.FileUserGroupProvider Creating new users file at /opt/nifi/nifi-current/./conf/users.xml
+2025-02-04 12:40:04,941 INFO [main] o.a.n.a.FileAccessPolicyProvider Creating new authorizations file at /opt/nifi/nifi-current/./conf/authorizations.xml
+2025-02-04 12:40:04,965 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Configuring Authorizer
+2025-02-04 12:42:27,957 INFO [NiFi Web Server-42] org.apache.nifi.web.api.AccessResource Logout Request [ed52e1a2-bcfd-4886-b69e-c862d11f7ecc] Identity [admin] started
+2025-02-04 12:42:28,051 INFO [NiFi Web Server-42] org.apache.nifi.web.api.AccessResource Logout Request [ed52e1a2-bcfd-4886-b69e-c862d11f7ecc] Completed [admin]
+2025-02-04 12:46:08,971 INFO [pool-1-thread-2] o.a.n.a.single.user.SingleUserAuthorizer Destroying Authorizer
+2025-02-04 12:46:41,039 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Initializing Authorizer
+2025-02-04 12:46:41,793 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Configuring Authorizer
+2025-02-04 17:55:26,657 INFO [pool-1-thread-2] o.a.n.a.single.user.SingleUserAuthorizer Destroying Authorizer
+2025-02-04 17:56:38,869 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Initializing Authorizer
+2025-02-04 17:56:40,425 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Configuring Authorizer
+2025-02-04 20:04:09,965 INFO [pool-1-thread-2] o.a.n.a.single.user.SingleUserAuthorizer Destroying Authorizer
+2025-02-04 20:11:27,914 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Initializing Authorizer
+2025-02-04 20:11:27,972 INFO [main] o.a.n.a.FileUserGroupProvider Creating new users file at /opt/nifi/nifi-current/./conf/users.xml
+2025-02-04 20:11:28,004 INFO [main] o.a.n.a.FileAccessPolicyProvider Creating new authorizations file at /opt/nifi/nifi-current/./conf/authorizations.xml
+2025-02-04 20:11:28,014 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Configuring Authorizer
+2025-02-04 20:12:52,463 INFO [NiFi Web Server-40] org.apache.nifi.web.api.AccessResource Logout Request [30c2b4a0-320f-40fb-a791-e7131438c4dd] Identity [admin] started
+2025-02-04 20:12:52,547 INFO [NiFi Web Server-40] org.apache.nifi.web.api.AccessResource Logout Request [30c2b4a0-320f-40fb-a791-e7131438c4dd] Completed [admin]
+2025-02-04 20:14:30,473 INFO [pool-1-thread-2] o.a.n.a.single.user.SingleUserAuthorizer Destroying Authorizer
+2025-02-04 20:15:40,556 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Initializing Authorizer
+2025-02-04 20:15:41,265 INFO [main] o.a.n.a.single.user.SingleUserAuthorizer Configuring Authorizer

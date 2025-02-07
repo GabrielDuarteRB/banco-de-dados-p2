@@ -1,10 +1,8 @@
 #!/bin/bash
 set -e
 
-echo "Adding Barman users..."
+echo "Criando usuario do barman no banco"
 
-# Create barman users
-psql -v ON_ERROR_STOP=1 --username "$POSTGRES_USER" <<-EOSQL
-    CREATE USER barman SUPERUSER PASSWORD 'barman';
-    CREATE USER streaming_barman REPLICATION PASSWORD 'barman';
-EOSQL
+psql -U $POSTGRES_USER -c "CREATE USER barman WITH REPLICATION PASSWORD 'barman';"
+
+psql -c "SELECT pg_reload_conf();"

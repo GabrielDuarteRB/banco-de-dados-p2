@@ -49,4 +49,5 @@ services:
 
 networks:
   postgres-network:
-    external: true
+    driver: bridge
+    

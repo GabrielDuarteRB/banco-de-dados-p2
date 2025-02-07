@@ -1,6 +1,13 @@
 #!/bin/bash
 set -e
 
-#service barman start
+sleep 20
 
-tail -f /dev/null
+barman cron
+
+sleep 5
+
+barman switch-wal --force --archive all
+
+
+sleep infinity 

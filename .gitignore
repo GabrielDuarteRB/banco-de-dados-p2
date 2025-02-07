@@ -3,3 +3,4 @@ postgres-database
 *.sqlite
 sqlite
 barman/backup/*
+pgbadger/pg_log/*

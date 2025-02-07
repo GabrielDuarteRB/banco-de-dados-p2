@@ -1,10 +1,8 @@
 #!/bin/bash
 set -e
 
-cp /usr/share/postgresql/postgresql.conf.sample /var/lib/postgresql/data/postgres-database/postgresql.conf
-cp /usr/share/postgresql/pg_hba.conf /var/lib/postgresql/data
-
-service ssh start
+touch /var/lib/postgresql/data/postgres-database
+cp /usr/share/postgresql/pg_hba.conf /var/lib/postgresql/data/postgres-database/pg_hba.conf
 
 function waitForPostgres {
     until pg_isready -h localhost -p 5432 -U postgres; do
@@ -15,7 +13,6 @@ function waitForPostgres {
 }
 
 function runTemboardAgente {
-	sleep 15
 	if [ ! -f "/var/lib/postgresql/data/configured" ]
 	then
 		/usr/local/share/temboard-agent/purge.sh data/postgres-database;
@@ -27,28 +24,27 @@ function runTemboardAgente {
     sudo -u postgres temboard-agent -c /etc/temboard-agent/data/postgres-database/temboard-agent.conf;
 }
 
-#function runBarman {
-#
-#	su - root << 'EOF' 
-#
-#	chwon -R barman:barman /var/lib/barman
-#	
-#	echo "0 3 * * 1 barman backup postgres" > /etc/cron.d/barman-backup
-#	chmod 0644 /etc/cron.d/barman-backup
-#
-#	echo "*/5 * * * * barman backup postgres" > /etc/cron.d/barman-incremental
-#	chmod 0644 /etc/cron.d/barman-incremental
-#
-#	service cron start	
-#} 
+function runBarman {
+	echo "Rodando Barman"
 
+    for db in $(psql -U $POSTGRES_USER -t -c "SELECT datname FROM pg_database WHERE datistemplate = false;"); do
+        psql -U $POSTGRES_USER -d "$db" -c "CREATE EXTENSION IF NOT EXISTS pg_stat_statements;"
+        psql -U $POSTGRES_USER -d "$db" -c "GRANT EXECUTE ON FUNCTION pg_start_backup(text, boolean, boolean) to barman;"
+        psql -U $POSTGRES_USER -d "$db" -c "GRANT EXECUTE ON FUNCTION pg_stop_backup() to barman;"
+		psql -U $POSTGRES_USER -d "$db" -c "GRANT EXECUTE ON FUNCTION pg_stop_backup(boolean, boolean) to barman;"
+        psql -U $POSTGRES_USER -d "$db" -c "GRANT EXECUTE ON FUNCTION pg_switch_wal() to barman;"
+        psql -U $POSTGRES_USER -d "$db" -c "GRANT EXECUTE ON FUNCTION pg_create_restore_point(text) to barman;"
+        psql -U $POSTGRES_USER -d "$db" -c "GRANT pg_read_all_settings TO barman;"
+        psql -U $POSTGRES_USER -d "$db" -c "GRANT pg_read_all_stats TO barman;"
+    done
+}
 
 /usr/local/bin/docker-entrypoint.sh postgres &
 
 waitForPostgres
+sleep 15
 
-#runBarman &
-
-runTemboardAgente &
+runBarman &
+#runTemboardAgente &
 
 sleep infinity 

@@ -4,12 +4,9 @@ services:
     build: ./app
     volumes:
       - ./postgres-database:/var/lib/postgresql/data
-      - ./app/config/postgresql.conf:/var/lib/postgresql/data/postgres-database/postgresql.conf
       - ./sqlite:/data
       - ./pgbadger/pg_log:/var/lib/postgresql/data/pg_log
-      - ./ssh/postgres/id_rsa:/root/.ssh/id_rsa
-      - ./ssh/postgres/id_rsa.pub:/root/.ssh/id_rsa.pub
-      - ./ssh/barman/id_rsa.pub:/root/.ssh/authorized_keys
+      - ./app/config/postgresql.conf:/var/lib/postgresql/data/postgres-database/postgresql.conf:rw
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
@@ -17,6 +14,8 @@ services:
       POSTGRES_NAME: postgres14
       PGDATA: /var/lib/postgresql/data/postgres-database
       PGPORT: "5432"
+      POSTGRES_HOST_AUTH_METHOD: "scram-sha-256"
+      POSTGRES_INITDB_ARGS: "--auth-host=scram-sha-256"
     ports:
       - "15432:5432"
       - "2345:2345"
@@ -25,7 +24,8 @@ services:
       interval: 10s
       retries: 5
     networks:
-      - postgres-network 
+      postgres-network:
+        ipv4_address: 100.100.0.10
 
   #pgloader:
   #  build: ./pgloader
@@ -46,9 +46,8 @@ services:
     container_name: barman
     volumes:
       - ./barman/backup:/var/lib/barman
-      - ./ssh/barman/id_rsa:/root/.ssh/id_rsa
-      - ./ssh/barman/id_rsa.pub:/root/.ssh/id_rsa.pub
-      - ./ssh/postgres/id_rsa.pub:/root/.ssh/authorized_keys
+      - ./barman/config/barman.conf:/etc/barman.conf:rw
+      - ./barman/config/data:/etc/barman.d:rw
     ports:
       - "222:22"  
     environment:
@@ -59,7 +58,8 @@ services:
     depends_on:
       - postgres
     networks:
-      - postgres-network
+      postgres-network:
+        ipv4_address: 100.100.0.20
 
   pgbadger:
     container_name: pgbadger
@@ -91,7 +91,8 @@ services:
     depends_on:
       - postgres
     networks:
-      - postgres-network
+      postgres-network:
+        ipv4_address: 100.100.0.30
 
 volumes:
   ssl:
@@ -105,4 +106,8 @@ volumes:
     driver: local  
 networks: 
   postgres-network:
+    name: postgres-network
     driver: bridge
+    ipam:
+      config:
+        - subnet: 100.100.0.0/16
