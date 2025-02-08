@@ -15,13 +15,13 @@ function waitForPostgres {
 function runTemboardAgente {
 	if [ ! -f "/var/lib/postgresql/data/configured" ]
 	then
-		/usr/local/share/temboard-agent/purge.sh data/postgres-database;
-		/usr/local/share/temboard-agent/auto_configure.sh http://temboard:3010;
-		sudo -u postgres temboard-agent -c /etc/temboard-agent/data/postgres-database/temboard-agent.conf fetch-key --force;
+		/usr/local/share/temboard-agent/purge.sh postgres;
+		/usr/local/share/temboard-agent/auto_configure.sh http://temboard:8888;
+		sudo -u postgres temboard-agent -c /etc/temboard-agent/postgres/temboard-agent.conf fetch-key
 	else
 		echo "Temboard Agente Configured"
 	fi;
-    sudo -u postgres temboard-agent -c /etc/temboard-agent/data/postgres-database/temboard-agent.conf;
+    sudo -u postgres temboard-agent -c /etc/temboard-agent/postgres/temboard-agent.conf
 }
 
 function runBarman {

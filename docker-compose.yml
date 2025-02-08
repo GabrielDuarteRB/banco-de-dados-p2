@@ -85,6 +85,7 @@ services:
       - pgdata:/var/lib/postgresql/data
       - home:/home/temboard
       - ./temboard/config/temboard.conf:/home/temboard/temboard.conf:rw
+      - ./temboard/config/postgresql.conf:/var/lib/postgresql/data/postgresql.conf:rw
     ports:
       - 3010:8888
       - 3110:5431
@@ -104,6 +105,7 @@ volumes:
   home:
     name: temboard-home
     driver: local  
+    
 networks: 
   postgres-network:
     name: postgres-network
