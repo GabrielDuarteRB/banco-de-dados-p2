@@ -156,35 +156,63 @@ slot_name = barman
 
 Verifique se o Barman consegue acessar o PostgreSQL:
 
+Os dois primeiros passos devem ter sido executados durante a inicialização pelo [custom-entrypoint.sh](./config/custom-entrypoint.sh). Caso isso não tenha ocorrido corretamente, execute os seguintes comandos manualmente:
+
+1. **Ative o cron do Barman**  
+```bash
+barman cron
+```
+
+2. **Force a criação do WAL**  
+```bash
+barman switch-wal --force --archive all
+```
+> Esse comando força a rotação e arquivamento do WAL, garantindo que as transações mais recentes sejam incluídas no backup.
+
+3. **Teste a conexão com o PostgreSQL**  
 ```bash
 barman check postgres
 ```
+Se não houver erro, a saída será semelhante a esta:
 
-## 💾 Executando o Backup
+![image](https://github.com/user-attachments/assets/423d5aed-3853-4430-b26c-a8887335f78f)
 
+> ⚠️ **Atenção**: Se houver falhas anteriores no backup, a saída pode incluir a mensagem "FAILED". Isso não significa um erro atual, apenas indica que em algum momento anterior houve uma falha.
+
+---
+
+## 💾 Executando o Backup  
+
+Para iniciar um backup manualmente, execute:  
 ```bash
 barman backup postgres
 ```
 
-## 🔄 Restaurando um Backup
+---
 
+## 🔄 Restaurando um Backup  
+
+Para recuperar o backup mais recente, utilize:  
 ```bash
 barman recover postgres LATEST /var/lib/postgresql/recovery/
 ```
 
-## 📊 Monitoramento
+---
 
-Verifique o status dos backups:
+## 📊 Monitoramento  
 
+Para verificar o status dos backups disponíveis:  
 ```bash
 barman list-backup postgres
 ```
 
-## 📜 Logs
+---
 
-Caso precise depurar algum erro, verifique os logs em:
+## 📝 Logs  
 
+Se precisar depurar algum erro, consulte os logs com:  
 ```bash
 sudo journalctl -u barman
 ```
+
 
