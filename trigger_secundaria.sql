@@ -245,12 +245,12 @@ RETURNS trigger AS
 $$
 BEGIN
   IF (TG_OP = 'INSERT') THEN
-    INSERT INTO secundario.match_odds (id, match_api_id, team_api_id, odds_home, odds_draw, odds_away) 
-    VALUES (NEW.id, NEW.match_api_id, NEW.team_api_id, NEW.odds_home, NEW.odds_draw, NEW.odds_away);
+    INSERT INTO secundario.match_odds (id, id_bets_house, match_api_id, home_win_odds, draw_odds, away_win_odds) 
+    VALUES (NEW.id, NEW.id_bets_house, NEW.match_api_id, NEW.home_win_odds, NEW.draw_odds, NEW.away_win_odds);
   ELSIF (TG_OP = 'UPDATE') THEN
     UPDATE secundario.match_odds 
-    SET match_api_id = NEW.match_api_id, team_api_id = NEW.team_api_id, 
-        odds_home = NEW.odds_home, odds_draw = NEW.odds_draw, odds_away = NEW.odds_away
+    SET match_api_id = NEW.match_api_id,
+        home_win_odds = NEW.home_win_odds, draw_odds = NEW.draw_odds, away_win_odds = NEW.away_win_odds, id_bets_house = NEW.id_bets_house
     WHERE id = OLD.id;
   ELSIF (TG_OP = 'DELETE') THEN
     DELETE FROM secundario.match_odds 
