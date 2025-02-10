@@ -49,3 +49,23 @@ END;
 $$ LANGUAGE plpgsql;
 
 call pr_update_odds(5000, 1, 5, 3.4, 2);
+
+-- Terceira Procedure
+
+CREATE OR REPLACE PROCEDURE convert_stringDate_to_Date()
+AS $$
+BEGIN
+    ALTER TABLE match ADD COLUMN date_tmp DATE;
+
+    UPDATE match 
+    SET date_tmp = date::DATE;
+
+    ALTER TABLE match DROP COLUMN date;
+
+    ALTER TABLE match RENAME COLUMN date_tmp TO date;
+
+    ALTER TABLE match ALTER COLUMN date SET NOT NULL;
+    
+    RAISE NOTICE 'Coluna date convertida com sucesso!';
+END;
+$$ LANGUAGE plpgsql;
