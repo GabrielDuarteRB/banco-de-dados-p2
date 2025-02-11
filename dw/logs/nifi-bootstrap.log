@@ -1,63 +1,78 @@
-2025-02-09 10:50:17,343 WARN [main] o.a.n.b.process.RuntimeValidatorExecutor Runtime Configuration [AvailableLocalPorts] validation failed: Local Ports [28231] less than recommended [55000] according to [/proc/sys/net/ipv4/ip_local_port_range]
-2025-02-09 10:50:17,348 WARN [main] o.a.n.b.process.RuntimeValidatorExecutor Runtime Configuration [ForkedProcesses] validation failed: Configuration file [/proc/75/limits] cannot be parsed
-2025-02-09 10:50:17,349 WARN [main] o.a.n.b.process.RuntimeValidatorExecutor Runtime Configuration [Swappiness] validation failed: Swappiness [60] more than recommended [0] according to [/proc/sys/vm/swappiness]
-2025-02-09 10:50:17,349 WARN [main] o.a.n.b.process.RuntimeValidatorExecutor Runtime Configuration [SocketTimedWaitDuration] validation failed: TCP Socket Wait [120 seconds] more than recommended [1 seconds] according to [/proc/sys/net/netfilter/nf_conntrack_tcp_timeout_time_wait]
-2025-02-09 10:50:17,676 INFO [main] org.apache.nifi.bootstrap.RunNiFi {javaVersion=21.0.3, availableProcessors=2, maxOpenFileDescriptors=1048576, totalPhysicalMemoryMB=2048, minimumHeapSize=1g, maximumHeapSize=1g}
-2025-02-09 10:50:17,763 INFO [main] org.apache.nifi.bootstrap.Command Starting Apache NiFi...
-2025-02-09 10:50:17,763 INFO [main] org.apache.nifi.bootstrap.Command Working Directory: /opt/nifi/nifi-current
-2025-02-09 10:50:17,763 INFO [main] org.apache.nifi.bootstrap.Command Command: /usr/lib/jvm/jdk-21.0.3-bellsoft-x86_64/bin/java -classpath /opt/nifi/nifi-current/./conf:/opt/nifi/nifi-current/./lib/nifi-runtime-2.0.0-M3.jar:/opt/nifi/nifi-current/./lib/jul-to-slf4j-2.0.13.jar:/opt/nifi/nifi-current/./lib/logback-core-1.5.6.jar:/opt/nifi/nifi-current/./lib/nifi-python-framework-api-2.0.0-M3.jar:/opt/nifi/nifi-current/./lib/log4j-over-slf4j-2.0.13.jar:/opt/nifi/nifi-current/./lib/nifi-properties-2.0.0-M3.jar:/opt/nifi/nifi-current/./lib/nifi-per-process-group-logging-2.0.0-M3.jar:/opt/nifi/nifi-current/./lib/nifi-framework-api-2.0.0-M3.jar:/opt/nifi/nifi-current/./lib/nifi-property-utils-2.0.0-M3.jar:/opt/nifi/nifi-current/./lib/jcl-over-slf4j-2.0.13.jar:/opt/nifi/nifi-current/./lib/nifi-api-2.0.0-M3.jar:/opt/nifi/nifi-current/./lib/logback-classic-1.5.6.jar:/opt/nifi/nifi-current/./lib/slf4j-api-2.0.13.jar:/opt/nifi/nifi-current/./lib/nifi-nar-utils-2.0.0-M3.jar:/opt/nifi/nifi-current/./lib/nifi-server-api-2.0.0-M3.jar:/opt/nifi/nifi-current/./lib/nifi-stateless-api-2.0.0-M3.jar -Xmx1g -Djava.awt.headless=true -Xms1g -Djavax.security.auth.useSubjectCredsOnly=true -Dsun.net.http.allowRestrictedHeaders=true -Djava.protocol.handler.pkgs=sun.net.www.protocol -Duser.timezone=America/Bahia -Dcurator-log-only-first-connection-issue-as-error-level=true -Dnifi.properties.file.path=/opt/nifi/nifi-current/./conf/nifi.properties -Dnifi.bootstrap.listen.port=37659 -Dapp=NiFi -Dorg.apache.nifi.bootstrap.config.log.dir=/opt/nifi/nifi-current/logs org.apache.nifi.NiFi 
-2025-02-09 10:50:17,821 INFO [main] org.apache.nifi.bootstrap.Command Application Process [112] launched
-2025-02-09 10:50:19,067 INFO [NiFi Bootstrap Command Listener] org.apache.nifi.bootstrap.RunNiFi Apache NiFi now running and listening for Bootstrap requests on port 33763
-2025-02-09 13:38:10,794 WARN [main] o.a.n.b.process.RuntimeValidatorExecutor Runtime Configuration [AvailableLocalPorts] validation failed: Local Ports [28231] less than recommended [55000] according to [/proc/sys/net/ipv4/ip_local_port_range]
-2025-02-09 13:38:10,799 WARN [main] o.a.n.b.process.RuntimeValidatorExecutor Runtime Configuration [ForkedProcesses] validation failed: Configuration file [/proc/75/limits] cannot be parsed
-2025-02-09 13:38:10,799 WARN [main] o.a.n.b.process.RuntimeValidatorExecutor Runtime Configuration [Swappiness] validation failed: Swappiness [60] more than recommended [0] according to [/proc/sys/vm/swappiness]
-2025-02-09 13:38:10,799 WARN [main] o.a.n.b.process.RuntimeValidatorExecutor Runtime Configuration [SocketTimedWaitDuration] validation failed: TCP Socket Wait [120 seconds] more than recommended [1 seconds] according to [/proc/sys/net/netfilter/nf_conntrack_tcp_timeout_time_wait]
-2025-02-09 13:38:11,065 INFO [main] org.apache.nifi.bootstrap.RunNiFi {javaVersion=21.0.3, availableProcessors=2, maxOpenFileDescriptors=1048576, totalPhysicalMemoryMB=2048, minimumHeapSize=1g, maximumHeapSize=1g}
-2025-02-09 13:38:11,108 INFO [main] org.apache.nifi.bootstrap.Command Starting Apache NiFi...
-2025-02-09 13:38:11,109 INFO [main] org.apache.nifi.bootstrap.Command Working Directory: /opt/nifi/nifi-current
-2025-02-09 13:38:11,109 INFO [main] org.apache.nifi.bootstrap.Command Command: /usr/lib/jvm/jdk-21.0.3-bellsoft-x86_64/bin/java -classpath /opt/nifi/nifi-current/./conf:/opt/nifi/nifi-current/./lib/nifi-runtime-2.0.0-M3.jar:/opt/nifi/nifi-current/./lib/jul-to-slf4j-2.0.13.jar:/opt/nifi/nifi-current/./lib/logback-core-1.5.6.jar:/opt/nifi/nifi-current/./lib/nifi-python-framework-api-2.0.0-M3.jar:/opt/nifi/nifi-current/./lib/log4j-over-slf4j-2.0.13.jar:/opt/nifi/nifi-current/./lib/nifi-properties-2.0.0-M3.jar:/opt/nifi/nifi-current/./lib/nifi-per-process-group-logging-2.0.0-M3.jar:/opt/nifi/nifi-current/./lib/nifi-framework-api-2.0.0-M3.jar:/opt/nifi/nifi-current/./lib/nifi-property-utils-2.0.0-M3.jar:/opt/nifi/nifi-current/./lib/jcl-over-slf4j-2.0.13.jar:/opt/nifi/nifi-current/./lib/nifi-api-2.0.0-M3.jar:/opt/nifi/nifi-current/./lib/logback-classic-1.5.6.jar:/opt/nifi/nifi-current/./lib/slf4j-api-2.0.13.jar:/opt/nifi/nifi-current/./lib/nifi-nar-utils-2.0.0-M3.jar:/opt/nifi/nifi-current/./lib/nifi-server-api-2.0.0-M3.jar:/opt/nifi/nifi-current/./lib/nifi-stateless-api-2.0.0-M3.jar -Xmx1g -Djava.awt.headless=true -Xms1g -Djavax.security.auth.useSubjectCredsOnly=true -Dsun.net.http.allowRestrictedHeaders=true -Djava.protocol.handler.pkgs=sun.net.www.protocol -Duser.timezone=America/Bahia -Dcurator-log-only-first-connection-issue-as-error-level=true -Dnifi.properties.file.path=/opt/nifi/nifi-current/./conf/nifi.properties -Dnifi.bootstrap.listen.port=44857 -Dapp=NiFi -Dorg.apache.nifi.bootstrap.config.log.dir=/opt/nifi/nifi-current/logs org.apache.nifi.NiFi 
-2025-02-09 13:38:11,164 INFO [main] org.apache.nifi.bootstrap.Command Application Process [113] launched
-2025-02-09 13:38:12,538 INFO [NiFi Bootstrap Command Listener] org.apache.nifi.bootstrap.RunNiFi Apache NiFi now running and listening for Bootstrap requests on port 34695
-2025-02-09 22:19:11,018 WARN [main] o.a.n.b.process.RuntimeValidatorExecutor Runtime Configuration [AvailableLocalPorts] validation failed: Local Ports [28231] less than recommended [55000] according to [/proc/sys/net/ipv4/ip_local_port_range]
-2025-02-09 22:19:11,021 WARN [main] o.a.n.b.process.RuntimeValidatorExecutor Runtime Configuration [ForkedProcesses] validation failed: Configuration file [/proc/75/limits] cannot be parsed
-2025-02-09 22:19:11,021 WARN [main] o.a.n.b.process.RuntimeValidatorExecutor Runtime Configuration [Swappiness] validation failed: Swappiness [60] more than recommended [0] according to [/proc/sys/vm/swappiness]
-2025-02-09 22:19:11,021 WARN [main] o.a.n.b.process.RuntimeValidatorExecutor Runtime Configuration [SocketTimedWaitDuration] validation failed: TCP Socket Wait [120 seconds] more than recommended [1 seconds] according to [/proc/sys/net/netfilter/nf_conntrack_tcp_timeout_time_wait]
-2025-02-09 22:19:11,307 INFO [main] org.apache.nifi.bootstrap.RunNiFi {javaVersion=21.0.3, availableProcessors=2, maxOpenFileDescriptors=1048576, totalPhysicalMemoryMB=2048, minimumHeapSize=1g, maximumHeapSize=1g}
-2025-02-09 22:19:11,385 INFO [main] org.apache.nifi.bootstrap.Command Starting Apache NiFi...
-2025-02-09 22:19:11,385 INFO [main] org.apache.nifi.bootstrap.Command Working Directory: /opt/nifi/nifi-current
-2025-02-09 22:19:11,386 INFO [main] org.apache.nifi.bootstrap.Command Command: /usr/lib/jvm/jdk-21.0.3-bellsoft-x86_64/bin/java -classpath /opt/nifi/nifi-current/./conf:/opt/nifi/nifi-current/./lib/nifi-runtime-2.0.0-M3.jar:/opt/nifi/nifi-current/./lib/jul-to-slf4j-2.0.13.jar:/opt/nifi/nifi-current/./lib/logback-core-1.5.6.jar:/opt/nifi/nifi-current/./lib/nifi-python-framework-api-2.0.0-M3.jar:/opt/nifi/nifi-current/./lib/log4j-over-slf4j-2.0.13.jar:/opt/nifi/nifi-current/./lib/nifi-properties-2.0.0-M3.jar:/opt/nifi/nifi-current/./lib/nifi-per-process-group-logging-2.0.0-M3.jar:/opt/nifi/nifi-current/./lib/nifi-framework-api-2.0.0-M3.jar:/opt/nifi/nifi-current/./lib/nifi-property-utils-2.0.0-M3.jar:/opt/nifi/nifi-current/./lib/jcl-over-slf4j-2.0.13.jar:/opt/nifi/nifi-current/./lib/nifi-api-2.0.0-M3.jar:/opt/nifi/nifi-current/./lib/logback-classic-1.5.6.jar:/opt/nifi/nifi-current/./lib/slf4j-api-2.0.13.jar:/opt/nifi/nifi-current/./lib/nifi-nar-utils-2.0.0-M3.jar:/opt/nifi/nifi-current/./lib/nifi-server-api-2.0.0-M3.jar:/opt/nifi/nifi-current/./lib/nifi-stateless-api-2.0.0-M3.jar -Xmx1g -Djava.awt.headless=true -Xms1g -Djavax.security.auth.useSubjectCredsOnly=true -Dsun.net.http.allowRestrictedHeaders=true -Djava.protocol.handler.pkgs=sun.net.www.protocol -Duser.timezone=America/Bahia -Dcurator-log-only-first-connection-issue-as-error-level=true -Dnifi.properties.file.path=/opt/nifi/nifi-current/./conf/nifi.properties -Dnifi.bootstrap.listen.port=35285 -Dapp=NiFi -Dorg.apache.nifi.bootstrap.config.log.dir=/opt/nifi/nifi-current/logs org.apache.nifi.NiFi 
-2025-02-09 22:19:11,441 INFO [main] org.apache.nifi.bootstrap.Command Application Process [113] launched
-2025-02-09 22:19:12,886 INFO [NiFi Bootstrap Command Listener] org.apache.nifi.bootstrap.RunNiFi Apache NiFi now running and listening for Bootstrap requests on port 41023
-2025-02-09 22:25:27,881 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'user'
-2025-02-09 22:25:27,884 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'password'
-2025-02-09 22:25:27,884 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'user'
-2025-02-09 22:25:27,886 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'password'
-2025-02-09 22:25:27,886 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'user'
-2025-02-09 22:25:27,887 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'password'
-2025-02-09 22:25:27,887 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'user'
-2025-02-09 22:25:27,887 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'password'
-2025-02-09 22:25:27,887 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'user'
-2025-02-09 22:25:27,887 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'password'
-2025-02-09 22:25:27,887 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'user'
-2025-02-09 22:31:27,905 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'password'
-2025-02-09 22:31:27,905 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'user'
-2025-02-09 22:31:27,905 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'password'
-2025-02-09 22:31:27,905 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'user'
-2025-02-09 22:31:27,906 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'password'
-2025-02-09 22:31:27,906 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'user'
-2025-02-09 22:31:27,906 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'password'
-2025-02-09 22:31:27,906 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'user'
-2025-02-09 22:31:27,906 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'password'
-2025-02-09 22:31:27,906 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'user'
-2025-02-09 22:31:27,906 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'password'
-2025-02-09 22:36:27,925 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'user'
-2025-02-09 22:36:27,926 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'password'
-2025-02-09 22:36:27,926 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'user'
-2025-02-09 22:36:27,926 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'password'
-2025-02-09 22:36:27,926 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'user'
-2025-02-09 22:36:27,926 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'password'
-2025-02-09 22:36:27,927 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'user'
-2025-02-09 22:36:27,927 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'password'
-2025-02-09 22:36:27,927 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'user'
-2025-02-09 22:36:27,927 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'password'
-2025-02-09 22:36:27,927 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'user'
+2025-02-10 22:32:46,686 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource conf
+2025-02-10 22:32:47,486 INFO [main] org.apache.nifi.bootstrap.RunNiFi A shutdown was initiated. Will not restart NiFi
+2025-02-10 22:34:10,723 WARN [main] o.a.n.b.process.RuntimeValidatorExecutor Runtime Configuration [AvailableLocalPorts] validation failed: Local Ports [28231] less than recommended [55000] according to [/proc/sys/net/ipv4/ip_local_port_range]
+2025-02-10 22:34:10,727 WARN [main] o.a.n.b.process.RuntimeValidatorExecutor Runtime Configuration [ForkedProcesses] validation failed: Configuration file [/proc/75/limits] cannot be parsed
+2025-02-10 22:34:10,727 WARN [main] o.a.n.b.process.RuntimeValidatorExecutor Runtime Configuration [Swappiness] validation failed: Swappiness [60] more than recommended [0] according to [/proc/sys/vm/swappiness]
+2025-02-10 22:34:10,727 WARN [main] o.a.n.b.process.RuntimeValidatorExecutor Runtime Configuration [SocketTimedWaitDuration] validation failed: TCP Socket Wait [120 seconds] more than recommended [1 seconds] according to [/proc/sys/net/netfilter/nf_conntrack_tcp_timeout_time_wait]
+2025-02-10 22:34:10,538 INFO [main] org.apache.nifi.bootstrap.RunNiFi {javaVersion=21.0.3, availableProcessors=2, maxOpenFileDescriptors=1048576, totalPhysicalMemoryMB=2048, minimumHeapSize=1g, maximumHeapSize=1g}
+2025-02-10 22:34:10,625 INFO [main] org.apache.nifi.bootstrap.Command Starting Apache NiFi...
+2025-02-10 22:34:10,625 INFO [main] org.apache.nifi.bootstrap.Command Working Directory: /opt/nifi/nifi-current
+2025-02-10 22:34:10,625 INFO [main] org.apache.nifi.bootstrap.Command Command: /usr/lib/jvm/jdk-21.0.3-bellsoft-x86_64/bin/java -classpath /opt/nifi/nifi-current/./conf:/opt/nifi/nifi-current/./lib/nifi-runtime-2.0.0-M3.jar:/opt/nifi/nifi-current/./lib/jul-to-slf4j-2.0.13.jar:/opt/nifi/nifi-current/./lib/logback-core-1.5.6.jar:/opt/nifi/nifi-current/./lib/nifi-python-framework-api-2.0.0-M3.jar:/opt/nifi/nifi-current/./lib/log4j-over-slf4j-2.0.13.jar:/opt/nifi/nifi-current/./lib/nifi-properties-2.0.0-M3.jar:/opt/nifi/nifi-current/./lib/nifi-per-process-group-logging-2.0.0-M3.jar:/opt/nifi/nifi-current/./lib/nifi-framework-api-2.0.0-M3.jar:/opt/nifi/nifi-current/./lib/nifi-property-utils-2.0.0-M3.jar:/opt/nifi/nifi-current/./lib/jcl-over-slf4j-2.0.13.jar:/opt/nifi/nifi-current/./lib/nifi-api-2.0.0-M3.jar:/opt/nifi/nifi-current/./lib/logback-classic-1.5.6.jar:/opt/nifi/nifi-current/./lib/slf4j-api-2.0.13.jar:/opt/nifi/nifi-current/./lib/nifi-nar-utils-2.0.0-M3.jar:/opt/nifi/nifi-current/./lib/nifi-server-api-2.0.0-M3.jar:/opt/nifi/nifi-current/./lib/nifi-stateless-api-2.0.0-M3.jar -Xmx1g -Djava.awt.headless=true -Xms1g -Djavax.security.auth.useSubjectCredsOnly=true -Dsun.net.http.allowRestrictedHeaders=true -Djava.protocol.handler.pkgs=sun.net.www.protocol -Duser.timezone=America/Bahia -Dcurator-log-only-first-connection-issue-as-error-level=true -Dnifi.properties.file.path=/opt/nifi/nifi-current/./conf/nifi.properties -Dnifi.bootstrap.listen.port=44327 -Dapp=NiFi -Dorg.apache.nifi.bootstrap.config.log.dir=/opt/nifi/nifi-current/logs org.apache.nifi.NiFi 
+2025-02-10 22:34:10,670 INFO [main] org.apache.nifi.bootstrap.Command Application Process [112] launched
+2025-02-10 22:34:11,946 INFO [NiFi Bootstrap Command Listener] org.apache.nifi.bootstrap.RunNiFi Apache NiFi now running and listening for Bootstrap requests on port 37279
+2025-02-10 22:36:21,141 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'user'
+2025-02-10 22:36:21,145 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'password'
+2025-02-10 22:36:21,145 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'user'
+2025-02-10 22:36:21,145 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'password'
+2025-02-10 22:36:21,145 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'user'
+2025-02-10 22:36:21,146 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'password'
+2025-02-10 22:36:21,146 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'user'
+2025-02-10 22:36:21,146 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'password'
+2025-02-10 22:36:21,146 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'user'
+2025-02-10 22:36:21,146 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'password'
+2025-02-10 22:36:21,146 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'user'
+2025-02-10 22:38:21,148 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'password'
+2025-02-10 22:38:21,148 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'user'
+2025-02-10 22:38:21,149 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'password'
+2025-02-10 22:38:21,149 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'user'
+2025-02-10 22:38:21,149 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'password'
+2025-02-10 22:38:21,149 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'user'
+2025-02-10 22:38:21,149 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'password'
+2025-02-10 22:38:21,150 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'user'
+2025-02-10 22:38:21,150 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'password'
+2025-02-10 22:38:21,150 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'user'
+2025-02-10 22:38:21,150 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'password'
+2025-02-10 22:40:21,041 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'user'
+2025-02-10 22:40:21,042 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'password'
+2025-02-10 22:40:21,042 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'user'
+2025-02-10 22:40:21,042 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'password'
+2025-02-10 22:40:21,042 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'user'
+2025-02-10 22:40:21,042 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'password'
+2025-02-10 22:40:21,042 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'user'
+2025-02-10 22:40:21,043 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'password'
+2025-02-10 22:40:21,043 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'user'
+2025-02-10 22:40:21,043 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'password'
+2025-02-10 22:40:21,043 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'user'
+2025-02-10 22:42:21,048 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'password'
+2025-02-10 22:42:21,048 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'user'
+2025-02-10 22:42:21,048 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'password'
+2025-02-10 22:42:21,048 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'user'
+2025-02-10 22:42:21,048 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'password'
+2025-02-10 22:42:21,048 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'user'
+2025-02-10 22:42:21,048 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'password'
+2025-02-10 22:42:21,048 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'user'
+2025-02-10 22:42:21,048 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'password'
+2025-02-10 22:42:21,048 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'user'
+2025-02-10 22:42:21,048 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'password'
+2025-02-10 22:44:21,055 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'user'
+2025-02-10 22:44:21,055 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'password'
+2025-02-10 22:44:21,055 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'user'
+2025-02-10 22:44:21,056 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'password'
+2025-02-10 22:44:21,056 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'user'
+2025-02-10 22:44:21,056 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'password'
+2025-02-10 22:44:21,056 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'user'
+2025-02-10 22:44:21,057 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'password'
+2025-02-10 22:44:21,057 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'user'
+2025-02-10 22:44:21,057 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'password'
+2025-02-10 22:44:21,058 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'user'
+2025-02-10 22:46:22,975 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'password'
+2025-02-10 22:46:22,975 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'user'
+2025-02-10 22:46:22,975 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'password'
+2025-02-10 22:46:22,975 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'user'
+2025-02-10 22:46:22,975 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'password'
+2025-02-10 22:46:22,975 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'user'
+2025-02-10 22:46:22,975 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'password'
+2025-02-10 22:46:22,975 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'user'
+2025-02-10 22:46:22,975 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'password'
+2025-02-10 22:46:22,975 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'user'
+2025-02-10 22:46:22,975 INFO [NiFi logging handler] org.apache.nifi.StdOut DBCP DataSource configured without a 'password'

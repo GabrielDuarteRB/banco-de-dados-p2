@@ -1,0 +1,3 @@
+2025-02-10 22:32:45,419 INFO [main] org.apache.nifi.bootstrap.Command Apache NiFi has accepted the Shutdown Command and is shutting down now
+2025-02-10 22:32:45,494 INFO [main] org.apache.nifi.bootstrap.Command NiFi PID [113] shutdown in progress...
+2025-02-10 22:32:47,500 INFO [main] org.apache.nifi.bootstrap.Command NiFi PID [113] shutdown completed
