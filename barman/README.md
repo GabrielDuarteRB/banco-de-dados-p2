@@ -43,30 +43,32 @@ No servidor PostgreSQL, edite o arquivo *[postgresql.conf](../app/config/postgre
 
 Crie o usuário `barman` no PostgreSQL e conceda as permissões:
 
-Dentro da nossa arquitetura possuimos um arquivo [init](../app/config/init/barman.sh) que, sempre que o nosso servidor PostresSQL subir, executará essas configurações.
-
-```bash
-psql -U $POSTGRES_USER -c "CREATE USER barman WITH REPLICATION PASSWORD 'barman';"
-```
+Dentro da nossa arquitetura possuimos um arquivo no container do Postgres de [custom-entrypoint.sh](../app/config/custom-entrypoint.sh) que, sempre que o nosso servidor PostresSQL subir, executará essas configurações, caso não tenha sido configurado anteriormente.
 
 ### Configurando Banco de dados
 
 Ao iniciar o projeto, precisamos nos certificar que algumas configurações e extensão estão funcionando.
 
-Para isso, vamos configurar dentro do [custom-entrypoint](../app/config/postgresql.conf) esses parametros.
+Para isso, vamos configurar dentro do [custom-entrypoint](../app/config/custom-entrypoint.sh) esses parametros.
 
-Dentro desse arquivo, temos uma função **runBarman** na qual possui todos os parametros necessários para que rode corretamente.
+Dentro desse arquivo, temos uma função **‎runConfigBdBarman** na qual possui todos os parametros necessários para que rode corretamente.
 
 ```bash
-    for db in $(psql -U $POSTGRES_USER -t -c "SELECT datname FROM pg_database WHERE datistemplate = false;"); do
-        psql -U $POSTGRES_USER -d "$db" -c "GRANT EXECUTE ON FUNCTION pg_start_backup(text, boolean, boolean) to barman;"
-        psql -U $POSTGRES_USER -d "$db" -c "GRANT EXECUTE ON FUNCTION pg_stop_backup() to barman;"
-	psql -U $POSTGRES_USER -d "$db" -c "GRANT EXECUTE ON FUNCTION pg_stop_backup(boolean, boolean) to barman;"
-        psql -U $POSTGRES_USER -d "$db" -c "GRANT EXECUTE ON FUNCTION pg_switch_wal() to barman;"
-        psql -U $POSTGRES_USER -d "$db" -c "GRANT EXECUTE ON FUNCTION pg_create_restore_point(text) to barman;"
-        psql -U $POSTGRES_USER -d "$db" -c "GRANT pg_read_all_settings TO barman;"
-        psql -U $POSTGRES_USER -d "$db" -c "GRANT pg_read_all_stats TO barman;"
-    done
+     	psql -U $POSTGRES_USER -c "CREATE USER barman WITH SUPERUSER REPLICATION PASSWORD 'barman';"
+
+        echo "Configurando banco para barman"
+
+        for db in $(psql -U $POSTGRES_USER -t -c "SELECT datname FROM pg_database WHERE datistemplate = false;"); do
+            psql -U $POSTGRES_USER -d "$db" -c "GRANT EXECUTE ON FUNCTION pg_start_backup(text, boolean, boolean) to barman;"
+            psql -U $POSTGRES_USER -d "$db" -c "GRANT EXECUTE ON FUNCTION pg_stop_backup() to barman;"
+            psql -U $POSTGRES_USER -d "$db" -c "GRANT EXECUTE ON FUNCTION pg_stop_backup(boolean, boolean) to barman;"
+            psql -U $POSTGRES_USER -d "$db" -c "GRANT EXECUTE ON FUNCTION pg_switch_wal() to barman;"
+            psql -U $POSTGRES_USER -d "$db" -c "GRANT EXECUTE ON FUNCTION pg_create_restore_point(text) to barman;"
+            psql -U $POSTGRES_USER -d "$db" -c "GRANT pg_read_all_settings TO barman;"
+            psql -U $POSTGRES_USER -d "$db" -c "GRANT pg_read_all_stats TO barman;"
+        done
+
+        psql -c "SELECT pg_reload_conf();"
 ```
 
 #### Explicação dos comandos
