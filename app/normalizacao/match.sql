@@ -9,7 +9,7 @@ create table match_player_position (
     position_y BIGINT,
     FOREIGN KEY (match_api_id) REFERENCES match(match_api_id),
     FOREIGN KEY (team_id) REFERENCES team(team_api_id)
-)
+);
 
 CREATE OR REPLACE FUNCTION populate_player_position()
 RETURNS void AS
@@ -56,8 +56,8 @@ BEGIN
                 match m', 
             player_number, player_number, player_number);
     END LOOP;
-END $$
-LANGUAGE plpgsql;
+END; 
+$$ LANGUAGE plpgsql;
 
 select populate_player_position();
 
@@ -281,7 +281,7 @@ CREATE TABLE match_goals (
     event_incident_typefk INT,
     elapsed INT,
     n INT
-)
+);
 
 CREATE OR REPLACE FUNCTION insert_goals_from_all_matches() 
 RETURNS VOID AS $$
@@ -331,10 +331,10 @@ END;
 $$ LANGUAGE plpgsql;
 
 
-select insert_goals_from_all_matches()
+select insert_goals_from_all_matches();
 
 ALTER TABLE match 
-DROP COLUMN goal
+DROP COLUMN goal;
 
 -- Shoton
 
@@ -396,14 +396,13 @@ BEGIN
     
     RETURN;
 END;
-$$ 
-LANGUAGE plpgsql;
+$$ LANGUAGE plpgsql;
 
 
 select insert_shoton_from_all_matches();
 
 ALTER TABLE match 
-DROP COLUMN shoton
+DROP COLUMN shoton;
 
 -- foulcommit
 

@@ -38,8 +38,8 @@ RUN mkdir -p /home/temboard/log/temboard && \
     mkdir -p /home/temboard/bin && \
     echo '' > /home/temboard/log/temboard/temboard-auto-configure.log
 
-COPY ./config/postgresql.conf /var/lib/postgresql/data/postgresql.conf
-COPY ./config/db-config.sh /docker-entrypoint-initdb.d/
+RUN mkdir -p /var/lib/postgresql/data
+COPY ./config/postgresql.conf /usr/share/postgresql/postgresql.conf
 COPY ./config/custom-entrypoint.sh /home/temboard/
 
 RUN chmod +x /home/temboard/custom-entrypoint.sh

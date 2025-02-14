@@ -24,8 +24,6 @@ BEGIN
 END;
 $$ LANGUAGE plpgsql;
 
-select fn_calculated_age_player(505942);
-
 -- Segunda funcao
 
 CREATE OR REPLACE FUNCTION fn_player_stats_in_match(p_match_id BIGINT, p_player_id BIGINT)
@@ -50,8 +48,6 @@ BEGIN
         player.player_api_id = p_player_id;
 END;
 $$ LANGUAGE plpgsql;
-
-SELECT * FROM fn_player_stats_in_match(539770, 111862);
 
 -- Terceira funcao
 
@@ -89,5 +85,3 @@ BEGIN
     RETURN gols_time_visitante + gols_time_casa;
 END;
 $$ LANGUAGE plpgsql;
-
-SELECT fn_goals_team_in_season('2008/2009', 10000);
