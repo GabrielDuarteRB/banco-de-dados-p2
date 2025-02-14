@@ -15,7 +15,7 @@ Nesse Readme, vamos detalhar os passos necessários para configurar e utilizar o
 
 ## 🛠️ Instalação do Temboard
 
-Para começarmos a instalação do Temboard, é necessário configurar os seguintes componentes:
+A instalação do Temboard envolve a configuração de dois componentes principais:
 
 1. **Temboard Server**: O servidor que irá interagir com o PostgreSQL para coletar métricas e informações de desempenho.
 2. **Temboard Agent**: O agente que será instalado no servidor PostgreSQL para enviar as informações para o Temboard Server.
@@ -48,15 +48,15 @@ Instale o Temboard Server em um servidor separado. Para isso, vamos configurar o
         ipv4_address: 100.100.0.30
 ```
 
-Ao rodar o dockerfile, iremos baixar a versão 8.2.1 do temboards, configurando dentro dele as variaveis de ambiente do seu postgres interno, que será utilizado para armazenar as informações que serão monitoradas.
+Ao rodar o dockerfile, a versão 8.2.1 do temboards será baixada, configurando dentro dele as variaveis de ambiente do seu postgres interno, que será utilizado para armazenar as informações que serão monitoradas.
 
-Dentro do seu `custom-entrypoint.sh` iremos iniciar o postgres e tambem configurar o ambiente do temboard, criando a extensão `pg_stat_statements` (caso não exista), que é usada para monitorar e coletar estatísticas sobre consultas SQL executadas no banco de dados. Além disso, executamos alguns comandos que geram as keys de segurança, que serão utilizadas pelo nosso container do postgres. 
+Dentro do seu `custom-entrypoint.sh`, iniciamos o PostgreSQL e configuramos o Temboard, criando a extensão `pg_stat_statements` (caso não exista), que é usada para monitorar e coletar estatísticas sobre consultas SQL executadas no banco de dados. Também são geradas as chaves de segurança, utilizadas para a comunicação entre os containers.
 
-Ao finalizado o custom-entrypoint, ele cria um arquivo, via touch, chamado *configured*, caso esse arquivo ja exista, o docker não executa novamente o comando, por existir uma validação de arquivo existente.
+Ao finalizado o custom-entrypoint, ele cria um arquivo, via touch, chamado *configured* para evitar a re-execução de comandos em containers subsequentes.
 
 ### **Temboard Agent**
 
-Para instalarmos o agent no lado do container do postgres, possuimos a necessidade de ter o python rodando. Dentro do [dockerfile](../app/Dockerfile) do postgres, possuimos as seguintes linhas na qual vai intalar o python e configurar o temboard-agente de acordo com a versão instalada no lado do servidor:
+Para instalar o Temboard agent no servidor PostgreSQL, é necessário ter o python instalado. O [dockerfile](../app/Dockerfile) do postgres, contém as seguintes instruções para intalação do Python e do Temboard Agent:
 
 ```Dockerfile
   python3-pip python3-setuptools python3-dev; \
@@ -67,21 +67,21 @@ Para instalarmos o agent no lado do container do postgres, possuimos a necessida
 
 Dentro desse arquivo, tambem vamos ter variaveis de ambiente de configuração que apontam para o caminho do servidor para que haja a comunicação.
 
-No seu custom-entrypoints, temos uma função chamada `runTemboardAgente`, que ao ser iniciar, ela cria a extensão(caso não exista) `pg_stat_statements` e ainda verifica se o temboard foi configurado a partir desse arquivo `temboard_configured`, caso não tenha sido configurado antes, vamos digitar o seguinte comando no nosso terminal local:
+No script `custom-entrypoints`, temos uma função chamada `runTemboardAgente`, que ao ser iniciar, ela cria a extensão `pg_stat_statements`(caso não exista) e verifica se o Temboard foi configurado a partir do arquivo `temboard_configured`, caso não tenha sido configurado, execute o seguinte comando no terminal local:
 
 ``` bash
 bash init.sh configTemboardOnPostgres
 ```
 
-Dentro desse arquivo `configTemboardOnPostgres`, iremos executar alguns comandos, no qual vamos buscar as keys geradas, no passo anterior, dentro do servidor do temboard e vamos iniciar o processo de monitoramento.
+Dentro do arquivo `configTemboardOnPostgres`, são executados comandos para buscar as chaves de segurança geradas no servido Temboarde e iniciar o processo de monitoramento.
 
-> **Aviso:**Essas etapas devem ser seguidas sempre que o container for zerado, caso tenha feito as configurações anteriormente e não tenha zerado os containers, não há a necessidade de executar os comandos.
+> **Aviso:** Essas etapas precisam ser repetidas sempre que o container for zerado. Caso já tenha realizado as configurações e não tenha zerado os containers, não será necessário executar os comandos novamente.
 
 ## Arquivos de configuração de conexão
 
 ### **Temboard Server**
 
-Dentro do servidor Temboard, possuímos dois arquivos de configuração principais: `postgresql.conf` e `temboard.conf`. Primeiro vamos detalhar as configurações presentes no arquivo **postgresql.conf**, que define o comportamento do servidor PostgreSQL.
+No servidor Temboard, possuímos dois arquivos de configuração principais: `postgresql.conf` e `temboard.conf`. A seguir, detalhamos a configuração do arquivo **postgresql.conf**, que define o comportamento do servidor PostgreSQL interno.
 
 **1. Configuração de Conexões**
 
@@ -236,31 +236,29 @@ Esta seção é configurada para gerenciar o monitoramento de instruções SQL.
 
 Dentro do container do postgres, possuimos dois arquivos que utilizamos para configurar, `temboard-agent.conf` e o `postgresql.conf`. Ambos os arquivos serão explicados dentro do [README.md do postgres](../app/README.md)
 
-# Acessando o Temboard
+# 🔑 Acessando o Temboard
 
 Ao passar pelos passos anteriores, tente acessar a url [http://localhost:3010](http://localhost:3010) no seu navegador. Caso não consiga acessar, verifique se o container esta rodando corretamente e volte para o passo [Arquivos de configuração de conexão](#arquivos-de-configuração-de-conexão)
 
-Caso tenha sido sucessedido o acesso dentro da porta `3010`, vamos seguir os seguintes passos para fazer login e cadastrar nosso banco.
+
+## Passos para configuração:
 
 **1. Tela de login**: Vamos adicionar as credenciais padrões do Temboard
   - **Usuário**: admin
   - **Senha**: admin
 
-**2.** Clique em Settings no canto superior direito e depois em new instance.
+**2.** Clique em **Settings** no canto superior direito e depois em new instance.
 
 **3. Configurando instancia**:
   - Adicione o endereço do agente, que como esta no mesmo container, podemos utilizar o próprio nome do container `postgres`.
   - Seguindo a mesma lógica, vamos adicionar a porta de acesso do agente, que será, de acordo com o docker-compose `2345`.
 
-**4.** Selecione groups default e os 6 plugins baixados.
+**4.** Selecione groups `default` e os 6 plugins baixados.
 
-**5.** Clique em register e comece a usar o monitorador.
+**5.** Clique em **Register** e comece a usar o monitorador.
 
 # Links Importantes
 
-Configuração do `temboard.conf` -> https://temboard.readthedocs.io/en/latest/server_configure
+[Documentação temboard](https://temboard.readthedocs.io/en/latest)
 
-
-
-
-
+[Documentação do temboard.conf](https://temboard.readthedocs.io/en/latest/server_configure)
