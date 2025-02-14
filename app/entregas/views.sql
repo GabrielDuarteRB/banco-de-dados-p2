@@ -36,8 +36,6 @@ GROUP BY
 ORDER BY
     match.season, team.team_long_name;
 
-select * from view_avg_goals_per_season
-
 -- Segunda View
 
 CREATE OR REPLACE VIEW player_stats_per_match AS
@@ -75,8 +73,6 @@ GROUP BY
 ORDER BY
     m.match_api_id, p.player_name;
 
-select * from player_stats_per_match
-
 -- Terceira View
 
 CREATE OR REPLACE VIEW match_odds_results AS
@@ -111,5 +107,3 @@ ON
 	bh.id_bets_house = mo.id_bets_house
 ORDER BY
     m.date, bh.name;
-	
-select * from match_odds_results

@@ -7,10 +7,10 @@ Este projeto visa a implementação de um banco de dados em PostgreSQL a partir 
   ✅ **Usar o pgloader para carregar os dados do SQlite para o Postgre**  
   ✅**3 Views**  
   ✅ **3 Functions**  
-  ⏳ **3 Procedures (Falta uma)**  
+  ✅ **3 Procedures (Falta uma)**  
   ✅ **3 Triggers**  
   ✅ **PgBarman para configurar backup**  
-  ❌ **Configurar o monitoramento ativo da base em Postgre com o TemBoard e o PgBadger**  
+  ✅ **Configurar o monitoramento ativo da base em Postgre com o TemBoard e o PgBadger**  
   ❌ **Transformar a base em Postgre em um DW (Usar o star schema)**  
   ❌ **Criar ETL do banco em Postgre para o DW**  
   ❌ **Criar dicionários de dados os dois banco criados**  
@@ -35,17 +35,22 @@ Antes de começar, certifique-se de ter os seguintes itens instalados:
 ## 🚀 **Como rodar**
 
 1. **Configuração inicial:**
-   -  Execute o comando bash init.sh createDirs
+   - Execute o comando bash init.sh createDirs
    - Adicione o arquivo do banco SQLite com o nome `database.sqlite` dentro da pasta sqlite criada.
 
 2. **Rodando a aplicação:**
-   - Acesse o terminal e execute os seguintes comandos:
+  - Acesse o terminal e execute os seguintes comandos:
      ```bash
      docker-compose build
      docker-compose up
      ```
+  - Após essa sequência de passos, seu banco de dados PostgreSQL estará funcionando e com todos os dados do banco SQLite selecionado.
      
-3. Após essa sequência de passos, seu banco de dados PostgreSQL estará funcionando e com todos os dados do banco SQLite selecionado.
+3. **Normalizando o banco de dados**
+  - Execute o comando `bash init.sh createNormalizedBd`
+
+4. **Adicionando as funções, procedure, trigger, views**
+  - Execute o comando `bash init.sh executeFunctionsTriggerView`
 
 ## 📂 **Pastas do Projeto**
 - [Barman](./barman/README.md) – Detalhes sobre a configuração e uso do Barman para backup.

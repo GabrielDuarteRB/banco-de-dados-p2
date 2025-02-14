@@ -3,10 +3,9 @@ services:
     container_name: postgres
     build: ./app
     volumes:
-      - ./postgres-database:/var/lib/postgresql/data
+      - ./postgres-database:/var/lib/postgresql/data:rw
       - ./sqlite:/data
       - ./pgbadger/pg_log:/var/lib/postgresql/data/pg_log
-      - ./app/config/postgresql.conf:/var/lib/postgresql/data/postgres-database/postgresql.conf:rw
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
@@ -20,26 +19,26 @@ services:
       - "15432:5432"
       - "2345:2345"
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U postgres"]
-      interval: 10s
-      retries: 5
+      test: ["CMD-SHELL", "pg_isready -U user -d mydb"]
+      interval: 5s
     networks:
       postgres-network:
         ipv4_address: 100.100.0.10
 
-  #pgloader:
-  #  build: ./pgloader
-  #  container_name: pgloader
-  #  volumes:
-  #    - ./sqlite:/data
-  #    - ./postgres-database:/var/lib/postgresql/data
-  #  depends_on:
-  #    - postgres
-  #  entrypoint: ["/usr/local/bin/entrypoint.sh"]
-  #  mem_limit: 8g
-  #  mem_reservation: 7g
-  #  networks:
-  #    - postgres-network
+  pgloader:
+   build: ./pgloader
+   container_name: pgloader
+   volumes:
+     - ./sqlite:/data
+     - ./postgres-database:/var/lib/postgresql/data
+   depends_on:
+      postgres:
+        condition: service_healthy
+   entrypoint: ["/usr/local/bin/entrypoint.sh"]
+   mem_limit: 8g
+   mem_reservation: 7g
+   networks:
+     - postgres-network
 
   barman:
     build: ./barman
@@ -56,7 +55,8 @@ services:
       - BARMAN_DB_PASSWORD=postgres
       - PGPASSWORD=postgres 
     depends_on:
-      - postgres
+      postgres:
+        condition: service_healthy
     networks:
       postgres-network:
         ipv4_address: 100.100.0.20
@@ -69,7 +69,8 @@ services:
     ports:
       - "8080:80"
     depends_on:
-      - postgres
+      postgres:
+        condition: service_healthy
     networks:
       - postgres-network
 
@@ -85,12 +86,12 @@ services:
       - pgdata:/var/lib/postgresql/data
       - home:/home/temboard
       - ./temboard/config/temboard.conf:/home/temboard/temboard.conf:rw
-      - ./temboard/config/postgresql.conf:/var/lib/postgresql/data/postgresql.conf:rw
     ports:
       - 3010:8888
       - 3110:5431
     depends_on:
-      - postgres
+      postgres:
+        condition: service_healthy
     networks:
       postgres-network:
         ipv4_address: 100.100.0.30
